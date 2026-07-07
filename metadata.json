@@ -1,0 +1,6 @@
+{
+  "name": "Indian Academy of Mental Health (IAMH)",
+  "description": "The official institutional website of the Indian Academy of Mental Health (IAMH) — a national, multidisciplinary academic network of mental health professionals promoting awareness, research, education, and evidence-based clinical practices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
