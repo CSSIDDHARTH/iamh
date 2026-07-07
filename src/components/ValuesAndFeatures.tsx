@@ -13,7 +13,7 @@ const IconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function ValuesAndFeatures() {
   return (
-    <section id="values" className="py-20 bg-slate-50 scroll-mt-16">
+    <section id="values" className="py-20 bg-white scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* --- Header --- */}
@@ -36,7 +36,7 @@ export default function ValuesAndFeatures() {
             return (
               <div
                 key={val.id}
-                className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.012)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.04)] hover:border-slate-300 transition-all duration-300 group flex flex-col justify-between"
+                className="bg-white border border-[#E9EDF2] p-6 sm:p-8 rounded-[20px] shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_12px_36px_rgba(40,78,156,0.09)] hover:border-slate-200 hover:-translate-y-0.5 transition-all duration-300 group flex flex-col justify-between"
               >
                 <div className="space-y-4.5">
                   {/* Icon Shield */}

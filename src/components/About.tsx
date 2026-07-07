@@ -17,7 +17,7 @@ const IconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white scroll-mt-16">
+    <section id="about" className="py-20 bg-pattern-neural scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* --- Two-Column Core Profile Section --- */}
@@ -61,7 +61,7 @@ export default function About() {
               {/* Soft decorative blur circles */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-100/40 rounded-full blur-3xl z-0" />
               
-              <div className="relative z-10 bg-slate-50 border border-slate-100 rounded-2xl p-8 sm:p-10 shadow-md">
+              <div className="relative z-10 bg-white border border-[#E9EDF2] rounded-[20px] p-8 sm:p-10 shadow-[0_4px_20px_rgba(40,78,156,0.06)] hover:shadow-[0_8px_32px_rgba(40,78,156,0.10)] transition-shadow duration-300">
                 <div className="w-12 h-12 flex items-center justify-center bg-emerald-100 text-iamh-emerald rounded-xl mb-6">
                   <Eye className="w-6 h-6 stroke-[1.8]" />
                 </div>
@@ -94,7 +94,7 @@ export default function About() {
         </div>
 
         {/* --- Mission Section --- */}
-        <div id="mission" className="border-t border-slate-200/50 pt-20 mb-24 scroll-mt-20">
+        <div id="mission" className="border-t border-slate-100 pt-20 mb-24 scroll-mt-20">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-bold tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100/80 px-3 py-1 rounded-full uppercase">
               Core Mission
@@ -113,7 +113,7 @@ export default function About() {
               return (
                 <div
                   key={item.id}
-                  className="bg-white border border-slate-200/60 p-6 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.015)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.035)] hover:border-slate-300 transition-all duration-300 group flex flex-col justify-between"
+                  className="bg-white border border-[#E9EDF2] p-6 rounded-[20px] shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_8px_28px_rgba(40,78,156,0.09)] hover:border-slate-200 hover:-translate-y-0.5 transition-all duration-300 group flex flex-col justify-between"
                 >
                   <div>
                     <div className="w-10 h-10 flex items-center justify-center bg-slate-50 text-iamh-emerald rounded-lg border border-slate-200/50 group-hover:bg-iamh-emerald group-hover:text-white group-hover:border-iamh-emerald transition-all duration-300 mb-5">
@@ -140,7 +140,7 @@ export default function About() {
         </div>
 
         {/* --- Multidisciplinary Network Section --- */}
-        <div id="network" className="border-t border-slate-200/50 pt-20 scroll-mt-20">
+        <div id="network" className="border-t border-slate-100 pt-20 scroll-mt-20">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-bold tracking-widest text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full uppercase">
               Collaborative Core
@@ -159,7 +159,7 @@ export default function About() {
               return (
                 <div
                   key={discipline.id}
-                  className="bg-white border border-slate-200/60 rounded-xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.015)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.035)] hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group"
+                  className="bg-white border border-[#E9EDF2] rounded-[20px] p-5 shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_8px_28px_rgba(40,78,156,0.09)] hover:border-slate-200 hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div className="space-y-4.5">
                     <div className="flex items-center gap-3.5">

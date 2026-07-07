@@ -135,50 +135,7 @@ export default function Hero() {
         </div>
       </div>
 
-        {/* Institutional News & Publications Bulletin Tape */}
-        <div className="mt-20 pt-8 border-t border-white/20 relative">
-          <div className="grid md:grid-cols-12 gap-4 items-center">
-            {/* Label Badge */}
-            <div className="md:col-span-3 flex items-center gap-2">
-              <span className="flex h-2 w-2 rounded-full bg-iamh-emerald" />
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-white/80">
-                Institutional Annals & Press
-              </span>
-              <span className="px-1.5 py-0.5 text-[8.5px] font-mono font-bold bg-white/10 text-white/70 rounded border border-white/20">
-                LIVE
-              </span>
-            </div>
 
-            {/* Bulletins list */}
-            <div className="md:col-span-9 overflow-hidden bg-white rounded-xl border border-slate-200/55 shadow-2xs p-3.5">
-              <div className="flex flex-col sm:flex-row gap-6 justify-between items-start sm:items-center text-xs">
-                <div className="flex items-center gap-2.5">
-                  <span className="px-2 py-0.5 text-[9px] font-mono font-bold bg-emerald-50 text-emerald-800 rounded border border-emerald-100 uppercase shrink-0">
-                    CALL FOR PAPERS
-                  </span>
-                  <p className="text-slate-600 font-medium">
-                    IAMH Journal of Clinical Studies, Vol. 4 (Issue 2) accepting scientific submissions till Aug 30.
-                  </p>
-                </div>
-                <div className="hidden lg:flex items-center gap-2.5 border-l border-slate-200 pl-6">
-                  <span className="px-2 py-0.5 text-[9px] font-mono font-bold bg-indigo-50 text-indigo-800 rounded border border-indigo-100 uppercase shrink-0">
-                    ACCREDITATION
-                  </span>
-                  <p className="text-slate-600 font-medium whitespace-nowrap">
-                    CME rehabilitation credits updated for 2026.
-                  </p>
-                </div>
-                <a 
-                  href="#about"
-                  className="text-xs font-mono font-bold text-iamh-navy hover:text-slate-900 shrink-0 transition-colors flex items-center gap-1 group"
-                >
-                  VIEW ALL
-                  <ArrowRight className="w-3 h-3 transform group-hover:translate-x-0.5 transition-transform" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
     </section>

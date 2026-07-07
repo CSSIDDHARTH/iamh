@@ -79,7 +79,7 @@ function BenefitCard({ benefit, index }: { benefit: (typeof membershipBenefitsDa
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`group bg-white rounded-[20px] shadow-[0_4px_24px_rgba(0,0,0,0.055)] border border-slate-100/80 p-8 flex flex-col gap-5 transition-all duration-700 hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(40,78,156,0.10)] cursor-default ${
+      className={`group bg-white rounded-[20px] shadow-[0_4px_20px_rgba(40,78,156,0.05)] border border-[#E9EDF2] p-8 flex flex-col gap-5 transition-all duration-700 hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(40,78,156,0.10)] cursor-default ${
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
@@ -182,41 +182,44 @@ export default function Membership() {
   };
 
   return (
-    <section id="membership" className="py-20 bg-slate-50 scroll-mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* --- Header Section --- */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-mono font-bold tracking-widest text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full uppercase">
-            National Directory Setup
-          </span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-iamh-navy tracking-tight mt-4">
-            Become a Member of IAMH
-          </h2>
-          <p className="text-slate-600 mt-3 text-base leading-relaxed">
-            Join a national network of mental health professionals working together for awareness, education, collaboration and community impact.
-          </p>
-          
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <button
-              onClick={() => setShowModal(true)}
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-iamh-navy hover:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
-            >
-              <UserPlus className="w-5 h-5 mr-2" />
-              Join Membership
-            </button>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-slate-700 bg-white hover:bg-slate-100 rounded-lg border border-slate-200 shadow-2xs hover:shadow-xs transition-all duration-200"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Contact Us
-            </a>
+    <section id="membership" className="scroll-mt-16">
+      {/* --- Part A: Header (Neural Pattern) --- */}
+      <div className="py-20 bg-pattern-neural border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="text-xs font-mono font-bold tracking-widest text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full uppercase">
+              National Directory Setup
+            </span>
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-iamh-navy tracking-tight mt-4">
+              Become a Member of IAMH
+            </h2>
+            <p className="text-slate-600 mt-3 text-base leading-relaxed">
+              Join a national network of mental health professionals working together for awareness, education, collaboration and community impact.
+            </p>
+            
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <button
+                onClick={() => setShowModal(true)}
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-iamh-navy hover:bg-slate-900 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              >
+                <UserPlus className="w-5 h-5 mr-2" />
+                Join Membership
+              </button>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-slate-700 bg-white hover:bg-slate-100 rounded-lg border border-slate-200 shadow-2xs hover:shadow-xs transition-all duration-200"
+              >
+                <Mail className="w-5 h-5 mr-2" />
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* --- Why Join IAMH Section --- */}
-        <div className="mb-20">
+      {/* --- Part B: Why Join (White Alternate) --- */}
+      <div className="py-20 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h3 className="font-display font-bold text-iamh-navy text-2xl tracking-tight">
               Why Join the Academy
@@ -232,7 +235,7 @@ export default function Membership() {
               return (
                 <div
                   key={feature.id}
-                  className="bg-white border border-slate-100 p-6 rounded-xl shadow-xs hover:shadow-md transition-all duration-200 flex gap-4"
+                  className="bg-white border border-[#E9EDF2] p-6 rounded-[20px] shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_8px_28px_rgba(40,78,156,0.09)] hover:-translate-y-0.5 transition-all duration-200 flex gap-4"
                 >
                   <div className="w-12 h-12 flex items-center justify-center bg-blue-50 text-iamh-navy rounded-xl shrink-0">
                     <IconComp className="w-6 h-6 stroke-[1.8]" />
@@ -250,125 +253,118 @@ export default function Membership() {
             })}
           </div>
         </div>
+      </div>
 
-        {/* --- Membership Benefits Section (Premium Redesign) --- */}
-        <MembershipBenefitsSection />
+      {/* --- Part C: Benefits & Enrollment (Neural Pattern) --- */}
+      <div className="py-20 bg-pattern-neural">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <MembershipBenefitsSection />
 
-        {/* --- Interactive QR Payment Placeholder & Information Panel --- */}
-        <div id="membership-join" className="bg-white border border-slate-200/60 rounded-2xl shadow-md p-8 sm:p-12 max-w-4xl mx-auto scroll-mt-20">
-          <div className="grid md:grid-cols-12 gap-8 items-center">
-            {/* Info */}
-            <div className="md:col-span-7 space-y-5">
-              <span className="text-[10px] font-mono font-bold tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full uppercase">
-                Secure Enrollment Gateway
-              </span>
-              <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-iamh-navy tracking-tight">
-                Become a Member by Scanning the QR
-              </h3>
-              
-              <div className="space-y-3.5 pt-1">
-                <h4 className="text-xs font-mono font-bold text-slate-800 uppercase tracking-wider">
-                  How to complete your enrollment:
-                </h4>
-                <ul className="space-y-3 text-xs text-slate-500">
-                  <li className="flex gap-2.5 items-start">
-                    <Check className="w-4.5 h-4.5 text-iamh-emerald shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Scan & Subscribe:</strong> Open any UPI application (GPay, PhonePe, Paytm, or BHIM) and scan the official Academy QR code on the right to register instantly.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* QR Area */}
-            <div className="md:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-inner">
-              <div className="relative w-44 h-44 bg-white border border-slate-200/60 rounded-xl p-3.5 flex items-center justify-center shadow-sm group">
-                {/* Modern corner brackets */}
-                <div className="absolute top-2.5 left-2.5 w-4 h-4 border-t-2 border-l-2 border-iamh-emerald" />
-                <div className="absolute top-2.5 right-2.5 w-4 h-4 border-t-2 border-r-2 border-iamh-emerald" />
-                <div className="absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-iamh-emerald" />
-                <div className="absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-iamh-emerald" />
+          <div id="membership-join" className="bg-white border border-slate-200/60 rounded-2xl shadow-md p-8 sm:p-12 max-w-4xl mx-auto scroll-mt-20">
+            <div className="grid md:grid-cols-12 gap-8 items-center">
+              {/* Info */}
+              <div className="md:col-span-7 space-y-5">
+                <span className="text-[10px] font-mono font-bold tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full uppercase">
+                  Secure Enrollment Gateway
+                </span>
+                <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-iamh-navy tracking-tight">
+                  Become a Member by Scanning the QR
+                </h3>
                 
-                {/* Real-looking SVG QR code pattern */}
-                <svg viewBox="0 0 100 100" className="w-full h-full text-slate-900" fill="currentColor">
-                  {/* Finder Pattern Top-Left */}
-                  <rect x="0" y="0" width="28" height="28" className="text-slate-900" />
-                  <rect x="4" y="4" width="20" height="20" fill="white" />
-                  <rect x="8" y="8" width="12" height="12" className="text-slate-900" />
-                  
-                  {/* Finder Pattern Top-Right */}
-                  <rect x="72" y="0" width="28" height="28" className="text-slate-900" />
-                  <rect x="76" y="4" width="20" height="20" fill="white" />
-                  <rect x="80" y="8" width="12" height="12" className="text-slate-900" />
-                  
-                  {/* Finder Pattern Bottom-Left */}
-                  <rect x="0" y="72" width="28" height="28" className="text-slate-900" />
-                  <rect x="4" y="76" width="20" height="20" fill="white" />
-                  <rect x="8" y="80" width="12" height="12" className="text-slate-900" />
-                  
-                  {/* Alignment Pattern Bottom-Right */}
-                  <rect x="80" y="80" width="12" height="12" className="text-slate-900" />
-                  <rect x="82" y="82" width="8" height="8" fill="white" />
-                  <rect x="84" y="84" width="4" height="4" className="text-slate-900" />
-
-                  {/* Timing Patterns */}
-                  <rect x="36" y="10" width="4" height="4" className="text-slate-900" />
-                  <rect x="44" y="10" width="4" height="4" className="text-slate-900" />
-                  <rect x="52" y="10" width="4" height="4" className="text-slate-900" />
-                  <rect x="60" y="10" width="4" height="4" className="text-slate-900" />
-
-                  <rect x="10" y="36" width="4" height="4" className="text-slate-900" />
-                  <rect x="10" y="44" width="4" height="4" className="text-slate-900" />
-                  <rect x="10" y="52" width="4" height="4" className="text-slate-900" />
-                  <rect x="10" y="60" width="4" height="4" className="text-slate-900" />
-
-                  {/* Pixel Matrix based on uploaded QR image */}
-                  <g fill="currentColor" className="text-slate-900">
-                    <rect x="36" y="20" width="8" height="4" />
-                    <rect x="48" y="24" width="4" height="4" />
-                    <rect x="60" y="20" width="4" height="8" />
-                    <rect x="36" y="36" width="4" height="4" />
-                    <rect x="44" y="36" width="8" height="4" />
-                    <rect x="56" y="32" width="4" height="4" />
-                    <rect x="32" y="44" width="4" height="8" />
-                    <rect x="40" y="40" width="8" height="4" />
-                    <rect x="52" y="44" width="8" height="4" />
-                    <rect x="44" y="52" width="4" height="4" />
-                    <rect x="48" y="56" width="8" height="4" />
-                    <rect x="36" y="64" width="4" height="4" />
-                    <rect x="44" y="68" width="12" height="4" />
-                    <rect x="32" y="76" width="8" height="4" />
-                    <rect x="44" y="84" width="4" height="4" />
-                    <rect x="48" y="80" width="8" height="4" />
-                    <rect x="60" y="72" width="4" height="12" />
-                    <rect x="72" y="36" width="4" height="8" />
-                    <rect x="80" y="40" width="8" height="4" />
-                    <rect x="88" y="36" width="4" height="4" />
-                    <rect x="76" y="48" width="12" height="4" />
-                    <rect x="72" y="56" width="4" height="4" />
-                    <rect x="80" y="56" width="8" height="4" />
-                    <rect x="88" y="60" width="4" height="4" />
-                    <rect x="72" y="68" width="8" height="4" />
-                    <rect x="88" y="68" width="4" height="4" />
-                  </g>
-                </svg>
-
-                {/* Secure Scan Overlay badge */}
-                <div className="absolute -bottom-2 bg-emerald-600 text-white font-mono text-[8px] font-bold tracking-widest px-2 py-0.5 rounded shadow border border-emerald-500 uppercase">
-                  OFFICIAL QR
+                <div className="space-y-3.5 pt-1">
+                  <h4 className="text-xs font-mono font-bold text-slate-800 uppercase tracking-wider">
+                    How to complete your enrollment:
+                  </h4>
+                  <ul className="space-y-3 text-xs text-slate-500">
+                    <li className="flex gap-2.5 items-start">
+                      <Check className="w-4.5 h-4.5 text-iamh-emerald shrink-0 mt-0.5" />
+                      <span>
+                        <strong>Scan & Subscribe:</strong> Open any UPI application (GPay, PhonePe, Paytm, or BHIM) and scan the official Academy QR code on the right to register instantly.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <h4 className="font-display font-bold text-slate-900 text-xs mt-4">
-                National Council Gateway
-              </h4>
-              <p className="text-[10px] text-slate-500 mt-1 max-w-[185px] leading-normal font-normal">
-                Scan using Google Pay, PhonePe, Paytm, or any BHIM UPI mobile application.
-              </p>
+
+              {/* QR Area */}
+              <div className="md:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-inner">
+                <div className="relative w-44 h-44 bg-white border border-slate-200/60 rounded-xl p-3.5 flex items-center justify-center shadow-sm group">
+                  <div className="absolute top-2.5 left-2.5 w-4 h-4 border-t-2 border-l-2 border-iamh-emerald" />
+                  <div className="absolute top-2.5 right-2.5 w-4 h-4 border-t-2 border-r-2 border-iamh-emerald" />
+                  <div className="absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-iamh-emerald" />
+                  <div className="absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-iamh-emerald" />
+                  
+                  <svg viewBox="0 0 100 100" className="w-full h-full text-slate-900" fill="currentColor">
+                    <rect x="0" y="0" width="28" height="28" className="text-slate-900" />
+                    <rect x="4" y="4" width="20" height="20" fill="white" />
+                    <rect x="8" y="8" width="12" height="12" className="text-slate-900" />
+                    
+                    <rect x="72" y="0" width="28" height="28" className="text-slate-900" />
+                    <rect x="76" y="4" width="20" height="20" fill="white" />
+                    <rect x="80" y="8" width="12" height="12" className="text-slate-900" />
+                    
+                    <rect x="0" y="72" width="28" height="28" className="text-slate-900" />
+                    <rect x="4" y="76" width="20" height="20" fill="white" />
+                    <rect x="8" y="80" width="12" height="12" className="text-slate-900" />
+                    
+                    <rect x="80" y="80" width="12" height="12" className="text-slate-900" />
+                    <rect x="82" y="82" width="8" height="8" fill="white" />
+                    <rect x="84" y="84" width="4" height="4" className="text-slate-900" />
+
+                    <rect x="36" y="10" width="4" height="4" className="text-slate-900" />
+                    <rect x="44" y="10" width="4" height="4" className="text-slate-900" />
+                    <rect x="52" y="10" width="4" height="4" className="text-slate-900" />
+                    <rect x="60" y="10" width="4" height="4" className="text-slate-900" />
+
+                    <rect x="10" y="36" width="4" height="4" className="text-slate-900" />
+                    <rect x="10" y="44" width="4" height="4" className="text-slate-900" />
+                    <rect x="10" y="52" width="4" height="4" className="text-slate-900" />
+                    <rect x="10" y="60" width="4" height="4" className="text-slate-900" />
+
+                    <g fill="currentColor" className="text-slate-900">
+                      <rect x="36" y="20" width="8" height="4" />
+                      <rect x="48" y="24" width="4" height="4" />
+                      <rect x="60" y="20" width="4" height="8" />
+                      <rect x="36" y="36" width="4" height="4" />
+                      <rect x="44" y="36" width="8" height="4" />
+                      <rect x="56" y="32" width="4" height="4" />
+                      <rect x="32" y="44" width="4" height="8" />
+                      <rect x="40" y="40" width="8" height="4" />
+                      <rect x="52" y="44" width="8" height="4" />
+                      <rect x="44" y="52" width="4" height="4" />
+                      <rect x="48" y="56" width="8" height="4" />
+                      <rect x="36" y="64" width="4" height="4" />
+                      <rect x="44" y="68" width="12" height="4" />
+                      <rect x="32" y="76" width="8" height="4" />
+                      <rect x="44" y="84" width="4" height="4" />
+                      <rect x="48" y="80" width="8" height="4" />
+                      <rect x="60" y="72" width="4" height="12" />
+                      <rect x="72" y="36" width="4" height="8" />
+                      <rect x="80" y="40" width="8" height="4" />
+                      <rect x="88" y="36" width="4" height="4" />
+                      <rect x="76" y="48" width="12" height="4" />
+                      <rect x="72" y="56" width="4" height="4" />
+                      <rect x="80" y="56" width="8" height="4" />
+                      <rect x="88" y="60" width="4" height="4" />
+                      <rect x="72" y="68" width="8" height="4" />
+                      <rect x="88" y="68" width="4" height="4" />
+                    </g>
+                  </svg>
+
+                  <div className="absolute -bottom-2 bg-emerald-600 text-white font-mono text-[8px] font-bold tracking-widest px-2 py-0.5 rounded shadow border border-emerald-500 uppercase">
+                    OFFICIAL QR
+                  </div>
+                </div>
+                <h4 className="font-display font-bold text-slate-900 text-xs mt-4">
+                  National Council Gateway
+                </h4>
+                <p className="text-[10px] text-slate-500 mt-1 max-w-[185px] leading-normal font-normal">
+                  Scan using Google Pay, PhonePe, Paytm, or any BHIM UPI mobile application.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
 
       {/* --- MEMBERSHIP SIGNUP & CARD GENERATOR MODAL --- */}

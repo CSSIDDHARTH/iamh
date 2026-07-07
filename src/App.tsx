@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-800 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+    <div className="min-h-screen bg-[#F7F8FA] font-sans text-slate-800 antialiased selection:bg-emerald-100 selection:text-emerald-900">
       {/* Sticky Header */}
       <Navbar />
       

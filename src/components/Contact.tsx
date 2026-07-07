@@ -24,7 +24,7 @@ export default function Contact() {
           {/* Quick Contact Cards */}
           <div className="grid sm:grid-cols-2 gap-6">
             {/* Phone Card */}
-            <div className="bg-slate-50 border border-slate-200/60 p-6 rounded-xl text-center space-y-3 flex flex-col items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.012)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.035)] hover:border-slate-300 transition-all duration-300 group">
+            <div className="bg-white border border-[#E9EDF2] p-6 rounded-[20px] text-center space-y-3 flex flex-col items-center justify-between shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_8px_28px_rgba(40,78,156,0.09)] hover:-translate-y-0.5 hover:border-slate-200 transition-all duration-300 group">
               <div className="w-10 h-10 flex items-center justify-center bg-blue-50 text-iamh-navy rounded-lg border border-blue-100/50 group-hover:bg-iamh-navy group-hover:text-white transition-all duration-300">
                 <Phone className="w-5 h-5 stroke-[1.5]" />
               </div>
@@ -41,7 +41,7 @@ export default function Contact() {
             </div>
 
             {/* Email Card */}
-            <div className="bg-slate-50 border border-slate-200/60 p-6 rounded-xl text-center space-y-3 flex flex-col items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.012)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.035)] hover:border-slate-300 transition-all duration-300 group">
+            <div className="bg-white border border-[#E9EDF2] p-6 rounded-[20px] text-center space-y-3 flex flex-col items-center justify-between shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_8px_28px_rgba(40,78,156,0.09)] hover:-translate-y-0.5 hover:border-slate-200 transition-all duration-300 group">
               <div className="w-10 h-10 flex items-center justify-center bg-emerald-50 text-iamh-emerald rounded-lg border border-emerald-100/50 group-hover:bg-iamh-emerald group-hover:text-white transition-all duration-300">
                 <Mail className="w-5 h-5 stroke-[1.5]" />
               </div>
