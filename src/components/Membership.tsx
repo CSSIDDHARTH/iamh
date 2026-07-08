@@ -294,73 +294,16 @@ export default function Membership() {
                   <div className="absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-iamh-emerald" />
                   <div className="absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-iamh-emerald" />
                   
-                  <svg viewBox="0 0 100 100" className="w-full h-full text-slate-900" fill="currentColor">
-                    <rect x="0" y="0" width="28" height="28" className="text-slate-900" />
-                    <rect x="4" y="4" width="20" height="20" fill="white" />
-                    <rect x="8" y="8" width="12" height="12" className="text-slate-900" />
-                    
-                    <rect x="72" y="0" width="28" height="28" className="text-slate-900" />
-                    <rect x="76" y="4" width="20" height="20" fill="white" />
-                    <rect x="80" y="8" width="12" height="12" className="text-slate-900" />
-                    
-                    <rect x="0" y="72" width="28" height="28" className="text-slate-900" />
-                    <rect x="4" y="76" width="20" height="20" fill="white" />
-                    <rect x="8" y="80" width="12" height="12" className="text-slate-900" />
-                    
-                    <rect x="80" y="80" width="12" height="12" className="text-slate-900" />
-                    <rect x="82" y="82" width="8" height="8" fill="white" />
-                    <rect x="84" y="84" width="4" height="4" className="text-slate-900" />
-
-                    <rect x="36" y="10" width="4" height="4" className="text-slate-900" />
-                    <rect x="44" y="10" width="4" height="4" className="text-slate-900" />
-                    <rect x="52" y="10" width="4" height="4" className="text-slate-900" />
-                    <rect x="60" y="10" width="4" height="4" className="text-slate-900" />
-
-                    <rect x="10" y="36" width="4" height="4" className="text-slate-900" />
-                    <rect x="10" y="44" width="4" height="4" className="text-slate-900" />
-                    <rect x="10" y="52" width="4" height="4" className="text-slate-900" />
-                    <rect x="10" y="60" width="4" height="4" className="text-slate-900" />
-
-                    <g fill="currentColor" className="text-slate-900">
-                      <rect x="36" y="20" width="8" height="4" />
-                      <rect x="48" y="24" width="4" height="4" />
-                      <rect x="60" y="20" width="4" height="8" />
-                      <rect x="36" y="36" width="4" height="4" />
-                      <rect x="44" y="36" width="8" height="4" />
-                      <rect x="56" y="32" width="4" height="4" />
-                      <rect x="32" y="44" width="4" height="8" />
-                      <rect x="40" y="40" width="8" height="4" />
-                      <rect x="52" y="44" width="8" height="4" />
-                      <rect x="44" y="52" width="4" height="4" />
-                      <rect x="48" y="56" width="8" height="4" />
-                      <rect x="36" y="64" width="4" height="4" />
-                      <rect x="44" y="68" width="12" height="4" />
-                      <rect x="32" y="76" width="8" height="4" />
-                      <rect x="44" y="84" width="4" height="4" />
-                      <rect x="48" y="80" width="8" height="4" />
-                      <rect x="60" y="72" width="4" height="12" />
-                      <rect x="72" y="36" width="4" height="8" />
-                      <rect x="80" y="40" width="8" height="4" />
-                      <rect x="88" y="36" width="4" height="4" />
-                      <rect x="76" y="48" width="12" height="4" />
-                      <rect x="72" y="56" width="4" height="4" />
-                      <rect x="80" y="56" width="8" height="4" />
-                      <rect x="88" y="60" width="4" height="4" />
-                      <rect x="72" y="68" width="8" height="4" />
-                      <rect x="88" y="68" width="4" height="4" />
-                    </g>
-                  </svg>
+                  <img
+                    src="/qr.png"
+                    alt="Institutional Registration QR Code"
+                    className="w-full h-full object-contain"
+                  />
 
                   <div className="absolute -bottom-2 bg-emerald-600 text-white font-mono text-[8px] font-bold tracking-widest px-2 py-0.5 rounded shadow border border-emerald-500 uppercase">
                     OFFICIAL QR
                   </div>
                 </div>
-                <h4 className="font-display font-bold text-slate-900 text-xs mt-4">
-                  National Council Gateway
-                </h4>
-                <p className="text-[10px] text-slate-500 mt-1 max-w-[185px] leading-normal font-normal">
-                  Scan using Google Pay, PhonePe, Paytm, or any BHIM UPI mobile application.
-                </p>
               </div>
             </div>
           </div>

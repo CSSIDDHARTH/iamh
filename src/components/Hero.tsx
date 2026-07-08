@@ -53,7 +53,9 @@ export default function Hero() {
             {/* Call to action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a
-                href="#membership-join"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdTM0Nc_0KlOJbkEs_-r3OYV9Pp1CFNCeYtFMLldaZyDboSNQ/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-white bg-iamh-navy hover:bg-iamh-navy/80 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 group"
               >
                 Become a Member

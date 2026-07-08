@@ -77,7 +77,9 @@ export default function Navbar() {
             ))}
             <div className="h-5 w-[1px] bg-slate-200 mx-3" />
             <a
-              href="#membership-join"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdTM0Nc_0KlOJbkEs_-r3OYV9Pp1CFNCeYtFMLldaZyDboSNQ/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider text-white bg-iamh-navy hover:bg-slate-950 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
             >
               Join Academy
@@ -116,7 +118,9 @@ export default function Navbar() {
           ))}
           <div className="pt-4 px-3">
             <a
-              href="#membership-join"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdTM0Nc_0KlOJbkEs_-r3OYV9Pp1CFNCeYtFMLldaZyDboSNQ/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="w-full inline-flex items-center justify-center px-4 py-3 text-base font-semibold text-white bg-iamh-navy hover:bg-slate-900 rounded-full shadow-sm transition-all text-center"
             >
