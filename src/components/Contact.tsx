@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Phone, Mail, Shield } from 'lucide-react';
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const handleEmailClick = () => {
+    navigator.clipboard.writeText("iamhindia2021@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section id="contact" className="py-20 bg-white scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,13 +55,18 @@ export default function Contact() {
               </div>
               <div>
                 <span className="text-[10px] font-mono text-slate-400 block uppercase tracking-wider font-bold">Email Directory</span>
-                <span className="text-sm font-semibold text-slate-800 font-sans block mt-1.5 truncate max-w-[150px]">info@iamh.in</span>
+                <span className="text-sm font-semibold text-slate-800 font-sans block mt-1.5 truncate max-w-[220px]">iamhindia2021@gmail.com</span>
               </div>
               <a
-                href="mailto:info@iamh.in"
-                className="w-full text-center py-2 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-mono text-[10px] font-bold tracking-wider transition-colors"
+                href="mailto:iamhindia2021@gmail.com"
+                onClick={handleEmailClick}
+                className={`w-full text-center py-2 border rounded-lg font-mono text-[10px] font-bold tracking-wider transition-all duration-200 ${
+                  copied 
+                    ? 'bg-emerald-600 border-emerald-600 text-white' 
+                    : 'bg-white hover:bg-slate-100 border-slate-200 text-slate-700'
+                }`}
               >
-                EMAIL US
+                {copied ? 'COPIED TO CLIPBOARD!' : 'EMAIL US'}
               </a>
             </div>
           </div>

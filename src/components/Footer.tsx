@@ -102,7 +102,7 @@ export default function Footer() {
                 <Mail className="w-4.5 h-4.5 text-iamh-emerald shrink-0 mt-0.5" />
                 <div>
                   <span className="text-[10px] text-slate-500 font-mono block uppercase">Administrative Email</span>
-                  <a href="mailto:info@iamh.in" className="text-slate-300 hover:text-white transition-colors">info@iamh.in</a>
+                  <a href="mailto:iamhindia2021@gmail.com" className="text-slate-300 hover:text-white transition-colors">iamhindia2021@gmail.com</a>
                 </div>
               </li>
             </ul>

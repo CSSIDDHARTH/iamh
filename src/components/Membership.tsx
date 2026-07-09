@@ -207,7 +207,7 @@ export default function Membership() {
               </button>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-slate-700 bg-white hover:bg-slate-100 rounded-lg border border-slate-200 shadow-2xs hover:shadow-xs transition-all duration-200"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-iamh-emerald hover:bg-iamh-emerald/80 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Contact Us
@@ -235,9 +235,9 @@ export default function Membership() {
               return (
                 <div
                   key={feature.id}
-                  className="bg-white border border-[#E9EDF2] p-6 rounded-[20px] shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_8px_28px_rgba(40,78,156,0.09)] hover:-translate-y-0.5 transition-all duration-200 flex gap-4"
+                  className="bg-gradient-to-br from-emerald-50/70 to-teal-50/30 border border-emerald-100/80 p-6 rounded-[20px] shadow-[0_2px_12px_rgba(16,185,129,0.04)] hover:shadow-[0_8px_28px_rgba(16,185,129,0.1)] hover:-translate-y-0.5 transition-all duration-200 flex gap-4"
                 >
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-50 text-iamh-navy rounded-xl shrink-0">
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-100/70 text-emerald-800 rounded-xl shrink-0">
                     <IconComp className="w-6 h-6 stroke-[1.8]" />
                   </div>
                   <div>
@@ -279,7 +279,7 @@ export default function Membership() {
                     <li className="flex gap-2.5 items-start">
                       <Check className="w-4.5 h-4.5 text-iamh-emerald shrink-0 mt-0.5" />
                       <span>
-                        <strong>Scan & Subscribe:</strong> Open any UPI application (GPay, PhonePe, Paytm, or BHIM) and scan the official Academy QR code on the right to register instantly.
+                        <strong>Scan the QR:</strong> Open the membership Google form, choose a membership plan,fill up the details, complete the payment and upload the payment details in the form to complete your application for membership at IAMH.
                       </span>
                     </li>
                   </ul>

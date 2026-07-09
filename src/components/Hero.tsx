@@ -63,7 +63,7 @@ export default function Hero() {
               </a>
               <a
                 href="#about"
-                className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-slate-900 bg-white/90 hover:bg-white rounded-lg border border-white/30 shadow-lg hover:shadow-xl backdrop-blur-sm transition-all duration-200"
+                className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-white bg-iamh-emerald hover:bg-iamh-emerald/80 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
               >
                 Learn More
               </a>
