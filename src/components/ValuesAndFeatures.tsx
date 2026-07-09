@@ -13,7 +13,7 @@ const IconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function ValuesAndFeatures() {
   return (
-    <section id="values" className="py-20 bg-white scroll-mt-16">
+    <section id="values" className="py-20 scroll-mt-16" style={{ background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 30%, #ecfdf5 60%, #f0fdf4 100%)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* --- Header --- */}
@@ -36,11 +36,11 @@ export default function ValuesAndFeatures() {
             return (
               <div
                 key={val.id}
-                className="bg-white border border-[#E9EDF2] p-6 sm:p-8 rounded-[20px] shadow-[0_2px_12px_rgba(40,78,156,0.04)] hover:shadow-[0_12px_36px_rgba(40,78,156,0.09)] hover:border-slate-200 hover:-translate-y-0.5 transition-all duration-300 group flex flex-col justify-between"
+                className="bg-gradient-to-br from-blue-50/60 to-sky-50/30 border border-blue-100/70 p-6 sm:p-8 rounded-[20px] shadow-[0_2px_12px_rgba(37,99,235,0.03)] hover:shadow-[0_12px_36px_rgba(37,99,235,0.08)] hover:border-blue-200 hover:-translate-y-0.5 transition-all duration-300 group flex flex-col justify-between"
               >
                 <div className="space-y-4.5">
                   {/* Icon Shield */}
-                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-50 text-iamh-emerald rounded-lg border border-emerald-100/50 group-hover:bg-iamh-emerald group-hover:text-white transition-all duration-300 shadow-2xs">
+                  <div className="w-12 h-12 flex items-center justify-center bg-blue-100/60 text-blue-700 rounded-lg border border-blue-200/50 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-2xs">
                     <IconComp className="w-5.5 h-5.5 stroke-[1.5]" />
                   </div>
 
@@ -55,7 +55,7 @@ export default function ValuesAndFeatures() {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-[10px] font-mono tracking-wider uppercase text-slate-400">
+                <div className="mt-8 pt-4 border-t border-slate-100/80 flex items-center justify-between text-[10px] font-mono tracking-wider uppercase text-slate-400">
                   <span>Ethical Guideline</span>
                   <span className="text-iamh-navy font-bold">Secured</span>
                 </div>

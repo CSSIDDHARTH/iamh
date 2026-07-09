@@ -218,7 +218,7 @@ export default function Membership() {
       </div>
 
       {/* --- Part B: Why Join (White Alternate) --- */}
-      <div className="py-20 bg-white border-b border-slate-100">
+      <div className="py-20 border-b border-slate-100" style={{ background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 35%, #ecfdf5 65%, #f0fdf4 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h3 className="font-display font-bold text-iamh-navy text-2xl tracking-tight">
@@ -235,9 +235,9 @@ export default function Membership() {
               return (
                 <div
                   key={feature.id}
-                  className="bg-gradient-to-br from-emerald-50/70 to-teal-50/30 border border-emerald-100/80 p-6 rounded-[20px] shadow-[0_2px_12px_rgba(16,185,129,0.04)] hover:shadow-[0_8px_28px_rgba(16,185,129,0.1)] hover:-translate-y-0.5 transition-all duration-200 flex gap-4"
+                  className="bg-gradient-to-br from-blue-50/80 to-sky-50/50 border border-blue-100/80 p-6 rounded-[20px] shadow-[0_2px_12px_rgba(37,99,235,0.05)] hover:shadow-[0_8px_28px_rgba(37,99,235,0.1)] hover:-translate-y-0.5 transition-all duration-200 flex gap-4"
                 >
-                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-100/70 text-emerald-800 rounded-xl shrink-0">
+                  <div className="w-12 h-12 flex items-center justify-center bg-blue-100/70 text-blue-700 rounded-xl shrink-0">
                     <IconComp className="w-6 h-6 stroke-[1.8]" />
                   </div>
                   <div>
