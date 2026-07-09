@@ -1,7 +1,83 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowRight, BookOpen, Users, ShieldAlert, Award, Compass, Heart } from 'lucide-react';
 
 export default function Hero() {
+  const [text, setText] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    const targetText = "Building a Mentally Healthy and Inclusive Society...";
+    let isDeleting = false;
+    let index = 0;
+    let timer: ReturnType<typeof setTimeout>;
+
+    const tick = () => {
+      if (!isDeleting) {
+        setText(targetText.slice(0, index + 1));
+        index++;
+        if (index === targetText.length) {
+          isDeleting = true;
+          timer = setTimeout(tick, 3000);
+          return;
+        }
+        timer = setTimeout(tick, 60);
+      } else {
+        setText(targetText.slice(0, index - 1));
+        index--;
+        if (index === 0) {
+          isDeleting = false;
+          timer = setTimeout(tick, 1000);
+          return;
+        }
+        timer = setTimeout(tick, 30);
+      }
+    };
+
+    timer = setTimeout(tick, 50);
+
+    const cursorInterval = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, 500);
+
+    return () => {
+      clearTimeout(timer);
+      clearInterval(cursorInterval);
+    };
+  }, []);
+
+  const renderTypedHeading = () => {
+    const part1 = "Building a Mentally ";
+    const part2 = "Healthy";
+    const part3 = " and ";
+    const part4 = "Inclusive";
+    const part5 = " Society...";
+
+    const len = text.length;
+
+    return (
+      <>
+        {text.slice(0, part1.length)}
+        {len > part1.length && (
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-white">
+            {text.slice(part1.length, part1.length + part2.length)}
+          </span>
+        )}
+        {len > part1.length + part2.length && (
+          text.slice(part1.length + part2.length, part1.length + part2.length + part3.length)
+        )}
+        {len > part1.length + part2.length + part3.length && (
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-iamh-emerald to-emerald-300">
+            {text.slice(part1.length + part2.length + part3.length, part1.length + part2.length + part3.length + part4.length)}
+          </span>
+        )}
+        {len > part1.length + part2.length + part3.length + part4.length && (
+          text.slice(part1.length + part2.length + part3.length + part4.length)
+        )}
+        <span className={`inline-block w-[3px] h-[0.9em] bg-emerald-400 ml-1.5 align-middle ${showCursor ? 'opacity-100' : 'opacity-0'}`} />
+      </>
+    );
+  };
+
   return (
     <section id="home" className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
       {/* Hero background image */}
@@ -28,10 +104,15 @@ export default function Hero() {
                 Indian Academy of Mental Health • Registration No: 00589
               </span>
             </div>            {/* Main Headline */}
-            <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6">
-              Building a Mentally <br className="hidden sm:inline" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-white">Healthy</span> and{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-iamh-emerald to-emerald-300">Inclusive</span> Society
+            <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 relative">
+              {/* Invisible placeholder to reserve layout height */}
+              <span className="opacity-0 select-none pointer-events-none block">
+                Building a Mentally <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-white">Healthy</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-iamh-emerald to-emerald-300">Inclusive</span> Society...
+              </span>
+              {/* Typing overlay container */}
+              <span className="absolute inset-0 block text-left">
+                {renderTypedHeading()}
+              </span>
             </h1>
 
             {/* Subtitle */}
