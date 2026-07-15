@@ -82,7 +82,7 @@ export default function Hero() {
       {/* Hero background image — no overlay, fully visible */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero.png')" }}
+        style={{ backgroundImage: "url('/hero1.png')" }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
