@@ -34,19 +34,19 @@ export default function Footer() {
                 <span className="font-display font-bold text-base leading-tight text-white tracking-tight">
                   Indian Academy of Mental Health
                 </span>
-                <span className="text-[10px] font-mono text-slate-400">
+                <span className="text-xs font-mono text-slate-400">
                   National NGO Academy • Reg No: 00589
                 </span>
               </div>
             </div>
 
-            <p className="text-sm text-slate-400 leading-relaxed max-w-sm font-normal">
+            <p className="text-base text-slate-400 leading-relaxed max-w-sm font-normal">
               A multidisciplinary national academy committed to advancing psychiatric sciences, clinical psychology, and community rehabilitation across rural and urban India.
             </p>
 
             {/* Official Motto Box */}
             <div className="border-l-2 border-iamh-emerald pl-3.5 pt-1">
-              <p className="text-xs font-serif italic text-slate-300 leading-relaxed">
+              <p className="text-sm font-serif italic text-slate-300 leading-relaxed">
                 "Together for Awareness. Together for Care. Together for a Mentally Healthy Society."
               </p>
             </div>
@@ -54,10 +54,10 @@ export default function Footer() {
 
           {/* Section 2: Quick Links (3 Cols) */}
           <div className="md:col-span-3 space-y-4">
-            <h4 className="text-xs font-mono font-bold text-white uppercase tracking-widest border-b border-slate-800 pb-2">
+            <h4 className="text-sm font-mono font-bold text-white uppercase tracking-widest border-b border-slate-800 pb-2">
               Quick Navigation
             </h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-2.5 text-base">
               <li>
                 <a href="#about" className="hover:text-white transition-colors flex items-center gap-1.5 group">
                   <span className="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-iamh-emerald transition-colors" />
@@ -87,22 +87,22 @@ export default function Footer() {
 
           {/* Section 3: Official Coordinates (4 Cols) */}
           <div className="md:col-span-4 space-y-4">
-            <h4 className="text-xs font-mono font-bold text-white uppercase tracking-widest border-b border-slate-800 pb-2">
+            <h4 className="text-sm font-mono font-bold text-white uppercase tracking-widest border-b border-slate-800 pb-2">
               Official Coordinates
             </h4>
-            <ul className="space-y-3.5 text-sm">
+            <ul className="space-y-3.5 text-base">
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4.5 h-4.5 text-iamh-emerald shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-[10px] text-slate-500 font-mono block uppercase">Secretary hotline</span>
+                  <span className="text-xs text-slate-500 font-mono block uppercase">Secretary hotline</span>
                   <a href="tel:+917007687896" className="text-slate-300 hover:text-white transition-colors">+91 70076 87896</a>
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4.5 h-4.5 text-iamh-emerald shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-[10px] text-slate-500 font-mono block uppercase">Administrative Email</span>
-                  <a href="mailto:iamhindia2021@gmail.com" className="text-slate-300 hover:text-white transition-colors">iamhindia2021@gmail.com</a>
+                  <span className="text-xs text-slate-500 font-mono block uppercase">Administrative Email</span>
+                  <a href="mailto:iamhindia2021@gmail.com" className="text-slate-300 hover:text-white transition-colors break-all">iamhindia2021@gmail.com</a>
                 </div>
               </li>
             </ul>
@@ -111,7 +111,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright segment */}
-        <div className="mt-14 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 font-mono">
+        <div className="mt-14 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-500 font-mono">
           <div className="flex items-center gap-1.5">
             <span>© 2026 Indian Academy of Mental Health (IAMH).</span>
             <span className="hidden md:inline-block">•</span>

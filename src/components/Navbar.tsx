@@ -41,54 +41,54 @@ export default function Navbar() {
       >
         <div className="flex justify-between items-center">
           {/* Logo Section */}
-          <a href="#" className="flex items-center gap-3.5 group">
+          <a href="#" className="flex items-center gap-3.5 group shrink-0">
             {/* Institutional Logo */}
             <img
               src="/logo.png"
               alt="Indian Academy of Mental Health Logo"
-              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03] shrink-0"
             />
-            
-            <div className="flex flex-col">
+
+            <div className="flex flex-col min-w-0">
               <div className="flex items-center gap-2">
-                <span className="font-display font-bold text-base leading-tight text-slate-950 tracking-tight group-hover:text-iamh-navy transition-colors">
+                <span className="font-display font-bold text-base leading-tight text-slate-950 tracking-tight group-hover:text-iamh-navy transition-colors whitespace-nowrap">
                   Indian Academy of Mental Health
                 </span>
-                <span className="hidden sm:inline-block px-1.5 py-0.5 text-[8.5px] font-mono font-bold tracking-wider bg-emerald-50 text-emerald-800 rounded border border-emerald-100/75 uppercase">
+                <span className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono font-bold tracking-wider bg-emerald-50 text-emerald-800 rounded border border-emerald-100/75 uppercase whitespace-nowrap">
                   Est. 2021
                 </span>
               </div>
-              <span className="text-[9.5px] font-mono text-slate-500 font-semibold tracking-wide">
+              <span className="text-[11px] font-mono text-slate-500 font-semibold tracking-wide whitespace-nowrap">
                 National Academy • Registered Body • No: 00589
               </span>
             </div>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1 xl:gap-2">
+          <div className="hidden xl:flex items-center gap-0.5 xl:gap-1.5">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-3.5 py-1.5 text-xs font-mono font-bold text-slate-600 hover:text-iamh-navy transition-colors duration-200 relative group tracking-wide uppercase"
+                className="px-2.5 xl:px-3 py-1.5 text-xs font-mono font-bold text-slate-600 hover:text-iamh-navy transition-colors duration-200 relative group tracking-wide uppercase whitespace-nowrap"
               >
                 {link.name}
-                <span className="absolute bottom-0 left-3.5 right-3.5 h-[1.5px] bg-iamh-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-out" />
+                <span className="absolute bottom-0 left-2.5 right-2.5 xl:left-3 xl:right-3 h-[1.5px] bg-iamh-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-out" />
               </a>
             ))}
-            <div className="h-5 w-[1px] bg-slate-200 mx-3" />
+            <div className="h-5 w-[1px] bg-slate-200 mx-2 xl:mx-3 shrink-0" />
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdTM0Nc_0KlOJbkEs_-r3OYV9Pp1CFNCeYtFMLldaZyDboSNQ/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider text-white bg-iamh-navy hover:bg-slate-950 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
+              className="inline-flex items-center justify-center px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider text-white bg-iamh-navy hover:bg-slate-950 rounded-full shadow-sm hover:shadow-md transition-all duration-200 whitespace-nowrap shrink-0"
             >
               Join Academy
             </a>
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex lg:hidden">
+          <div className="flex xl:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-full text-slate-600 hover:text-iamh-navy hover:bg-slate-50 border border-slate-200/50 focus:outline-none transition-colors"
@@ -102,10 +102,10 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen border-b border-slate-200/55 shadow-md mt-2 rounded-2xl mx-4' : 'max-h-0'}`}>
+      <div className={`xl:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen border-b border-slate-200/55 shadow-md mt-2 rounded-2xl mx-4' : 'max-h-0'}`}>
         <div className="px-4 pt-2 pb-6 space-y-1 bg-white/95 backdrop-blur-xl border border-slate-200/60 rounded-2xl">
           <div className="px-3 py-1 mb-3 border-b border-slate-100 pb-2">
-            <span className="block text-[10px] font-mono text-slate-500">REGISTRATION NUMBER: 00589</span>
+            <span className="block text-[11.5px] font-mono text-slate-500">REGISTRATION NUMBER: 00589</span>
           </div>
           {navLinks.map((link) => (
             <a

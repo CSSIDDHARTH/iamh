@@ -111,14 +111,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
 
             <span className="flex flex-col leading-none min-w-0">
               <span className="flex items-center gap-1.5 sm:gap-2">
-                <span className="font-display font-semibold uppercase text-white text-[11.5px] sm:text-[14.5px] tracking-[0.01em] leading-none whitespace-nowrap truncate">
+                <span className="font-display font-semibold uppercase text-white text-[11.5px] sm:text-[15.5px] tracking-[0.01em] leading-none whitespace-nowrap truncate">
                   IAMH Conclave
                 </span>
-                <span className="hidden sm:inline-flex items-center rounded-full bg-[var(--nav-gold)]/15 px-1.5 py-[2px] text-[10px] font-bold text-[var(--nav-gold-light)] ring-1 ring-[var(--nav-gold)]/25 leading-none">
+                <span className="hidden sm:inline-flex items-center rounded-full bg-[var(--nav-gold)]/15 px-1.5 py-[2px] text-[11px] font-bold text-[var(--nav-gold-light)] ring-1 ring-[var(--nav-gold)]/25 leading-none">
                   2026
                 </span>
               </span>
-              <span className="hidden sm:block mt-1 text-[10px] font-medium uppercase tracking-[0.04em] text-slate-400 leading-none whitespace-nowrap">
+              <span className="hidden sm:block mt-1 text-[11px] font-medium uppercase tracking-[0.04em] text-slate-400 leading-none whitespace-nowrap">
                 BHU Varanasi &bull; 6 Oct
               </span>
             </span>
@@ -134,7 +134,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                   type="button"
                   onClick={() => handleLinkClick(link.href)}
                   aria-current={isActive ? 'true' : undefined}
-                  className={`group relative px-3 py-2 text-[13px] font-medium transition-colors duration-200 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60 ${
+                  className={`group relative px-3 py-2 text-[14px] font-medium transition-colors duration-200 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60 ${
                     isActive ? 'text-white' : 'text-slate-400 hover:text-slate-100'
                   }`}
                 >
@@ -175,7 +175,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
             <button
               type="button"
               onClick={onOpenRegister}
-              className="group inline-flex items-center gap-1.5 sm:gap-2 rounded-xl bg-gradient-to-b from-[var(--nav-gold-light)] to-[var(--nav-gold)] px-3 sm:px-5 py-2 sm:py-2.5 text-[12.5px] sm:text-sm font-semibold text-[#161005] shadow-[0_8px_20px_-8px_rgba(208,169,50,0.55)] transition-all duration-200 hover:-translate-y-px hover:shadow-[0_10px_26px_-8px_rgba(208,169,50,0.7)] active:translate-y-0 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+              className="group inline-flex items-center gap-1.5 sm:gap-2 rounded-xl bg-gradient-to-b from-[var(--nav-gold-light)] to-[var(--nav-gold)] px-3 sm:px-5 py-2 sm:py-2.5 text-[13.5px] sm:text-sm font-semibold text-[#161005] shadow-[0_8px_20px_-8px_rgba(208,169,50,0.55)] transition-all duration-200 hover:-translate-y-px hover:shadow-[0_10px_26px_-8px_rgba(208,169,50,0.7)] active:translate-y-0 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
             >
               <span className="whitespace-nowrap">
                 Register<span className="hidden sm:inline"> School</span>
@@ -207,8 +207,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
             }`}
           >
             <div className="flex items-center justify-between rounded-xl bg-white/[0.04] px-3.5 py-2.5 mb-2">
-              <span className="text-[12px] font-semibold text-slate-200">School Mental Health Conclave</span>
-              <span className="text-[11px] font-bold text-[var(--nav-gold-light)]">{EVENT_DETAILS.date}</span>
+              <span className="text-[13px] font-semibold text-slate-200">School Mental Health Conclave</span>
+              <span className="text-[12px] font-bold text-[var(--nav-gold-light)]">{EVENT_DETAILS.date}</span>
             </div>
 
             <nav aria-label="Conclave sections" className="flex flex-col">
@@ -220,7 +220,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                     type="button"
                     onClick={() => handleLinkClick(link.href)}
                     aria-current={isActive ? 'true' : undefined}
-                    className={`flex items-center gap-3 rounded-lg px-3.5 py-3 text-left text-[13.5px] font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60 ${
+                    className={`flex items-center gap-3 rounded-lg px-3.5 py-3 text-left text-[14.5px] font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60 ${
                       isActive ? 'text-white bg-white/[0.06]' : 'text-slate-300 hover:text-white hover:bg-white/[0.04]'
                     }`}
                   >
@@ -240,14 +240,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
               <Link
                 to="/"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[12.5px] font-medium text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] hover:text-white transition-colors duration-200"
+                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[13.5px] font-medium text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] hover:text-white transition-colors duration-200"
               >
                 <IAMHLogo size={14} className="h-3.5 w-3.5" />
                 IAMH.org
               </Link>
               <a
                 href={`tel:${EVENT_DETAILS.contactPhone}`}
-                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[12.5px] font-medium text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] hover:text-white transition-colors duration-200"
+                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[13.5px] font-medium text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] hover:text-white transition-colors duration-200"
               >
                 <PhoneCall className="w-3.5 h-3.5" />
                 Helpline
@@ -260,7 +260,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                 closeMenu();
                 onOpenRegister();
               }}
-              className="mt-2 w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-[var(--nav-gold-light)] to-[var(--nav-gold)] py-3 text-[13.5px] font-semibold text-[#161005] shadow-[0_8px_20px_-8px_rgba(208,169,50,0.55)] active:scale-[0.98] transition-all duration-200"
+              className="mt-2 w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-[var(--nav-gold-light)] to-[var(--nav-gold)] py-3 text-[14.5px] font-semibold text-[#161005] shadow-[0_8px_20px_-8px_rgba(208,169,50,0.55)] active:scale-[0.98] transition-all duration-200"
             >
               Register Your School
               <ArrowRight className="w-4 h-4" />

@@ -8,7 +8,7 @@ export default function EventsAnnouncement() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2 mb-8">
           <span className="h-[2px] w-8 bg-iamh-emerald" />
-          <span className="text-xs font-mono font-bold tracking-widest text-slate-500 uppercase">
+          <span className="text-sm font-mono font-bold tracking-widest text-slate-500 uppercase">
             Upcoming IAMH Event
           </span>
         </div>
@@ -25,7 +25,7 @@ export default function EventsAnnouncement() {
             <div className="lg:col-span-8 flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 mb-5 w-fit">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span className="text-[11px] font-mono font-semibold tracking-wider text-amber-300 uppercase">
+                <span className="text-sm font-mono font-semibold tracking-wider text-amber-300 uppercase">
                   World Mental Health Day 2026
                 </span>
               </div>
@@ -34,13 +34,13 @@ export default function EventsAnnouncement() {
                 School Mental Health Conclave 2026
               </h2>
 
-              <p className="text-slate-300 leading-relaxed font-normal text-sm sm:text-base mb-6 max-w-2xl">
+              <p className="text-slate-300 leading-relaxed font-normal text-base mb-6 max-w-2xl">
                 IAMH, in collaboration with the Department of Psychiatry, Centre of Excellence, IMS-BHU, is
                 bringing schools, teachers, and students together for a landmark national summit on building
                 mentally healthy and supportive school ecosystems.
               </p>
 
-              <div className="flex flex-wrap items-center gap-5 mb-8 text-sm text-slate-200">
+              <div className="flex flex-wrap items-center gap-5 mb-8 text-base text-slate-200">
                 <div className="flex items-center gap-2">
                   <CalendarDays className="w-4 h-4 text-iamh-emerald" />
                   <span className="font-semibold">6 October 2026 &bull; 10:30 AM – 4:00 PM</span>

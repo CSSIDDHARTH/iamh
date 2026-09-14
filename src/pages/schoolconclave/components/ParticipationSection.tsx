@@ -19,7 +19,7 @@ export const ParticipationSection: React.FC<ParticipationSectionProps> = ({ onRe
           <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Participation From Each School
           </h2>
-          <p className="mt-3 text-base sm:text-base text-slate-500 leading-relaxed max-w-xl mx-auto">
+          <p className="mt-3 text-base text-slate-500 leading-relaxed max-w-xl mx-auto">
             Each school nominates a structured, multi-tier delegation — enabling unified learning and real institutional change.
           </p>
         </div>

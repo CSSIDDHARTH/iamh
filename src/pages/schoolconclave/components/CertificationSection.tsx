@@ -41,7 +41,7 @@ export const CertificationSection: React.FC = () => {
                 <Award className="w-5 h-5 text-amber-500" />
               </div>
 
-              <h3 className="font-display text-base sm:text-base font-bold text-slate-900 leading-snug mb-1">
+              <h3 className="font-display text-base font-bold text-slate-900 leading-snug mb-1">
                 {tier.certificateTitle}
               </h3>
               <p className="text-sm font-semibold text-blue-700 mb-3">{tier.subtitle}</p>

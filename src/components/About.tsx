@@ -27,7 +27,7 @@ export default function About() {
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-2">
               <span className="h-[2px] w-8 bg-iamh-emerald" />
-              <span className="text-xs font-mono font-bold tracking-widest text-slate-500 uppercase">
+              <span className="text-sm font-mono font-bold tracking-widest text-slate-500 uppercase">
                 Institutional Profile
               </span>
             </div>
@@ -75,15 +75,15 @@ export default function About() {
                 </p>
 
                 <div className="border-t border-slate-200/60 pt-6 space-y-3">
-                  <div className="flex items-center gap-2.5 text-xs font-mono text-slate-500">
+                  <div className="flex items-center gap-2.5 text-sm font-mono text-slate-500">
                     <span className="w-1.5 h-1.5 bg-iamh-navy rounded-full" />
                     <span>Focus on Evidence-Based Care</span>
                   </div>
-                  <div className="flex items-center gap-2.5 text-xs font-mono text-slate-500">
+                  <div className="flex items-center gap-2.5 text-sm font-mono text-slate-500">
                     <span className="w-1.5 h-1.5 bg-iamh-navy rounded-full" />
                     <span>Advancing Psychiatric Science</span>
                   </div>
-                  <div className="flex items-center gap-2.5 text-xs font-mono text-slate-500">
+                  <div className="flex items-center gap-2.5 text-sm font-mono text-slate-500">
                     <span className="w-1.5 h-1.5 bg-iamh-navy rounded-full" />
                     <span>Nationwide Professional Collaboration</span>
                   </div>
@@ -96,13 +96,13 @@ export default function About() {
         {/* --- Mission Section --- */}
         <div id="mission" className="border-t border-slate-100 pt-20 mb-24 scroll-mt-20">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-mono font-bold tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100/80 px-3 py-1 rounded-full uppercase">
+            <span className="text-sm font-mono font-bold tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100/80 px-3 py-1 rounded-full uppercase">
               Core Mission
             </span>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-iamh-navy tracking-tight mt-4">
               Our Core Mission Areas
             </h2>
-            <p className="text-slate-500 mt-3 text-sm leading-relaxed">
+            <p className="text-slate-500 mt-3 text-base leading-relaxed">
               The strategic pillars defining the daily practices, academic projects, and advocacy initiatives of the Academy.
             </p>
           </div>
@@ -124,12 +124,12 @@ export default function About() {
                       {item.title}
                     </h4>
                     
-                    <p className="text-[12px] text-slate-500 leading-relaxed font-normal">
+                    <p className="text-sm text-slate-500 leading-relaxed font-normal">
                       {item.description}
                     </p>
                   </div>
                   
-                  <div className="mt-6 pt-3.5 border-t border-slate-100 flex items-center gap-1.5 text-[10px] font-mono font-bold tracking-wide uppercase text-slate-400 group-hover:text-iamh-emerald transition-colors">
+                  <div className="mt-6 pt-3.5 border-t border-slate-100 flex items-center gap-1.5 text-xs font-mono font-bold tracking-wide uppercase text-slate-400 group-hover:text-iamh-emerald transition-colors">
                     <span>Explore Strategy</span>
                     <ArrowRight className="w-3 h-3 transform group-hover:translate-x-0.5 transition-transform" />
                   </div>
@@ -142,13 +142,13 @@ export default function About() {
         {/* --- Multidisciplinary Network Section --- */}
         <div id="network" className="border-t border-slate-100 pt-20 scroll-mt-20">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-mono font-bold tracking-widest text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full uppercase">
+            <span className="text-sm font-mono font-bold tracking-widest text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full uppercase">
               Collaborative Core
             </span>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-iamh-navy tracking-tight mt-4">
               Our Multidisciplinary Network
             </h2>
-            <p className="text-slate-500 mt-3 text-sm leading-relaxed">
+            <p className="text-slate-500 mt-3 text-base leading-relaxed">
               Bringing together licensed healthcare practitioners from eleven critical disciplines under a unified institutional standard.
             </p>
           </div>
@@ -166,16 +166,16 @@ export default function About() {
                       <div className={`w-10 h-10 flex items-center justify-center rounded-lg border transition-all duration-350 group-hover:scale-105 ${discipline.bgClass} shrink-0`}>
                         <IconComp className="w-5 h-5 stroke-[1.5]" />
                       </div>
-                      <h4 className="font-display font-bold text-slate-900 text-sm sm:text-base tracking-tight leading-tight group-hover:text-iamh-navy transition-colors">
+                      <h4 className="font-display font-bold text-slate-900 text-base tracking-tight leading-tight group-hover:text-iamh-navy transition-colors">
                         {discipline.name}
                       </h4>
                     </div>
-                    <p className="text-[12px] text-slate-500 leading-relaxed font-normal">
+                    <p className="text-sm text-slate-500 leading-relaxed font-normal">
                       {discipline.description}
                     </p>
                   </div>
 
-                  <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-[10px] font-mono tracking-wide uppercase text-slate-400">
+                  <div className="mt-5 pt-3.5 border-t border-slate-100 flex flex-col gap-0.5 text-xs font-mono tracking-wide uppercase text-slate-400">
                     <span>Clinical Field</span>
                     <span className="text-iamh-navy font-bold">Specialty Division</span>
                   </div>

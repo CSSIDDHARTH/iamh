@@ -19,8 +19,8 @@ export const TeacherTrainingSection: React.FC = () => {
           </div>
           
           <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Understanding Behaviour.<br className="hidden sm:inline" />
-            Managing Emotions.<br className="hidden sm:inline" />
+            Understanding Behaviour. <br className="hidden sm:inline" />
+            Managing Emotions. <br className="hidden sm:inline" />
             Building Connections.
           </h2>
 

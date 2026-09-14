@@ -31,7 +31,7 @@ export const ParticipationFeeSection: React.FC<ParticipationFeeSectionProps> = (
                   Participation Fee
                 </h2>
 
-                <p className="text-base sm:text-base text-slate-300 leading-relaxed max-w-xl">
+                <p className="text-base text-slate-300 leading-relaxed max-w-xl">
                   {EVENT_DETAILS.feeScope}
                 </p>
 

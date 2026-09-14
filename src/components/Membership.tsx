@@ -43,7 +43,7 @@ function MembershipBenefitsSection() {
           headingInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
-        <span className="inline-block text-xs font-mono font-bold tracking-widest text-iamh-emerald bg-emerald-50 border border-emerald-100 px-4 py-1.5 rounded-full uppercase mb-4">
+        <span className="inline-block text-sm font-mono font-bold tracking-widest text-iamh-emerald bg-emerald-50 border border-emerald-100 px-4 py-1.5 rounded-full uppercase mb-4">
           Member Privileges
         </span>
         <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-iamh-navy tracking-tight leading-tight">
@@ -93,7 +93,7 @@ function BenefitCard({ benefit, index }: { benefit: (typeof membershipBenefitsDa
         <h4 className="font-display font-bold text-iamh-navy text-lg tracking-tight leading-snug">
           {benefit.title}
         </h4>
-        <p className="text-slate-500 text-sm leading-relaxed font-normal">
+        <p className="text-slate-500 text-base leading-relaxed font-normal">
           {benefit.text}
         </p>
       </div>
@@ -187,7 +187,7 @@ export default function Membership() {
       <div className="py-20 bg-pattern-neural border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-xs font-mono font-bold tracking-widest text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full uppercase">
+            <span className="text-sm font-mono font-bold tracking-widest text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full uppercase">
               National Directory Setup
             </span>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-iamh-navy tracking-tight mt-4">
@@ -224,7 +224,7 @@ export default function Membership() {
             <h3 className="font-display font-bold text-iamh-navy text-2xl tracking-tight">
               Why Join the Academy
             </h3>
-            <p className="text-slate-500 text-sm mt-1">
+            <p className="text-slate-500 text-base mt-1">
               Elevate your clinical practice, lead community programs, and access exclusive research assets.
             </p>
           </div>
@@ -244,7 +244,7 @@ export default function Membership() {
                     <h4 className="font-display font-bold text-slate-800 text-base mb-1 tracking-tight">
                       {feature.title}
                     </h4>
-                    <p className="text-xs text-slate-500 leading-relaxed">
+                    <p className="text-sm text-slate-500 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -264,7 +264,7 @@ export default function Membership() {
             <div className="grid md:grid-cols-12 gap-8 items-center">
               {/* Info */}
               <div className="md:col-span-7 space-y-5">
-                <span className="text-[10px] font-mono font-bold tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full uppercase">
+                <span className="text-xs font-mono font-bold tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full uppercase">
                   Secure Enrollment Gateway
                 </span>
                 <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-iamh-navy tracking-tight">
@@ -272,10 +272,10 @@ export default function Membership() {
                 </h3>
                 
                 <div className="space-y-3.5 pt-1">
-                  <h4 className="text-xs font-mono font-bold text-slate-800 uppercase tracking-wider">
+                  <h4 className="text-sm font-mono font-bold text-slate-800 uppercase tracking-wider">
                     How to complete your enrollment:
                   </h4>
-                  <ul className="space-y-3 text-xs text-slate-500">
+                  <ul className="space-y-3 text-sm text-slate-500">
                     <li className="flex gap-2.5 items-start">
                       <Check className="w-4.5 h-4.5 text-iamh-emerald shrink-0 mt-0.5" />
                       <span>
@@ -318,7 +318,7 @@ export default function Membership() {
             <div className="bg-gradient-to-r from-iamh-navy to-slate-900 p-5 text-white flex justify-between items-center">
               <div>
                 <h3 className="font-display font-bold text-lg">IAMH National Membership Portal</h3>
-                <p className="text-xs text-slate-300 font-mono">Academic Session 2026 • Registration</p>
+                <p className="text-sm text-slate-300 font-mono">Academic Session 2026 • Registration</p>
               </div>
               <button
                 onClick={() => {
@@ -336,7 +336,7 @@ export default function Membership() {
               {!registrationSuccess ? (
                 /* Application Form */
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="flex gap-4 p-3 bg-blue-50/50 border border-blue-100 rounded-lg text-slate-600 text-xs">
+                  <div className="flex gap-4 p-3 bg-blue-50/50 border border-blue-100 rounded-lg text-slate-600 text-sm">
                     <ShieldAlert className="w-5 h-5 text-iamh-navy shrink-0 mt-0.5" />
                     <p>
                       This is an academic registration form. Please input your authentic medical or psychological board licenses. Simulated credentials will generate an automated institutional mock card.
@@ -344,7 +344,7 @@ export default function Membership() {
                   </div>
 
                   {errorVal && (
-                    <div className="p-3.5 bg-red-50 border border-red-200/50 rounded-lg text-red-700 text-xs font-semibold flex items-center gap-2">
+                    <div className="p-3.5 bg-red-50 border border-red-200/50 rounded-lg text-red-700 text-sm font-semibold flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
                       {errorVal}
                     </div>
@@ -353,7 +353,7 @@ export default function Membership() {
                   <div className="grid sm:grid-cols-2 gap-4">
                     {/* Full Name */}
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
                         Full Name (with honorific) *
                       </label>
                       <input
@@ -363,20 +363,20 @@ export default function Membership() {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         placeholder="Dr. Siddharth Sharma, PhD"
-                        className="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
+                        className="w-full text-base px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
                       />
                     </div>
 
                     {/* Primary Specialty */}
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
                         Primary Specialty Discipline *
                       </label>
                       <select
                         name="discipline"
                         value={formData.discipline}
                         onChange={handleInputChange}
-                        className="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy bg-white"
+                        className="w-full text-base px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy bg-white"
                       >
                         <option value="Psychiatry">Psychiatry</option>
                         <option value="Psychology">Psychology</option>
@@ -394,7 +394,7 @@ export default function Membership() {
 
                     {/* Degrees / Academics */}
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
                         Academic Degrees *
                       </label>
                       <input
@@ -404,13 +404,13 @@ export default function Membership() {
                         value={formData.degree}
                         onChange={handleInputChange}
                         placeholder="MD, M.Phil, PhD in Clinical Psychology"
-                        className="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
+                        className="w-full text-base px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
                       />
                     </div>
 
                     {/* Medical / RCI License Code */}
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
                         State Council / RCI License No.
                       </label>
                       <input
@@ -419,13 +419,13 @@ export default function Membership() {
                         value={formData.licenseNumber}
                         onChange={handleInputChange}
                         placeholder="RCI A84392 or MCI-94301"
-                        className="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
+                        className="w-full text-base px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
                       />
                     </div>
 
                     {/* Email */}
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
                         Professional Email *
                       </label>
                       <input
@@ -435,13 +435,13 @@ export default function Membership() {
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="siddharth@iamh.in"
-                        className="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
+                        className="w-full text-base px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
                       />
                     </div>
 
                     {/* Phone */}
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
                         Mobile Number *
                       </label>
                       <input
@@ -451,14 +451,14 @@ export default function Membership() {
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="+91 98765 43210"
-                        className="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
+                        className="w-full text-base px-3.5 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-iamh-navy"
                       />
                     </div>
                   </div>
 
                   {/* Photo upload */}
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+                    <label className="block text-sm font-semibold text-slate-700 uppercase tracking-wider mb-2">
                       Professional Headshot (Passport format)
                     </label>
                     <div 
@@ -482,15 +482,15 @@ export default function Membership() {
                             referrerPolicy="no-referrer"
                           />
                           <div className="text-left">
-                            <span className="text-xs font-semibold text-slate-700 block">Photo loaded successfully</span>
-                            <span className="text-[10px] text-slate-400">Click to replace headshot image</span>
+                            <span className="text-sm font-semibold text-slate-700 block">Photo loaded successfully</span>
+                            <span className="text-xs text-slate-400">Click to replace headshot image</span>
                           </div>
                         </div>
                       ) : (
                         <>
                           <Upload className="w-8 h-8 text-slate-400 stroke-[1.5] mb-2" />
-                          <span className="text-xs font-semibold text-slate-600">Drag & Drop or Click to Upload</span>
-                          <span className="text-[10px] text-slate-400 mt-1">Supports PNG, JPG (Max 2MB)</span>
+                          <span className="text-sm font-semibold text-slate-600">Drag & Drop or Click to Upload</span>
+                          <span className="text-xs text-slate-400 mt-1">Supports PNG, JPG (Max 2MB)</span>
                         </>
                       )}
                     </div>
@@ -504,14 +504,14 @@ export default function Membership() {
                         setShowModal(false);
                         resetForm();
                       }}
-                      className="px-5 py-2.5 text-sm font-semibold text-slate-600 hover:bg-slate-100 rounded-lg transition-colors"
+                      className="px-5 py-2.5 text-base font-semibold text-slate-600 hover:bg-slate-100 rounded-lg transition-colors"
                     >
                       Cancel
                     </button>
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className="px-6 py-2.5 text-sm font-semibold text-white bg-iamh-navy hover:bg-slate-900 disabled:bg-slate-400 rounded-lg shadow-sm flex items-center gap-2 transition-all"
+                      className="px-6 py-2.5 text-base font-semibold text-white bg-iamh-navy hover:bg-slate-900 disabled:bg-slate-400 rounded-lg shadow-sm flex items-center gap-2 transition-all"
                     >
                       {isLoading ? (
                         <>
@@ -537,7 +537,7 @@ export default function Membership() {
                     <h4 className="font-display font-extrabold text-xl text-slate-900 tracking-tight">
                       Affiliation Form Approved
                     </h4>
-                    <p className="text-xs text-slate-500">
+                    <p className="text-sm text-slate-500">
                       Your credentials have been logged in the Academy Directory. Your digital membership card is generated below.
                     </p>
                   </div>

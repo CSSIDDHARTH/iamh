@@ -97,7 +97,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <span className="text-[11px] font-mono font-semibold tracking-wider text-slate-700 uppercase">
+              <span className="text-sm font-mono font-semibold tracking-wider text-slate-700 uppercase">
                 Indian Academy of Mental Health • Registration No: 00589
               </span>
             </div>
@@ -126,7 +126,7 @@ export default function Hero() {
 
             {/* Tagline */}
             <div className="border-l-4 border-iamh-emerald pl-4 mb-8">
-              <span className="text-sm font-display font-medium text-slate-500 uppercase tracking-widest block mb-1">
+              <span className="text-base font-display font-medium text-slate-500 uppercase tracking-widest block mb-1">
                 Our Institutional Philosophy
               </span>
               <span className="font-display font-bold text-slate-800 text-lg sm:text-xl">
@@ -167,11 +167,11 @@ export default function Hero() {
                     <h3 className="font-display font-bold text-iamh-navy text-lg leading-tight">
                       Academy Credentials
                     </h3>
-                    <p className="text-xs text-slate-500 font-mono mt-1">
+                    <p className="text-sm text-slate-500 font-mono mt-1">
                       National Registration: No. 00589
                     </p>
                   </div>
-                  <span className="text-xs font-semibold px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-full border border-emerald-100">
+                  <span className="text-sm font-semibold px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-full border border-emerald-100">
                     Established 2021
                   </span>
                 </div>
@@ -183,8 +183,8 @@ export default function Hero() {
                       <Users className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800">Multidisciplinary Synergy</h4>
-                      <p className="text-xs text-slate-500 mt-0.5">
+                      <h4 className="text-base font-semibold text-slate-800">Multidisciplinary Synergy</h4>
+                      <p className="text-sm text-slate-500 mt-0.5">
                         Psychiatrists, psychologists, psychiatric nurses, counselors, and social workers.
                       </p>
                     </div>
@@ -196,8 +196,8 @@ export default function Hero() {
                       <BookOpen className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800">Evidence-Based Research</h4>
-                      <p className="text-xs text-slate-500 mt-0.5">
+                      <h4 className="text-base font-semibold text-slate-800">Evidence-Based Research</h4>
+                      <p className="text-sm text-slate-500 mt-0.5">
                         Advancing psychological sciences through systematic trials, journals, and workshops.
                       </p>
                     </div>
@@ -209,8 +209,8 @@ export default function Hero() {
                       <Compass className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800">National Healthcare Advocacy</h4>
-                      <p className="text-xs text-slate-500 mt-0.5">
+                      <h4 className="text-base font-semibold text-slate-800">National Healthcare Advocacy</h4>
+                      <p className="text-sm text-slate-500 mt-0.5">
                         Working in lockstep with policymakers for inclusive mental health guidelines.
                       </p>
                     </div>
