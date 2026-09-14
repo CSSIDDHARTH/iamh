@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -7,9 +7,28 @@
   --color-iamh-gold: #D0A932;
   --color-iamh-mint: #E8F5E9;
   --color-iamh-light: #F8FAFC;
-  
+
+  /*
+   * Premium Light Luxury palette — warm ivory/champagne ground with
+   * muted-gold accents and deep navy typography. This replaces the former
+   * dark-navy-heavy visual system across both the main site and the
+   * School Conclave subpage. Large section backgrounds should draw from
+   * ivory/cream/champagne only; navy is reserved for text, logos, icons
+   * and small UI details — never large solid fills.
+   */
+  --color-ivory: #FFFDF7;
+  --color-cream: #FFF8E8;
+  --color-champagne: #FFF1C7;
+  --color-gold: #D6A72C;
+  --color-gold-soft: #E7C76A;
+  --color-gold-deep: #B8871F;
+  --color-navy: #17203A;
+  --color-text-secondary: #596174;
+  --color-warm: #6F5A3A;
+
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-editorial: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
 
   /*
    * Global typography scale — overrides Tailwind's default text-* tokens
@@ -82,7 +101,8 @@
   background: #94a3b8;
 }
 
-/* Premium Institutional Background Patterns */
+/* Premium Institutional Background Patterns (main site — kept neutral;
+   the gold/champagne treatment is scoped to the School Conclave page only) */
 .bg-pattern-neural {
   background-color: #F7F8FA;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='none' stroke-width='0.75' opacity='0.08'%3E%3Cpath d='M50 50 L100 80 L180 60 L230 110 M100 80 L120 160 L70 210 L50 50' stroke='%23284E9C' /%3E%3Cpath d='M120 160 L200 180 L230 110 L270 40' stroke='%234DA92B' /%3E%3Cpath d='M200 180 L250 240 L160 270 L70 210' stroke='%23284E9C' stroke-dasharray='3,3' /%3E%3Cpath d='M70 210 L30 140 L100 80' stroke='%234DA92B' /%3E%3Cpath d='M180 60 L140 20 L50 50' stroke='%23284E9C' /%3E%3Cpath d='M0 100 Q50 90 100 120 T200 100 T300 120' stroke='%23284E9C' stroke-dasharray='4,2' /%3E%3Cpath d='M150 0 L180 60 M160 270 L150 300' stroke='%234DA92B' /%3E%3Cpath d='M0 50 L50 50 M250 90 L300 90' stroke='%23284E9C' /%3E%3C/g%3E%3Cg opacity='0.12'%3E%3Ccircle cx='50' cy='50' r='3' fill='%23284E9C' /%3E%3Ccircle cx='100' cy='80' r='4.5' fill='%234DA92B' /%3E%3Ccircle cx='180' cy='60' r='3' fill='%23D0A932' /%3E%3Ccircle cx='230' cy='110' r='4.5' fill='%23284E9C' /%3E%3Ccircle cx='120' cy='160' r='4' fill='%234DA92B' /%3E%3Ccircle cx='70' cy='210' r='3' fill='%23D0A932' /%3E%3Ccircle cx='200' cy='180' r='3.5' fill='%23284E9C' /%3E%3Ccircle cx='250' cy='240' r='4' fill='%234DA92B' /%3E%3Ccircle cx='160' cy='270' r='3' fill='%23D0A932' /%3E%3Ccircle cx='30' cy='140' r='2.5' fill='%23284E9C' /%3E%3Ccircle cx='140' cy='20' r='3' fill='%234DA92B' /%3E%3Ccircle cx='270' cy='40' r='3' fill='%23D0A932' /%3E%3Ccircle cx='100' cy='80' r='9' fill='none' stroke='%234DA92B' stroke-width='0.5' /%3E%3Ccircle cx='230' cy='110' r='10' fill='none' stroke='%23284E9C' stroke-width='0.5' /%3E%3Ccircle cx='120' cy='160' r='8' fill='none' stroke='%234DA92B' stroke-width='0.5' /%3E%3C/g%3E%3C/svg%3E");
@@ -101,6 +121,43 @@
   background-repeat: repeat;
 }
 
+/* Faint paper-grain texture — layer on any ivory/cream/champagne surface
+   for tactile, stationery-like craftsmanship without reading as "flat". */
+.bg-paper-grain {
+  position: relative;
+}
+.bg-paper-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.66  0 0 0 0 0.55  0 0 0 0 0.28  0 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Soft radial champagne/gold morning-light glows for section grounds */
+.bg-gold-glow-top {
+  background-image: radial-gradient(ellipse 70% 55% at 50% -8%, rgba(214, 167, 44, 0.16), transparent 62%);
+}
+.bg-gold-glow-corner {
+  background-image:
+    radial-gradient(ellipse 55% 45% at 92% 0%, rgba(214, 167, 44, 0.14), transparent 60%),
+    radial-gradient(ellipse 55% 45% at 4% 100%, rgba(231, 199, 106, 0.14), transparent 60%);
+}
+
+/* Subtle Indian-heritage line art — lotus + mandala rings, extremely low
+   opacity, sat behind content as ambient decoration rather than motif. */
+.bg-mandala-pattern {
+  background-image: radial-gradient(#0f2347 0.75px, transparent 0.75px), radial-gradient(#10b981 0.75px, #ffffff 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-lotus-motif {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23D6A72C' stroke-width='1' opacity='0.10'%3E%3Ccircle cx='260' cy='260' r='210'/%3E%3Ccircle cx='260' cy='260' r='170'/%3E%3Ccircle cx='260' cy='260' r='130'/%3E%3Cpath d='M260 130 C230 190 190 220 190 270 C190 310 222 340 260 340 C298 340 330 310 330 270 C330 220 290 190 260 130Z'/%3E%3Cpath d='M260 160 C238 205 210 228 210 268 C210 298 232 320 260 320 C288 320 310 298 310 268 C310 228 282 205 260 160Z'/%3E%3Cpath d='M130 260 C190 230 220 190 270 190 C310 190 340 222 340 260 C340 298 310 330 270 330 C220 330 190 290 130 260Z' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
 
 /* ===== School Conclave Page Styles ===== */
 
@@ -108,19 +165,25 @@
   font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
+/* Editorial heading treatment — deep navy fading into a muted champagne
+   gold, replacing the former multicolour "rainbow" gradient. Used across
+   every major section headline via the shared .heading-rainbow class name
+   (kept for compatibility with existing markup). */
 .heading-rainbow {
-  background: linear-gradient(115deg, #e11d48 0%, #ea580c 20%, #d97706 38%, #16a34a 56%, #0284c7 76%, #7c3aed 100%);
+  background: linear-gradient(100deg, #17203A 0%, #17203A 46%, #6F5A3A 72%, #B8871F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  display: inline-block;
-}
-
-.bg-mandala-pattern {
-  background-image: radial-gradient(#0f2347 0.75px, transparent 0.75px), radial-gradient(#10b981 0.75px, #ffffff 0.75px);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
+  /*
+   * Deliberately `block`, not `inline-block`. The eyebrow badge above every
+   * heading using this class is `inline-flex`, which is itself inline-level;
+   * an inline-level heading right after it (with no whitespace text node
+   * between them in JSX) would sit on the same line whenever both are short
+   * enough to fit — badge left, heading right — instead of stacking. `block`
+   * guarantees the heading always starts its own line.
+   */
+  display: block;
 }
 
 @media print {
@@ -139,6 +202,30 @@
   --nav-gold-light: color-mix(in srgb, var(--color-iamh-gold) 55%, white);
   --nav-gold: var(--color-iamh-gold);
   --nav-gold-dark: color-mix(in srgb, var(--color-iamh-gold) 82%, black);
+}
+
+/* ===== Premium light-luxury panel & divider helpers ===== */
+
+/* Replaces the former "dark navy premium panel" treatment (bg-slate-900
+   gradients) with an ivory/champagne editorial panel: soft paper ground,
+   a thin gold top border, and a warm ambient glow instead of darkness. */
+.panel-editorial {
+  background: linear-gradient(160deg, #FFFDF7 0%, #FFF8E8 55%, #FFF1C7 100%);
+  border: 1px solid rgba(214, 167, 44, 0.25);
+  position: relative;
+}
+.panel-editorial::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #D6A72C 20%, #E7C76A 50%, #D6A72C 80%, transparent);
+  border-radius: inherit;
+}
+
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D6A72C 50%, transparent);
 }
 
 @keyframes conclave-menu-in {

@@ -21,7 +21,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
-          
+
           {/* Section 1: Logo & Vision Quote (5 Cols) */}
           <div className="md:col-span-5 space-y-5">
             <div className="flex items-center gap-3">

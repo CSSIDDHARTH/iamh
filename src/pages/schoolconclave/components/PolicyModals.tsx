@@ -75,7 +75,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ isOpen, onClose, type 
         <div className="pt-4 border-t border-slate-100 flex justify-end">
           <button
             onClick={onClose}
-            className="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold"
+            className="px-5 py-2.5 rounded-xl bg-[#17203A] hover:bg-[#232d4d] text-white text-sm font-semibold"
           >
             Understood &amp; Close
           </button>

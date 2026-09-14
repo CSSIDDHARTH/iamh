@@ -91,8 +91,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
         <div
           className={`conclave-nav pointer-events-auto w-full rounded-2xl border transition-[padding,box-shadow,background-color] duration-300 ease-out ${
             scrolled
-              ? 'border-white/[0.08] bg-gradient-to-b from-[#0b1330]/95 to-[#060a1a]/95 backdrop-blur-xl shadow-[0_16px_44px_-18px_rgba(0,0,0,0.65)] py-2'
-              : 'border-white/[0.06] bg-gradient-to-b from-[#0d1638]/90 to-[#080c20]/90 backdrop-blur-lg shadow-[0_10px_36px_-16px_rgba(0,0,0,0.5)] py-2.5'
+              ? 'border-[#D6A72C]/20 bg-gradient-to-b from-white/95 to-[#FFF8E8]/95 backdrop-blur-xl shadow-[0_16px_44px_-18px_rgba(107,84,25,0.25)] py-2'
+              : 'border-[#D6A72C]/15 bg-gradient-to-b from-white/85 to-[#FFF8E8]/85 backdrop-blur-lg shadow-[0_10px_36px_-16px_rgba(107,84,25,0.18)] py-2.5'
           } px-3 sm:px-5 lg:px-6 flex items-center justify-between gap-2 sm:gap-4`}
         >
           {/* Brand */}
@@ -105,20 +105,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
             className="group flex items-center gap-2 sm:gap-3 shrink-0 min-w-0 rounded-xl py-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60"
             aria-label="School Mental Health Conclave — go to top"
           >
-            <span className="relative flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-white/[0.06] ring-1 ring-white/10 transition-all duration-300 group-hover:ring-[var(--nav-gold)]/50 group-hover:shadow-[0_0_18px_-2px_var(--nav-gold)] shrink-0">
+            <span className="relative flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-[#17203A]/[0.04] ring-1 ring-[#D6A72C]/20 transition-all duration-300 group-hover:ring-[var(--nav-gold)]/60 group-hover:shadow-[0_0_18px_-2px_var(--nav-gold)] shrink-0">
               <IAMHLogo size={20} className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300 group-hover:scale-105" />
             </span>
 
             <span className="flex flex-col leading-none min-w-0">
               <span className="flex items-center gap-1.5 sm:gap-2">
-                <span className="font-display font-semibold uppercase text-white text-[11.5px] sm:text-[15.5px] tracking-[0.01em] leading-none whitespace-nowrap truncate">
+                <span className="font-display font-semibold uppercase text-[#17203A] text-[11.5px] sm:text-[15.5px] tracking-[0.01em] leading-none whitespace-nowrap truncate">
                   IAMH Conclave
                 </span>
-                <span className="hidden sm:inline-flex items-center rounded-full bg-[var(--nav-gold)]/15 px-1.5 py-[2px] text-[11px] font-bold text-[var(--nav-gold-light)] ring-1 ring-[var(--nav-gold)]/25 leading-none">
+                <span className="hidden sm:inline-flex items-center rounded-full bg-[var(--nav-gold)]/15 px-1.5 py-[2px] text-[11px] font-bold text-[var(--nav-gold-dark)] ring-1 ring-[var(--nav-gold)]/30 leading-none">
                   2026
                 </span>
               </span>
-              <span className="hidden sm:block mt-1 text-[11px] font-medium uppercase tracking-[0.04em] text-slate-400 leading-none whitespace-nowrap">
+              <span className="hidden sm:block mt-1 text-[11px] font-medium uppercase tracking-[0.04em] text-[#596174] leading-none whitespace-nowrap">
                 BHU Varanasi &bull; 6 Oct
               </span>
             </span>
@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                   onClick={() => handleLinkClick(link.href)}
                   aria-current={isActive ? 'true' : undefined}
                   className={`group relative px-3 py-2 text-[14px] font-medium transition-colors duration-200 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60 ${
-                    isActive ? 'text-white' : 'text-slate-400 hover:text-slate-100'
+                    isActive ? 'text-[#17203A]' : 'text-[#596174] hover:text-[#17203A]'
                   }`}
                 >
                   <span className="whitespace-nowrap">{link.label}</span>
@@ -152,12 +152,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
 
           {/* Secondary actions + primary CTA */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            <div className="hidden xl:flex items-center gap-1 mr-1 pr-3 border-r border-white/10">
+            <div className="hidden xl:flex items-center gap-1 mr-1 pr-3 border-r border-[#D6A72C]/20">
               <Link
                 to="/"
                 title="Back to IAMH.org"
                 aria-label="Back to IAMH main website"
-                className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition-colors duration-200 hover:text-[var(--nav-gold-light)] hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60"
+                className="flex h-8 w-8 items-center justify-center rounded-lg text-[#596174] transition-colors duration-200 hover:text-[var(--nav-gold-dark)] hover:bg-[#17203A]/[0.04] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60"
               >
                 <IAMHLogo size={16} className="h-4 w-4" />
               </Link>
@@ -165,7 +165,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                 href={`tel:${EVENT_DETAILS.contactPhone}`}
                 title={`Call Helpline: ${EVENT_DETAILS.contactPhone}`}
                 aria-label={`Call helpline ${EVENT_DETAILS.contactPhone}`}
-                className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition-colors duration-200 hover:text-[var(--nav-gold-light)] hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60"
+                className="flex h-8 w-8 items-center justify-center rounded-lg text-[#596174] transition-colors duration-200 hover:text-[var(--nav-gold-dark)] hover:bg-[#17203A]/[0.04] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60"
               >
                 <PhoneCall className="w-4 h-4" />
               </a>
@@ -188,7 +188,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
               ref={menuToggleRef}
               type="button"
               onClick={() => (isOpen ? closeMenu() : setIsOpen(true))}
-              className="xl:hidden flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-lg text-slate-300 bg-white/5 hover:bg-white/10 hover:text-white transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60"
+              className="xl:hidden flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-lg text-[#17203A] bg-[#17203A]/[0.05] hover:bg-[#17203A]/[0.09] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isOpen}
               aria-controls="conclave-mobile-menu"
@@ -202,13 +202,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
         {isOpen && (
           <div
             id="conclave-mobile-menu"
-            className={`conclave-nav pointer-events-auto mt-2 w-full max-w-md self-end xl:hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-[#0d1638]/98 to-[#080c20]/98 backdrop-blur-xl shadow-[0_20px_50px_-20px_rgba(0,0,0,0.7)] p-3 ${
+            className={`conclave-nav pointer-events-auto mt-2 w-full max-w-md self-end xl:hidden rounded-2xl border border-[#D6A72C]/20 bg-gradient-to-b from-white/98 to-[#FFF8E8]/98 backdrop-blur-xl shadow-[0_20px_50px_-20px_rgba(107,84,25,0.3)] p-3 ${
               isClosing ? 'conclave-menu-exit' : 'conclave-menu-enter'
             }`}
           >
-            <div className="flex items-center justify-between rounded-xl bg-white/[0.04] px-3.5 py-2.5 mb-2">
-              <span className="text-[13px] font-semibold text-slate-200">School Mental Health Conclave</span>
-              <span className="text-[12px] font-bold text-[var(--nav-gold-light)]">{EVENT_DETAILS.date}</span>
+            <div className="flex items-center justify-between rounded-xl bg-[#17203A]/[0.04] px-3.5 py-2.5 mb-2">
+              <span className="text-[13px] font-semibold text-[#17203A]">School Mental Health Conclave</span>
+              <span className="text-[12px] font-bold text-[var(--nav-gold-dark)]">{EVENT_DETAILS.date}</span>
             </div>
 
             <nav aria-label="Conclave sections" className="flex flex-col">
@@ -221,13 +221,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                     onClick={() => handleLinkClick(link.href)}
                     aria-current={isActive ? 'true' : undefined}
                     className={`flex items-center gap-3 rounded-lg px-3.5 py-3 text-left text-[14.5px] font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--nav-gold)]/60 ${
-                      isActive ? 'text-white bg-white/[0.06]' : 'text-slate-300 hover:text-white hover:bg-white/[0.04]'
+                      isActive ? 'text-[#17203A] bg-[#17203A]/[0.06]' : 'text-[#596174] hover:text-[#17203A] hover:bg-[#17203A]/[0.04]'
                     }`}
                   >
                     <span
                       aria-hidden="true"
                       className={`h-1.5 w-1.5 rounded-full transition-colors duration-200 ${
-                        isActive ? 'bg-[var(--nav-gold)]' : 'bg-slate-600'
+                        isActive ? 'bg-[var(--nav-gold)]' : 'bg-slate-300'
                       }`}
                     />
                     {link.label}
@@ -236,18 +236,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
               })}
             </nav>
 
-            <div className="mt-2 pt-3 border-t border-white/[0.08] grid grid-cols-2 gap-2">
+            <div className="mt-2 pt-3 border-t border-[#D6A72C]/20 grid grid-cols-2 gap-2">
               <Link
                 to="/"
                 onClick={closeMenu}
-                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[13.5px] font-medium text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] hover:text-white transition-colors duration-200"
+                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[13.5px] font-medium text-[#596174] bg-[#17203A]/[0.04] hover:bg-[#17203A]/[0.08] hover:text-[#17203A] transition-colors duration-200"
               >
                 <IAMHLogo size={14} className="h-3.5 w-3.5" />
                 IAMH.org
               </Link>
               <a
                 href={`tel:${EVENT_DETAILS.contactPhone}`}
-                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[13.5px] font-medium text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] hover:text-white transition-colors duration-200"
+                className="flex items-center justify-center gap-2 rounded-lg py-2.5 text-[13.5px] font-medium text-[#596174] bg-[#17203A]/[0.04] hover:bg-[#17203A]/[0.08] hover:text-[#17203A] transition-colors duration-200"
               >
                 <PhoneCall className="w-3.5 h-3.5" />
                 Helpline

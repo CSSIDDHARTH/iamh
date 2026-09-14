@@ -4,7 +4,7 @@ import { IAMHLogo, IMSBHULogo } from './InstitutionalBadges';
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-white relative">
+    <section id="about" className="py-20 bg-white relative scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Tag */}
@@ -75,55 +75,55 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="relative">
               {/* Decorative background aura */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-teal-600 rounded-3xl opacity-10 blur-xl"></div>
-              
-              <div className="relative bg-slate-900 text-white rounded-2xl p-7 sm:p-9 shadow-xl border border-slate-800 overflow-hidden">
+              <div className="absolute -inset-2 bg-gradient-to-r from-[#D6A72C] to-[#E7C76A] rounded-3xl opacity-15 blur-xl"></div>
+
+              <div className="relative panel-editorial text-[#17203A] rounded-2xl p-7 sm:p-9 shadow-xl overflow-hidden">
                 {/* Subtle watermark */}
-                <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+                <div className="absolute top-0 right-0 p-8 opacity-[0.07] pointer-events-none">
                   <IAMHLogo size={160} />
                 </div>
 
                 <div className="relative z-10 space-y-6">
-                  <div className="flex items-center justify-between pb-5 border-b border-slate-800">
+                  <div className="flex items-center justify-between pb-5 border-b border-[#D6A72C]/25">
                     <div>
-                      <span className="text-sm uppercase tracking-widest font-semibold text-amber-400">Institutional Mandate</span>
-                      <h3 className="text-xl font-bold font-display text-white mt-0.5">Whole-School Well-being</h3>
+                      <span className="text-sm uppercase tracking-widest font-semibold text-[#B8871F]">Institutional Mandate</span>
+                      <h3 className="text-xl font-bold font-display text-[#17203A] mt-0.5">Whole-School Well-being</h3>
                     </div>
                     <IAMHLogo size={46} className="h-11 w-11" />
                   </div>
 
-                  <p className="text-base text-slate-300 leading-relaxed">
+                  <p className="text-base text-[#596174] leading-relaxed">
                     Mental health in schools is not an isolated crisis intervention. It is the soil in which intellectual curiosity, social confidence, and lifelong emotional resilience take root.
                   </p>
 
                   <div className="space-y-3 pt-2">
-                    <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
-                      <div className="p-2 rounded-lg bg-emerald-500/20 text-emerald-300 shrink-0">
+                    <div className="flex items-start gap-3 p-3 rounded-xl bg-white/70 border border-[#D6A72C]/20">
+                      <div className="p-2 rounded-lg bg-emerald-100 text-emerald-700 shrink-0">
                         <Users className="w-4 h-4" />
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-slate-200">Integrated Triad</h4>
-                        <p className="text-sm text-slate-400 mt-0.5">
+                        <h4 className="text-sm font-bold text-[#17203A]">Integrated Triad</h4>
+                        <p className="text-sm text-[#596174] mt-0.5">
                           Uniting Students, Teachers, and Principals on a single collaborative platform.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
-                      <div className="p-2 rounded-lg bg-sky-500/20 text-sky-300 shrink-0">
+                    <div className="flex items-start gap-3 p-3 rounded-xl bg-white/70 border border-[#D6A72C]/20">
+                      <div className="p-2 rounded-lg bg-sky-100 text-sky-700 shrink-0">
                         <HeartHandshake className="w-4 h-4" />
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-slate-200">Clinical &amp; Academic Expertise</h4>
-                        <p className="text-sm text-slate-400 mt-0.5">
+                        <h4 className="text-sm font-bold text-[#17203A]">Clinical &amp; Academic Expertise</h4>
+                        <p className="text-sm text-[#596174] mt-0.5">
                           Guided by senior psychiatry faculty and child mental health practitioners.
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm text-slate-400">
-                    <span className="font-semibold text-amber-300">World Mental Health Day 2026</span>
+                  <div className="pt-4 border-t border-[#D6A72C]/25 flex items-center justify-between text-sm text-[#596174]">
+                    <span className="font-semibold text-[#B8871F]">World Mental Health Day 2026</span>
                     <span>Banaras Hindu University</span>
                   </div>
                 </div>

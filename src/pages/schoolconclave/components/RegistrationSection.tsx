@@ -30,7 +30,7 @@ export const RegistrationSection: React.FC = () => {
   };
 
   return (
-    <section id="registration" className="py-20 sm:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-100 relative overflow-hidden border-t border-slate-200">
+    <section id="registration" className="py-20 sm:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-100 relative overflow-hidden border-t border-slate-200 scroll-mt-28">
       {/* Background Decorative Blur Rings */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-400/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -58,11 +58,11 @@ export const RegistrationSection: React.FC = () => {
           <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
             
             {/* Left Column: QR Code Showcase (Span 6) */}
-            <div className="lg:col-span-6 p-8 sm:p-12 bg-gradient-to-br from-[#0c1e38] via-[#09172d] to-[#060e1d] text-white flex flex-col items-center justify-between text-center relative">
-              
+            <div className="lg:col-span-6 p-8 sm:p-12 bg-gradient-to-br from-[#FFF1C7] via-[#FFF8E8] to-[#FFFDF7] text-[#17203A] flex flex-col items-center justify-between text-center relative">
+
               {/* Top badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-sm text-amber-300 font-semibold mb-6">
-                <Smartphone className="w-3.5 h-3.5 text-amber-400" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white backdrop-blur-md border border-[#D6A72C]/25 text-sm text-[#B8871F] font-semibold mb-6 shadow-sm">
+                <Smartphone className="w-3.5 h-3.5 text-[#B8871F]" />
                 <span>Instant Mobile Registration</span>
               </div>
 
@@ -161,24 +161,24 @@ export const RegistrationSection: React.FC = () => {
                   href={googleFormUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 text-slate-950 text-base font-bold shadow-lg hover:shadow-amber-400/30 flex items-center justify-center gap-2 transition-all active:scale-98"
+                  className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-[#E7C76A] to-[#D6A72C] hover:brightness-105 text-[#17203A] text-base font-bold shadow-lg hover:shadow-[#D6A72C]/30 flex items-center justify-center gap-2 transition-all active:scale-98"
                 >
                   <span>Open Google Form Directly</span>
-                  <ExternalLink className="w-4 h-4 text-slate-950" />
+                  <ExternalLink className="w-4 h-4 text-[#17203A]" />
                 </a>
 
                 <button
                   onClick={handleCopyLink}
-                  className="w-full py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-sm font-semibold text-slate-200 flex items-center justify-center gap-1.5 transition-colors"
+                  className="w-full py-2 px-3 rounded-xl bg-white hover:bg-[#FFFDF7] border border-[#D6A72C]/25 text-sm font-semibold text-[#17203A] flex items-center justify-center gap-1.5 transition-colors shadow-sm"
                 >
                   {copied ? (
                     <>
-                      <Check className="w-3.5 h-3.5 text-emerald-400" />
-                      <span className="text-emerald-300">Google Form Link Copied!</span>
+                      <Check className="w-3.5 h-3.5 text-emerald-600" />
+                      <span className="text-emerald-700">Google Form Link Copied!</span>
                     </>
                   ) : (
                     <>
-                      <Copy className="w-3.5 h-3.5 text-slate-400" />
+                      <Copy className="w-3.5 h-3.5 text-[#596174]" />
                       <span>Copy Google Form Link</span>
                     </>
                   )}
@@ -239,31 +239,31 @@ export const RegistrationSection: React.FC = () => {
               </div>
 
               {/* Delegation Summary Card */}
-              <div className="p-5 rounded-2xl bg-slate-900 text-white space-y-3 shadow-md">
+              <div className="p-5 rounded-2xl panel-editorial text-[#17203A] space-y-3 shadow-sm">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="font-bold text-amber-300 uppercase tracking-wider">Delegation Guidelines</span>
-                  <span className="px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">
+                  <span className="font-bold text-[#B8871F] uppercase tracking-wider">Delegation Guidelines</span>
+                  <span className="px-2 py-0.5 rounded-full bg-white text-[#596174] text-xs font-semibold border border-[#D6A72C]/20">
                     {EVENT_DETAILS.badge}
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 pt-1 border-t border-slate-800 text-sm">
+                <div className="grid grid-cols-2 gap-3 pt-1 border-t border-[#D6A72C]/20 text-sm">
                   <div>
-                    <span className="text-slate-400 block text-sm">Recommended Delegation:</span>
-                    <strong className="text-white font-semibold">50–80 Students + 10–20 Teachers</strong>
+                    <span className="text-[#596174] block text-sm">Recommended Delegation:</span>
+                    <strong className="text-[#17203A] font-semibold">50–80 Students + 10–20 Teachers</strong>
                   </div>
                   <div>
-                    <span className="text-slate-400 block text-sm">Institutional Fee:</span>
-                    <strong className="text-amber-400 font-bold text-base">{EVENT_DETAILS.participationFee} Per School</strong>
+                    <span className="text-[#596174] block text-sm">Institutional Fee:</span>
+                    <strong className="text-[#B8871F] font-bold text-base">{EVENT_DETAILS.participationFee} Per School</strong>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-sm text-slate-300">
+                <div className="pt-2 border-t border-[#D6A72C]/20 flex items-center justify-between text-sm text-[#17203A]">
                   <span className="flex items-center gap-1.5">
-                    <Calendar className="w-3.5 h-3.5 text-sky-400" />
+                    <Calendar className="w-3.5 h-3.5 text-blue-700" />
                     <span>6 October 2026</span>
                   </span>
-                  <span className="text-slate-400 text-sm">BHU Varanasi</span>
+                  <span className="text-[#596174] text-sm">BHU Varanasi</span>
                 </div>
               </div>
 

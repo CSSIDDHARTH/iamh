@@ -31,12 +31,19 @@ export const SchoolEcosystemSection: React.FC = () => {
         
         {/* Highlighted Premium Vision Banner: Every Child Deserves a Mentally Healthy School. */}
         <div className="mb-20">
-          <div className="relative rounded-3xl bg-gradient-to-r from-blue-950 via-slate-900 to-blue-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl border border-blue-900/50 overflow-hidden text-center">
-            
-            <div className="absolute inset-0 opacity-10 bg-mandala-pattern pointer-events-none" />
+          <div
+            className="relative rounded-3xl panel-editorial p-8 sm:p-12 lg:p-14 shadow-xl overflow-hidden text-center"
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23D6A72C' stroke-width='1' opacity='0.10'%3E%3Ccircle cx='260' cy='260' r='210'/%3E%3Ccircle cx='260' cy='260' r='170'/%3E%3Ccircle cx='260' cy='260' r='130'/%3E%3Cpath d='M260 130 C230 190 190 220 190 270 C190 310 222 340 260 340 C298 340 330 310 330 270 C330 220 290 190 260 130Z'/%3E%3Cpath d='M260 160 C238 205 210 228 210 268 C210 298 232 320 260 320 C288 320 310 298 310 268 C310 228 282 205 260 160Z'/%3E%3Cpath d='M130 260 C190 230 220 190 270 190 C310 190 340 222 340 260 C340 298 310 330 270 330 C220 330 190 290 130 260Z' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E\"), linear-gradient(160deg, #FFFDF7 0%, #FFF8E8 55%, #FFF1C7 100%)",
+              backgroundRepeat: 'no-repeat, no-repeat',
+              backgroundPosition: 'center, center',
+            }}
+          >
+
             <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-              
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-sm font-bold uppercase tracking-widest border border-amber-400/30">
+
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D6A72C]/15 text-[#B8871F] text-sm font-bold uppercase tracking-widest border border-[#D6A72C]/30">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>The Core Conclave Vision</span>
               </div>
@@ -45,12 +52,12 @@ export const SchoolEcosystemSection: React.FC = () => {
                 "{EVENT_DETAILS.visionStatement}"
               </h2>
 
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium pt-2">
+              <p className="text-base sm:text-lg text-[#596174] leading-relaxed font-medium pt-2">
                 Mental health cannot be addressed by focusing on the child alone.
               </p>
 
               <div className="pt-2">
-                <IndianLotusDivider className="w-48 h-6 mx-auto opacity-75 text-amber-400" />
+                <IndianLotusDivider className="w-48 h-6 mx-auto opacity-90 text-[#B8871F]" />
               </div>
             </div>
           </div>

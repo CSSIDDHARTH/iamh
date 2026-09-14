@@ -574,9 +574,9 @@ export default function Membership() {
                     <div className="flex gap-4 items-center">
                       <div className="shrink-0">
                         {photoPreview ? (
-                          <img 
-                            src={photoPreview} 
-                            alt="Member Photo" 
+                          <img
+                            src={photoPreview}
+                            alt="Member Photo"
                             className="w-20 h-24 object-cover rounded-lg border border-white/10 shadow-md bg-slate-800"
                             referrerPolicy="no-referrer"
                           />
@@ -596,7 +596,7 @@ export default function Membership() {
                             {formData.fullName || "Dr. Siddharth Sharma"}
                           </span>
                         </div>
-                        
+
                         <div>
                           <span className="text-[7px] font-mono text-slate-400 uppercase tracking-widest block">Academic Credentials</span>
                           <span className="font-display text-[10px] text-slate-200 block truncate max-w-[240px]">

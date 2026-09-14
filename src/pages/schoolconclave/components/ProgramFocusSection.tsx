@@ -13,7 +13,7 @@ export const ProgramFocusSection: React.FC = () => {
     : PROGRAM_FOCUS_AREAS.filter(area => area.category === activeCategory);
 
   return (
-    <section id="program-focus" className="py-20 bg-white">
+    <section id="program-focus" className="py-20 bg-white scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -81,18 +81,18 @@ export const ProgramFocusSection: React.FC = () => {
         </div>
 
         {/* Supporting Summary Box */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-blue-900 to-slate-900 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-12 p-6 rounded-2xl panel-editorial text-[#17203A] shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
-            <h4 className="font-display text-lg font-bold text-white">
+            <h4 className="font-display text-lg font-bold text-[#17203A]">
               Holistic Recognition Over Disciplinary Punishment
             </h4>
-            <p className="text-base text-slate-300 max-w-2xl">
+            <p className="text-base text-[#596174] max-w-2xl">
               By reframing overt behavioural challenges as signals of unspoken emotional or cognitive strain, educators can intervene constructively before problems intensify.
             </p>
           </div>
           <a
             href="#registration"
-            className="px-6 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-base font-bold shadow transition-all whitespace-nowrap shrink-0"
+            className="px-6 py-2.5 rounded-xl bg-gradient-to-b from-[#E7C76A] to-[#D6A72C] hover:brightness-105 text-[#17203A] text-base font-bold shadow transition-all whitespace-nowrap shrink-0"
           >
             Nominate Your School
           </a>

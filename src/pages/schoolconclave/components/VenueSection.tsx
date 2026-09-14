@@ -12,7 +12,7 @@ export const VenueSection: React.FC = () => {
   };
 
   return (
-    <section id="venue" className="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="venue" className="py-20 bg-slate-50 border-t border-slate-200 scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -144,19 +144,19 @@ export const VenueSection: React.FC = () => {
 
             {/* Right Column: Embedded Interactive Google Map */}
             <div className="lg:col-span-6 flex flex-col">
-              <div className="rounded-2xl border-2 border-slate-200/90 overflow-hidden shadow-lg bg-slate-900 flex-1 flex flex-col">
-                
+              <div className="rounded-2xl border-2 border-[#D6A72C]/25 overflow-hidden shadow-lg bg-white flex-1 flex flex-col">
+
                 {/* Map top bar */}
-                <div className="px-4 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between text-white">
+                <div className="px-4 py-3 bg-[#FFF8E8] border-b border-[#D6A72C]/20 flex items-center justify-between text-[#17203A]">
                   <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
                     <span className="text-sm font-bold tracking-wide">Live Google Map Locator</span>
                   </div>
                   <a
                     href="https://maps.google.com/?q=Swatantrata+Bhawan+BHU+Varanasi"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-amber-300 hover:text-amber-200 flex items-center gap-1 transition-colors"
+                    className="text-sm font-semibold text-[#B8871F] hover:text-[#8a651a] flex items-center gap-1 transition-colors"
                   >
                     <span>Full Screen</span>
                     <ExternalLink className="w-3 h-3" />
@@ -176,15 +176,15 @@ export const VenueSection: React.FC = () => {
                 </div>
 
                 {/* Footer strip on map card */}
-                <div className="px-4 py-3 bg-slate-800/90 border-t border-slate-700/80 flex items-center justify-between gap-3 text-slate-300 text-sm">
-                  <p className="truncate text-slate-300">
-                    <span className="font-semibold text-white">Landmark:</span> Near IMS-BHU / Malaviya Bhawan
+                <div className="px-4 py-3 bg-white border-t border-[#D6A72C]/20 flex items-center justify-between gap-3 text-[#596174] text-sm">
+                  <p className="truncate text-[#596174]">
+                    <span className="font-semibold text-[#17203A]">Landmark:</span> Near IMS-BHU / Malaviya Bhawan
                   </p>
                   <a
                     href="https://maps.google.com/?q=Swatantrata+Bhawan+BHU+Varanasi"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 font-bold text-amber-300 hover:underline shrink-0"
+                    className="inline-flex items-center gap-1 font-bold text-[#B8871F] hover:underline shrink-0"
                   >
                     <span>Open in App</span>
                     <Navigation className="w-3 h-3" />

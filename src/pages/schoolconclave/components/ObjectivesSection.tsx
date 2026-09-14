@@ -30,7 +30,7 @@ export const ObjectivesSection: React.FC = () => {
   };
 
   return (
-    <section id="objectives" className="py-20 bg-gradient-to-b from-amber-50/90 via-yellow-100/40 to-amber-50/70 border-t border-amber-200/60 relative overflow-hidden">
+    <section id="objectives" className="py-20 bg-gradient-to-b from-amber-50/90 via-yellow-100/40 to-amber-50/70 border-t border-amber-200/60 relative overflow-hidden scroll-mt-28">
       {/* Golden ambient decorative glows */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />

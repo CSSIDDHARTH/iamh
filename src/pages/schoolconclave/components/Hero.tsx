@@ -22,8 +22,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
         
         {/* Top Institutional Header Badge */}
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 mb-6 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 text-white shadow-sm border border-slate-700">
-            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-b from-[#E7C76A] to-[#D6A72C] text-[#17203A] shadow-sm border border-[#B8871F]/30">
+            <span className="w-2 h-2 rounded-full bg-[#17203A] animate-pulse" />
             <span className="text-sm font-bold tracking-wider uppercase font-display">
               {EVENT_DETAILS.badge}
             </span>

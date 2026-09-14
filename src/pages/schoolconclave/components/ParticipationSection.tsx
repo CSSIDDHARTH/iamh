@@ -7,7 +7,7 @@ interface ParticipationSectionProps {
 
 export const ParticipationSection: React.FC<ParticipationSectionProps> = ({ onRegisterClick }) => {
   return (
-    <section id="participation" className="py-20 bg-slate-50/70 border-t border-slate-200/80">
+    <section id="participation" className="py-20 bg-slate-50/70 border-t border-slate-200/80 scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
@@ -50,7 +50,7 @@ export const ParticipationSection: React.FC<ParticipationSectionProps> = ({ onRe
 
           {/* Teachers Card */}
           <div className="bg-white rounded-2xl p-6 border border-blue-200 shadow-sm hover:shadow-md hover:border-blue-400 transition-all duration-300 flex flex-col relative">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-900 text-white text-xs font-bold uppercase px-3 py-0.5 rounded-full">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#E7C76A] to-[#D6A72C] text-[#17203A] text-xs font-bold uppercase px-3 py-0.5 rounded-full shadow-sm">
               Certified Training
             </div>
             <div className="flex items-center justify-between mb-4">
