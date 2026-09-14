@@ -30,19 +30,23 @@ export const ObjectivesSection: React.FC = () => {
   };
 
   return (
-    <section id="objectives" className="py-20 bg-slate-50/80 border-t border-slate-200/70">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="objectives" className="py-20 bg-gradient-to-b from-amber-50/90 via-yellow-100/40 to-amber-50/70 border-t border-amber-200/60 relative overflow-hidden">
+      {/* Golden ambient decorative glows */}
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-sm font-bold uppercase tracking-wider mb-3 border border-emerald-100">
-            <Compass className="w-3.5 h-3.5 text-emerald-700" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/80 text-amber-900 text-sm font-bold uppercase tracking-wider mb-3 border border-amber-200">
+            <Compass className="w-3.5 h-3.5 text-amber-700" />
             <span>Strategic Framework</span>
           </div>
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading-rainbow">
             What We Aim To Achieve
           </h2>
-          <p className="mt-3 text-base text-slate-500">
+          <p className="mt-3 text-base text-slate-600">
             Nine key objectives translating psychiatric knowledge into daily classroom empathy and school practice.
           </p>
         </div>
@@ -52,19 +56,19 @@ export const ObjectivesSection: React.FC = () => {
           {KEY_OBJECTIVES.map((obj) => (
             <div
               key={obj.id}
-              className="group bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-200 transition-all duration-200 flex items-start gap-4"
+              className="group bg-white/90 backdrop-blur-xs rounded-2xl p-6 border border-amber-200/70 shadow-xs hover:shadow-md hover:border-amber-400 transition-all duration-200 flex items-start gap-4"
             >
               {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200/70 flex items-center justify-center shrink-0 group-hover:bg-blue-50/60 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-amber-50/80 border border-amber-200/70 flex items-center justify-center shrink-0 group-hover:bg-amber-100/80 transition-colors">
                 {getIcon(obj.iconName)}
               </div>
 
               {/* Content */}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1.5">
-                  <span className="text-base font-mono font-bold text-slate-400">0{obj.id}</span>
+                  <span className="text-base font-mono font-bold text-amber-700/70">0{obj.id}</span>
                 </div>
-                <h3 className="font-display text-lg font-bold text-slate-900 group-hover:text-blue-900 transition-colors leading-snug">
+                <h3 className="font-display text-lg font-bold text-slate-900 group-hover:text-amber-900 transition-colors leading-snug">
                   {obj.title}
                 </h3>
               </div>

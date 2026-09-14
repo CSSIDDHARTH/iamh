@@ -46,19 +46,19 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Indian Academy of Mental Health Logo"
-              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+              className="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
             />
             
             <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <span className="font-display font-bold text-base leading-tight text-slate-950 tracking-tight group-hover:text-iamh-navy transition-colors">
+              <div className="flex items-center gap-2.5">
+                <span className="font-display font-extrabold text-lg sm:text-xl md:text-2xl leading-tight text-slate-950 tracking-tight group-hover:text-iamh-navy transition-colors">
                   Indian Academy of Mental Health
                 </span>
-                <span className="hidden sm:inline-block px-1.5 py-0.5 text-[8.5px] font-mono font-bold tracking-wider bg-emerald-50 text-emerald-800 rounded border border-emerald-100/75 uppercase">
+                <span className="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-bold tracking-wider bg-emerald-50 text-emerald-800 rounded border border-emerald-100/75 uppercase">
                   Est. 2021
                 </span>
               </div>
-              <span className="text-[9.5px] font-mono text-slate-500 font-semibold tracking-wide">
+              <span className="text-[11px] sm:text-xs font-mono text-slate-500 font-semibold tracking-wide">
                 National Academy • Registered Body • No: 00589
               </span>
             </div>

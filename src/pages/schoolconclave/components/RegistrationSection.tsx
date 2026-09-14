@@ -44,7 +44,7 @@ export const RegistrationSection: React.FC = () => {
             <span>Official Delegation Registration</span>
           </div>
 
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight heading-rainbow">
             Register via Google Forms
           </h2>
 
@@ -254,7 +254,7 @@ export const RegistrationSection: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-slate-400 block text-sm">Institutional Fee:</span>
-                    <strong className="text-amber-400 font-bold text-base">₹11,000 /- Per School</strong>
+                    <strong className="text-amber-400 font-bold text-base">{EVENT_DETAILS.participationFee} Per School</strong>
                   </div>
                 </div>
 

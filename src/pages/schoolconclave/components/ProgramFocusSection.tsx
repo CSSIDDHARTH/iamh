@@ -22,7 +22,7 @@ export const ProgramFocusSection: React.FC = () => {
             <Eye className="w-3.5 h-3.5 text-sky-700" />
             <span>Clinical &amp; Classroom Insights</span>
           </div>
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading-rainbow">
             Understanding the Child Behind the Behaviour
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
