@@ -27,7 +27,7 @@ export const ParticipationFeeSection: React.FC<ParticipationFeeSectionProps> = (
                   <span>Transparent Institutional Fee</span>
                 </div>
 
-                <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                <h2 className="font-serif-heading text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                   Participation Fee
                 </h2>
 

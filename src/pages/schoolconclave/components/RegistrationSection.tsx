@@ -44,7 +44,7 @@ export const RegistrationSection: React.FC = () => {
             <span>Official Delegation Registration</span>
           </div>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
             Register via Google Forms
           </h2>
 

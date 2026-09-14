@@ -22,7 +22,7 @@ export const ProgramFocusSection: React.FC = () => {
             <Eye className="w-3.5 h-3.5 text-sky-700" />
             <span>Clinical &amp; Classroom Insights</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Understanding the Child Behind the Behaviour
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
@@ -52,10 +52,10 @@ export const ProgramFocusSection: React.FC = () => {
           {filteredAreas.map((item: FocusArea) => (
             <div
               key={item.id}
-              className="bg-[#fcfdfe] rounded-xl px-4 py-3.5 border border-slate-200 hover:border-sky-300 hover:shadow-sm transition-all duration-200 flex items-start gap-3"
+              className="bg-[#fcfdfe] rounded-xl px-5 py-4 border border-slate-200 hover:border-sky-300 hover:shadow-sm transition-all duration-200 flex items-start gap-3"
             >
               {/* Colour dot accent */}
-              <span className={`mt-1.5 w-2 h-2 rounded-full shrink-0 ${
+              <span className={`mt-2 w-2.5 h-2.5 rounded-full shrink-0 ${
                 item.category === 'Emotional & Psychological'
                   ? 'bg-blue-500'
                   : item.category === 'Academic & Cognitive'
@@ -63,7 +63,7 @@ export const ProgramFocusSection: React.FC = () => {
                   : 'bg-emerald-500'
               }`} />
               <div className="min-w-0">
-                <span className={`text-[10px] font-bold uppercase tracking-wider ${
+                <span className={`text-xs font-bold uppercase tracking-wider ${
                   item.category === 'Emotional & Psychological'
                     ? 'text-blue-600'
                     : item.category === 'Academic & Cognitive'
@@ -72,7 +72,7 @@ export const ProgramFocusSection: React.FC = () => {
                 }`}>
                   {item.category}
                 </span>
-                <h3 className="font-display text-sm font-bold text-slate-900 leading-snug mt-0.5">
+                <h3 className="font-display text-lg font-bold text-slate-900 leading-snug mt-0.5">
                   {item.title}
                 </h3>
               </div>

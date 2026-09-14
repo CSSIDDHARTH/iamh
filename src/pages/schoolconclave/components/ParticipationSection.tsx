@@ -16,7 +16,7 @@ export const ParticipationSection: React.FC<ParticipationSectionProps> = ({ onRe
             <Users className="w-3.5 h-3.5 text-blue-700" />
             <span>Institutional Delegation Format</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Participation From Each School
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-500 leading-relaxed max-w-xl mx-auto">

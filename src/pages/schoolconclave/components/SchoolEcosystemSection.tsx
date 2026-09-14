@@ -93,10 +93,10 @@ export const SchoolEcosystemSection: React.FC = () => {
               <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
                 {getIcon(stakeholder.iconName)}
               </div>
-              <h4 className="font-display text-sm font-bold text-slate-900 leading-tight">
+              <h4 className="font-display text-lg font-bold text-slate-900 leading-tight">
                 {stakeholder.role}
               </h4>
-              <p className="text-[11px] text-slate-500 leading-snug">
+              <p className="text-sm text-slate-500 leading-snug">
                 {stakeholder.responsibility}
               </p>
             </div>
@@ -125,17 +125,17 @@ export const SchoolEcosystemSection: React.FC = () => {
               >
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-900 font-mono font-bold text-[11px] flex items-center justify-center">
+                    <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-900 font-mono font-bold text-xs flex items-center justify-center">
                       {idx + 1}
                     </span>
                     {idx < CONTINUUM_PROGRESSION.length - 1 && (
                       <ArrowRight className="hidden lg:block w-3.5 h-3.5 text-slate-300 absolute -right-2 top-6 z-10 bg-white" />
                     )}
                   </div>
-                  <h5 className="font-display text-sm font-bold text-slate-900">
+                  <h5 className="font-display text-base font-bold text-slate-900">
                     {step.stage}
                   </h5>
-                  <p className="mt-1.5 text-xs text-slate-600 leading-normal">
+                  <p className="mt-1.5 text-sm text-slate-600 leading-normal">
                     {step.desc}
                   </p>
                 </div>

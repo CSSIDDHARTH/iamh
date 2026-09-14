@@ -15,7 +15,7 @@ export const CertificationSection: React.FC = () => {
             <span>Formal Institutional Credentials</span>
           </div>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Certification &amp; Recognition
           </h2>
 

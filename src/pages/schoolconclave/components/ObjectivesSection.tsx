@@ -39,7 +39,7 @@ export const ObjectivesSection: React.FC = () => {
             <Compass className="w-3.5 h-3.5 text-emerald-700" />
             <span>Strategic Framework</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             What We Aim To Achieve
           </h2>
           <p className="mt-3 text-sm text-slate-500">
@@ -52,19 +52,19 @@ export const ObjectivesSection: React.FC = () => {
           {KEY_OBJECTIVES.map((obj) => (
             <div
               key={obj.id}
-              className="group bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-200 transition-all duration-200 flex items-start gap-4"
+              className="group bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-200 transition-all duration-200 flex items-start gap-4"
             >
               {/* Icon */}
-              <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200/70 flex items-center justify-center shrink-0 group-hover:bg-blue-50/60 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200/70 flex items-center justify-center shrink-0 group-hover:bg-blue-50/60 transition-colors">
                 {getIcon(obj.iconName)}
               </div>
 
               {/* Content */}
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-[10px] font-mono font-bold text-slate-400">0{obj.id}</span>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-sm font-mono font-bold text-slate-400">0{obj.id}</span>
                 </div>
-                <h3 className="font-display text-sm font-bold text-slate-900 group-hover:text-blue-900 transition-colors leading-snug">
+                <h3 className="font-display text-lg font-bold text-slate-900 group-hover:text-blue-900 transition-colors leading-snug">
                   {obj.title}
                 </h3>
               </div>

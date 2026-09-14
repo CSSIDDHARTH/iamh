@@ -14,7 +14,7 @@ export const TeacherWellbeingSection: React.FC = () => {
             <span>Nurturing the Caregivers</span>
           </div>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Healthy Teachers.<br className="hidden sm:inline" />
             Healthy Classrooms.<br className="hidden sm:inline" />
             Healthy Schools.
