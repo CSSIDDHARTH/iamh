@@ -36,7 +36,7 @@ export const SchoolEcosystemSection: React.FC = () => {
             <div className="absolute inset-0 opacity-10 bg-mandala-pattern pointer-events-none" />
             <div className="relative z-10 max-w-3xl mx-auto space-y-4">
               
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-widest border border-amber-400/30">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-sm font-bold uppercase tracking-widest border border-amber-400/30">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>The Core Conclave Vision</span>
               </div>
@@ -58,7 +58,7 @@ export const SchoolEcosystemSection: React.FC = () => {
 
         {/* Stakeholder Collaboration Breakdown */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-wider mb-3 border border-blue-100">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 text-blue-800 text-sm font-bold uppercase tracking-wider mb-3 border border-blue-100">
             <HeartHandshake className="w-3.5 h-3.5 text-blue-700" />
             <span>Multi-Tiered Collaboration</span>
           </div>
@@ -70,7 +70,7 @@ export const SchoolEcosystemSection: React.FC = () => {
             A resilient school climate unites all five vital community stakeholders in proactive dialogue and shared responsibility.
           </p>
 
-          <div className="mt-4 flex items-center justify-center flex-wrap gap-2 text-xs sm:text-sm font-bold text-blue-950 bg-blue-50/70 p-3 rounded-xl border border-blue-100 max-w-xl mx-auto">
+          <div className="mt-4 flex items-center justify-center flex-wrap gap-2 text-sm sm:text-base font-bold text-blue-950 bg-blue-50/70 p-3 rounded-xl border border-blue-100 max-w-xl mx-auto">
             <span>Students</span>
             <span className="text-blue-400">+</span>
             <span>Teachers</span>
@@ -96,7 +96,7 @@ export const SchoolEcosystemSection: React.FC = () => {
               <h4 className="font-display text-lg font-bold text-slate-900 leading-tight">
                 {stakeholder.role}
               </h4>
-              <p className="text-sm text-slate-500 leading-snug">
+              <p className="text-base text-slate-500 leading-snug">
                 {stakeholder.responsibility}
               </p>
             </div>
@@ -106,13 +106,13 @@ export const SchoolEcosystemSection: React.FC = () => {
         {/* Concept Note Progression Flow */}
         <div className="bg-slate-50/90 rounded-3xl p-6 sm:p-10 border border-slate-200">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs uppercase tracking-widest font-bold text-blue-800">
+            <span className="text-sm uppercase tracking-widest font-bold text-blue-800">
               Continuum of Comprehensive Care
             </span>
             <h4 className="font-display text-xl sm:text-2xl font-bold text-slate-900 mt-1">
               The 6-Stage Institutional Pathway
             </h4>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1">
+            <p className="text-sm sm:text-base text-slate-600 mt-1">
               From early awareness to sustained student recovery and lifelong thriving.
             </p>
           </div>
@@ -125,7 +125,7 @@ export const SchoolEcosystemSection: React.FC = () => {
               >
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-900 font-mono font-bold text-xs flex items-center justify-center">
+                    <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-900 font-mono font-bold text-sm flex items-center justify-center">
                       {idx + 1}
                     </span>
                     {idx < CONTINUUM_PROGRESSION.length - 1 && (
@@ -135,7 +135,7 @@ export const SchoolEcosystemSection: React.FC = () => {
                   <h5 className="font-display text-base font-bold text-slate-900">
                     {step.stage}
                   </h5>
-                  <p className="mt-1.5 text-sm text-slate-600 leading-normal">
+                  <p className="mt-1.5 text-base text-slate-600 leading-normal">
                     {step.desc}
                   </p>
                 </div>

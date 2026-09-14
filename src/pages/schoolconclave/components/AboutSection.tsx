@@ -9,7 +9,7 @@ export const AboutSection: React.FC = () => {
         
         {/* Section Header Tag */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-wider mb-3 border border-blue-100">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-sm font-bold uppercase tracking-wider mb-3 border border-blue-100">
             <Sparkles className="w-3.5 h-3.5 text-blue-700" />
             <span>Foundational Vision</span>
           </div>
@@ -34,7 +34,7 @@ export const AboutSection: React.FC = () => {
             </div>
 
             {/* Compact bullet points replacing three long paragraphs */}
-            <ul className="space-y-2 text-sm text-slate-600">
+            <ul className="space-y-2 text-base text-slate-600">
               <li className="flex items-start gap-2.5">
                 <span className="text-blue-400 mt-1 shrink-0">•</span>
                 <span>Academic pressure, peer dynamics, and digital exposure impact student emotional well-being.</span>
@@ -50,7 +50,7 @@ export const AboutSection: React.FC = () => {
             </ul>
 
             {/* Core Pillars — compact inline tags */}
-            <div className="pt-2 flex flex-wrap gap-2 text-xs font-semibold">
+            <div className="pt-2 flex flex-wrap gap-2 text-sm font-semibold">
               <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700">
                 <CheckCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                 Evidence-Based Psychiatric Literacy
@@ -86,13 +86,13 @@ export const AboutSection: React.FC = () => {
                 <div className="relative z-10 space-y-6">
                   <div className="flex items-center justify-between pb-5 border-b border-slate-800">
                     <div>
-                      <span className="text-xs uppercase tracking-widest font-semibold text-amber-400">Institutional Mandate</span>
+                      <span className="text-sm uppercase tracking-widest font-semibold text-amber-400">Institutional Mandate</span>
                       <h3 className="text-xl font-bold font-display text-white mt-0.5">Whole-School Well-being</h3>
                     </div>
                     <IAMHLogo size={46} className="h-11 w-11" />
                   </div>
 
-                  <p className="text-sm text-slate-300 leading-relaxed">
+                  <p className="text-base text-slate-300 leading-relaxed">
                     Mental health in schools is not an isolated crisis intervention. It is the soil in which intellectual curiosity, social confidence, and lifelong emotional resilience take root.
                   </p>
 
@@ -102,8 +102,8 @@ export const AboutSection: React.FC = () => {
                         <Users className="w-4 h-4" />
                       </div>
                       <div>
-                        <h4 className="text-xs font-bold text-slate-200">Integrated Triad</h4>
-                        <p className="text-xs text-slate-400 mt-0.5">
+                        <h4 className="text-sm font-bold text-slate-200">Integrated Triad</h4>
+                        <p className="text-sm text-slate-400 mt-0.5">
                           Uniting Students, Teachers, and Principals on a single collaborative platform.
                         </p>
                       </div>
@@ -114,15 +114,15 @@ export const AboutSection: React.FC = () => {
                         <HeartHandshake className="w-4 h-4" />
                       </div>
                       <div>
-                        <h4 className="text-xs font-bold text-slate-200">Clinical &amp; Academic Expertise</h4>
-                        <p className="text-xs text-slate-400 mt-0.5">
+                        <h4 className="text-sm font-bold text-slate-200">Clinical &amp; Academic Expertise</h4>
+                        <p className="text-sm text-slate-400 mt-0.5">
                           Guided by senior psychiatry faculty and child mental health practitioners.
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                  <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm text-slate-400">
                     <span className="font-semibold text-amber-300">World Mental Health Day 2026</span>
                     <span>Banaras Hindu University</span>
                   </div>

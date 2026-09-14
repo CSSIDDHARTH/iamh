@@ -35,14 +35,14 @@ export const ObjectivesSection: React.FC = () => {
         
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3 border border-emerald-100">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-sm font-bold uppercase tracking-wider mb-3 border border-emerald-100">
             <Compass className="w-3.5 h-3.5 text-emerald-700" />
             <span>Strategic Framework</span>
           </div>
           <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             What We Aim To Achieve
           </h2>
-          <p className="mt-3 text-sm text-slate-500">
+          <p className="mt-3 text-base text-slate-500">
             Nine key objectives translating psychiatric knowledge into daily classroom empathy and school practice.
           </p>
         </div>
@@ -62,7 +62,7 @@ export const ObjectivesSection: React.FC = () => {
               {/* Content */}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1.5">
-                  <span className="text-sm font-mono font-bold text-slate-400">0{obj.id}</span>
+                  <span className="text-base font-mono font-bold text-slate-400">0{obj.id}</span>
                 </div>
                 <h3 className="font-display text-lg font-bold text-slate-900 group-hover:text-blue-900 transition-colors leading-snug">
                   {obj.title}

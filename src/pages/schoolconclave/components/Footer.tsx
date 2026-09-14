@@ -63,17 +63,17 @@ export const Footer: React.FC = () => {
                       Indian Academy of Mental Health
                     </h3>
                   </div>
-                  <p className="text-xs font-semibold text-amber-400 mt-1 flex items-center gap-1.5">
+                  <p className="text-sm font-semibold text-amber-400 mt-1 flex items-center gap-1.5">
                     <Sparkles className="w-3 h-3 text-amber-400" />
                     <span>School Mental Health Conclave 2026</span>
                   </p>
-                  <p className="text-[11px] text-slate-400 mt-0.5">
+                  <p className="text-sm text-slate-400 mt-0.5">
                     In Academic Collaboration with Dept. of Psychiatry, IMS-BHU
                   </p>
                 </div>
               </div>
 
-              <p className="text-xs sm:text-sm text-slate-400 leading-relaxed pr-2">
+              <p className="text-sm sm:text-base text-slate-400 leading-relaxed pr-2">
                 A landmark national summit bringing educators, school leaders, psychologists, and clinicians together to cultivate mentally healthy students, resilient teachers, and supportive classrooms across India.
               </p>
 
@@ -83,11 +83,11 @@ export const Footer: React.FC = () => {
 
             {/* Column 2: Quick Links (Span 3) */}
             <div className="lg:col-span-3 space-y-4">
-              <h4 className="font-display text-sm font-bold uppercase tracking-wider text-white flex items-center gap-2">
+              <h4 className="font-display text-base font-bold uppercase tracking-wider text-white flex items-center gap-2">
                 <span className="w-1.5 h-4 rounded-full bg-amber-400"></span>
                 <span>Conclave Navigation</span>
               </h4>
-              <ul className="space-y-2 text-xs sm:text-sm">
+              <ul className="space-y-2 text-sm sm:text-base">
                 {navLinks.map((link) => (
                   <li key={link.label}>
                     <button
@@ -104,7 +104,7 @@ export const Footer: React.FC = () => {
 
             {/* Column 3: Event Overview & Venue Card (Span 4) */}
             <div className="lg:col-span-4 space-y-4">
-              <h4 className="font-display text-sm font-bold uppercase tracking-wider text-white flex items-center gap-2">
+              <h4 className="font-display text-base font-bold uppercase tracking-wider text-white flex items-center gap-2">
                 <span className="w-1.5 h-4 rounded-full bg-blue-400"></span>
                 <span>Event Quick Glance</span>
               </h4>
@@ -116,8 +116,8 @@ export const Footer: React.FC = () => {
                     <Calendar className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-white">{EVENT_DETAILS.date} ({EVENT_DETAILS.day})</p>
-                    <p className="text-[11px] text-slate-400">{EVENT_DETAILS.time}</p>
+                    <p className="text-sm font-bold text-white">{EVENT_DETAILS.date} ({EVENT_DETAILS.day})</p>
+                    <p className="text-sm text-slate-400">{EVENT_DETAILS.time}</p>
                   </div>
                 </div>
 
@@ -127,15 +127,15 @@ export const Footer: React.FC = () => {
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-white">{EVENT_DETAILS.venueName}</p>
-                    <p className="text-[11px] text-slate-400">Banaras Hindu University, Varanasi</p>
+                    <p className="text-sm font-bold text-white">{EVENT_DETAILS.venueName}</p>
+                    <p className="text-sm text-slate-400">Banaras Hindu University, Varanasi</p>
                     <a
                       href="#venue"
                       onClick={(e) => {
                         e.preventDefault();
                         handleLinkClick('#venue');
                       }}
-                      className="inline-flex items-center gap-1 text-[11px] text-amber-300 font-semibold hover:underline mt-0.5"
+                      className="inline-flex items-center gap-1 text-sm text-amber-300 font-semibold hover:underline mt-0.5"
                     >
                       <span>View on Google Maps</span>
                       <ExternalLink className="w-2.5 h-2.5" />
@@ -149,10 +149,10 @@ export const Footer: React.FC = () => {
                     <PhoneCall className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Helpline &amp; Inquiries:</span>
+                    <span className="text-xs uppercase font-bold text-slate-400 tracking-wider">Helpline &amp; Inquiries:</span>
                     <a
                       href={`tel:${EVENT_DETAILS.contactPhone}`}
-                      className="block font-mono text-sm font-bold text-emerald-300 hover:text-emerald-200 transition-colors"
+                      className="block font-mono text-base font-bold text-emerald-300 hover:text-emerald-200 transition-colors"
                     >
                       {EVENT_DETAILS.contactPhone}
                     </a>
@@ -165,7 +165,7 @@ export const Footer: React.FC = () => {
 
           
           {/* Sub-footer: Policies, Copyright, Legal Notice */}
-          <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 border-t border-slate-800/60">
+          <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 border-t border-slate-800/60">
             <p className="text-center sm:text-left">
               &copy; {new Date().getFullYear()} Indian Academy of Mental Health (IAMH). All rights reserved.
             </p>

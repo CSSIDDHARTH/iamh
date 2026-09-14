@@ -39,7 +39,7 @@ export const RegistrationSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider mb-4 border border-amber-300 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-300 shadow-sm">
             <QrCode className="w-3.5 h-3.5 text-amber-700" />
             <span>Official Delegation Registration</span>
           </div>
@@ -61,7 +61,7 @@ export const RegistrationSection: React.FC = () => {
             <div className="lg:col-span-6 p-8 sm:p-12 bg-gradient-to-br from-[#0c1e38] via-[#09172d] to-[#060e1d] text-white flex flex-col items-center justify-between text-center relative">
               
               {/* Top badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs text-amber-300 font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-sm text-amber-300 font-semibold mb-6">
                 <Smartphone className="w-3.5 h-3.5 text-amber-400" />
                 <span>Instant Mobile Registration</span>
               </div>
@@ -146,10 +146,10 @@ export const RegistrationSection: React.FC = () => {
 
                 {/* Scan notice banner under QR */}
                 <div className="mt-2 text-center">
-                  <span className="text-[11px] font-bold text-slate-700 uppercase tracking-wider block">
+                  <span className="text-sm font-bold text-slate-700 uppercase tracking-wider block">
                     Google Forms Registration QR
                   </span>
-                  <span className="text-[10px] text-slate-500">
+                  <span className="text-xs text-slate-500">
                     
                   </span>
                 </div>
@@ -161,7 +161,7 @@ export const RegistrationSection: React.FC = () => {
                   href={googleFormUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 text-slate-950 text-sm font-bold shadow-lg hover:shadow-amber-400/30 flex items-center justify-center gap-2 transition-all active:scale-98"
+                  className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 text-slate-950 text-base font-bold shadow-lg hover:shadow-amber-400/30 flex items-center justify-center gap-2 transition-all active:scale-98"
                 >
                   <span>Open Google Form Directly</span>
                   <ExternalLink className="w-4 h-4 text-slate-950" />
@@ -169,7 +169,7 @@ export const RegistrationSection: React.FC = () => {
 
                 <button
                   onClick={handleCopyLink}
-                  className="w-full py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-xs font-semibold text-slate-200 flex items-center justify-center gap-1.5 transition-colors"
+                  className="w-full py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-sm font-semibold text-slate-200 flex items-center justify-center gap-1.5 transition-colors"
                 >
                   {copied ? (
                     <>
@@ -194,43 +194,43 @@ export const RegistrationSection: React.FC = () => {
                 <h3 className="font-display text-2xl font-extrabold text-slate-900 tracking-tight">
                   How School Registration Works
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                <p className="text-sm sm:text-base text-slate-500 mt-1">
                   Follow 3 simple steps to confirm your school’s delegation for 6 October 2026.
                 </p>
 
                 {/* 3 Step Process */}
                 <div className="mt-6 space-y-4">
                   <div className="flex items-start gap-3.5 p-3 rounded-2xl bg-slate-50 border border-slate-200/80">
-                    <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-700 font-black text-sm flex items-center justify-center shrink-0 border border-amber-300/60">
+                    <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-700 font-black text-base flex items-center justify-center shrink-0 border border-amber-300/60">
                       1
                     </div>
                     <div>
-                      <h4 className="text-xs sm:text-sm font-bold text-slate-900">Scan or Click the Google Form</h4>
-                      <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                      <h4 className="text-sm sm:text-base font-bold text-slate-900">Scan or Click the Google Form</h4>
+                      <p className="text-sm text-slate-600 mt-0.5 leading-relaxed">
                         Access the official form through the QR code on your mobile phone or open the link on your computer.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3.5 p-3 rounded-2xl bg-slate-50 border border-slate-200/80">
-                    <div className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-700 font-black text-sm flex items-center justify-center shrink-0 border border-blue-300/60">
+                    <div className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-700 font-black text-base flex items-center justify-center shrink-0 border border-blue-300/60">
                       2
                     </div>
                     <div>
-                      <h4 className="text-xs sm:text-sm font-bold text-slate-900">Submit Delegation &amp; Contact Details</h4>
-                      <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                      <h4 className="text-sm sm:text-base font-bold text-slate-900">Submit Delegation &amp; Contact Details</h4>
+                      <p className="text-sm text-slate-600 mt-0.5 leading-relaxed">
                         Provide school affiliation, nominated coordinator details, and estimated student/teacher numbers.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3.5 p-3 rounded-2xl bg-slate-50 border border-slate-200/80">
-                    <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-700 font-black text-sm flex items-center justify-center shrink-0 border border-emerald-300/60">
+                    <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-700 font-black text-base flex items-center justify-center shrink-0 border border-emerald-300/60">
                       3
                     </div>
                     <div>
-                      <h4 className="text-xs sm:text-sm font-bold text-slate-900">Confirmation &amp; Hall Passes Dispatched</h4>
-                      <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                      <h4 className="text-sm sm:text-base font-bold text-slate-900">Confirmation &amp; Hall Passes Dispatched</h4>
+                      <p className="text-sm text-slate-600 mt-0.5 leading-relaxed">
                         IAMH &amp; IMS-BHU secretariat will verify your submission and issue hall access passes and conclave kits.
                       </p>
                     </div>
@@ -240,35 +240,35 @@ export const RegistrationSection: React.FC = () => {
 
               {/* Delegation Summary Card */}
               <div className="p-5 rounded-2xl bg-slate-900 text-white space-y-3 shadow-md">
-                <div className="flex items-center justify-between text-xs">
+                <div className="flex items-center justify-between text-sm">
                   <span className="font-bold text-amber-300 uppercase tracking-wider">Delegation Guidelines</span>
-                  <span className="px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 text-[10px] font-semibold">
+                  <span className="px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">
                     {EVENT_DETAILS.badge}
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 pt-1 border-t border-slate-800 text-xs">
+                <div className="grid grid-cols-2 gap-3 pt-1 border-t border-slate-800 text-sm">
                   <div>
-                    <span className="text-slate-400 block text-[11px]">Recommended Delegation:</span>
+                    <span className="text-slate-400 block text-sm">Recommended Delegation:</span>
                     <strong className="text-white font-semibold">50–80 Students + 10–20 Teachers</strong>
                   </div>
                   <div>
-                    <span className="text-slate-400 block text-[11px]">Institutional Fee:</span>
-                    <strong className="text-amber-400 font-bold text-sm">₹11,000 /- Per School</strong>
+                    <span className="text-slate-400 block text-sm">Institutional Fee:</span>
+                    <strong className="text-amber-400 font-bold text-base">₹11,000 /- Per School</strong>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300">
+                <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-sm text-slate-300">
                   <span className="flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5 text-sky-400" />
                     <span>6 October 2026</span>
                   </span>
-                  <span className="text-slate-400 text-[11px]">BHU Varanasi</span>
+                  <span className="text-slate-400 text-sm">BHU Varanasi</span>
                 </div>
               </div>
 
               {/* Direct Inquiries & Helpline Strip */}
-              <div className="flex items-center justify-between gap-3 p-3.5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs">
+              <div className="flex items-center justify-between gap-3 p-3.5 rounded-2xl bg-amber-50/80 border border-amber-200 text-sm">
                 <div className="flex items-center gap-2.5">
                   <PhoneCall className="w-4 h-4 text-amber-700 shrink-0" />
                   <div>
@@ -283,7 +283,7 @@ export const RegistrationSection: React.FC = () => {
                 </div>
                 <a
                   href={`tel:${EVENT_DETAILS.contactPhone}`}
-                  className="px-3 py-1.5 rounded-xl bg-amber-200 hover:bg-amber-300 text-amber-900 font-bold text-xs transition-colors shrink-0"
+                  className="px-3 py-1.5 rounded-xl bg-amber-200 hover:bg-amber-300 text-amber-900 font-bold text-sm transition-colors shrink-0"
                 >
                   Call Desk
                 </a>

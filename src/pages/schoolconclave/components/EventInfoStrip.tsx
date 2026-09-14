@@ -14,11 +14,11 @@ export const EventInfoStrip: React.FC = () => {
               <Calendar className="w-5 h-5 text-sky-400" />
             </div>
             <div>
-              <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Event Date</p>
-              <p className="text-sm font-bold text-white tracking-tight">
+              <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Event Date</p>
+              <p className="text-base font-bold text-white tracking-tight">
                 Tuesday, 6 October 2026
               </p>
-              <p className="text-[11px] text-amber-300 font-medium">{EVENT_DETAILS.badge}</p>
+              <p className="text-sm text-amber-300 font-medium">{EVENT_DETAILS.badge}</p>
             </div>
           </div>
 
@@ -28,11 +28,11 @@ export const EventInfoStrip: React.FC = () => {
               <Clock className="w-5 h-5 text-emerald-400" />
             </div>
             <div>
-              <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Conclave Hours</p>
-              <p className="text-sm font-bold text-white tracking-tight">
+              <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Conclave Hours</p>
+              <p className="text-base font-bold text-white tracking-tight">
                 10:30 AM to 4:00 PM
               </p>
-              <p className="text-[11px] text-slate-400">Full-day Academic Program</p>
+              <p className="text-sm text-slate-400">Full-day Academic Program</p>
             </div>
           </div>
 
@@ -43,15 +43,15 @@ export const EventInfoStrip: React.FC = () => {
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Venue</p>
-                <span className="text-[10px] px-1.5 py-0.2 bg-amber-950 text-amber-300 border border-amber-800/80 rounded font-semibold">
+                <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Venue</p>
+                <span className="text-xs px-1.5 py-0.2 bg-amber-950 text-amber-300 border border-amber-800/80 rounded font-semibold">
                   Tentative
                 </span>
               </div>
-              <p className="text-xs font-bold text-white line-clamp-1">
+              <p className="text-sm font-bold text-white line-clamp-1">
                 Swatantrata Bhawan – Shatabdi Auditorium
               </p>
-              <p className="text-[11px] text-slate-400">BHU, Varanasi</p>
+              <p className="text-sm text-slate-400">BHU, Varanasi</p>
             </div>
           </div>
 
@@ -61,18 +61,18 @@ export const EventInfoStrip: React.FC = () => {
               <Building2 className="w-5 h-5 text-indigo-400" />
             </div>
             <div>
-              <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Organized &amp; Supported By</p>
-              <p className="text-xs font-bold text-white">
+              <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Organized &amp; Supported By</p>
+              <p className="text-sm font-bold text-white">
                 IAMH &amp; Dept. of Psychiatry, IMS-BHU
               </p>
-              <p className="text-[11px] text-emerald-300">Centre of Excellence</p>
+              <p className="text-sm text-emerald-300">Centre of Excellence</p>
             </div>
           </div>
 
         </div>
 
         {/* Explicit Tentative Disclaimer Sub-banner */}
-        <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-center gap-2 text-center text-xs text-amber-200/90 font-medium">
+        <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-center gap-2 text-center text-sm text-amber-200/90 font-medium">
           <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
           <span>{EVENT_DETAILS.venueStatus}</span>
         </div>

@@ -24,11 +24,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 mb-6 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 text-white shadow-sm border border-slate-700">
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-            <span className="text-xs font-bold tracking-wider uppercase font-display">
+            <span className="text-sm font-bold tracking-wider uppercase font-display">
               {EVENT_DETAILS.badge}
             </span>
           </div>
-          <div className="hidden sm:inline-flex items-center gap-2 text-xs font-semibold text-slate-600 bg-white/80 backdrop-blur px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs">
+          <div className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-slate-600 bg-white/80 backdrop-blur px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs">
             <span>Organized by IAMH</span>
             <span className="text-slate-300">•</span>
             <span>With IMS-BHU Psychiatry CoE</span>
@@ -83,9 +83,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
                   <Calendar className="w-6 h-6 text-blue-800" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-blue-700 uppercase tracking-wider block">Conclave Date</span>
+                  <span className="text-sm font-bold text-blue-700 uppercase tracking-wider block">Conclave Date</span>
                   <p className="text-lg font-bold text-slate-900 mt-0.5">{EVENT_DETAILS.date}</p>
-                  <p className="text-xs font-semibold text-slate-500">{EVENT_DETAILS.day}</p>
+                  <p className="text-sm font-semibold text-slate-500">{EVENT_DETAILS.day}</p>
                 </div>
               </div>
 
@@ -95,9 +95,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
                   <Clock className="w-6 h-6 text-emerald-800" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-emerald-700 uppercase tracking-wider block">Program Schedule</span>
+                  <span className="text-sm font-bold text-emerald-700 uppercase tracking-wider block">Program Schedule</span>
                   <p className="text-lg font-bold text-slate-900 mt-0.5">{EVENT_DETAILS.time}</p>
-                  <p className="text-xs font-semibold text-slate-500">Comprehensive Day Sessions</p>
+                  <p className="text-sm font-semibold text-slate-500">Comprehensive Day Sessions</p>
                 </div>
               </div>
 
@@ -107,11 +107,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
                   <MapPin className="w-6 h-6 text-amber-800" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-amber-800 uppercase tracking-wider block">Conclave Venue</span>
-                  <p className="text-sm font-bold text-slate-900 mt-0.5 leading-snug">
+                  <span className="text-sm font-bold text-amber-800 uppercase tracking-wider block">Conclave Venue</span>
+                  <p className="text-base font-bold text-slate-900 mt-0.5 leading-snug">
                     {EVENT_DETAILS.venueName}
                   </p>
-                  <p className="text-xs text-slate-600 font-medium">
+                  <p className="text-sm text-slate-600 font-medium">
                     {EVENT_DETAILS.venueInstitution}
                   </p>
                 </div>
@@ -119,12 +119,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
             </div>
 
             {/* Crucial Tentative Venue Notice Bar */}
-            <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2 text-xs">
+            <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2 text-sm">
               <div className="flex items-center gap-2 text-amber-900 bg-amber-50/90 px-3 py-1.5 rounded-lg border border-amber-200/80 font-medium">
                 <AlertCircle className="w-4 h-4 text-amber-700 shrink-0" />
                 <span><strong>Notice:</strong> {EVENT_DETAILS.venueStatus}</span>
               </div>
-              <div className="flex items-center gap-1.5 text-slate-500 text-[11px]">
+              <div className="flex items-center gap-1.5 text-slate-500 text-sm">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
                 <span>Dedicated delegation: Students (50-80) + Teachers (10-20) + Principal</span>
               </div>
@@ -133,7 +133,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
         </div>
 
         {/* Institutional Host Trust Banner */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-slate-600 text-xs font-medium">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-slate-600 text-sm font-medium">
           <div className="flex items-center gap-2.5">
             <IAMHLogo size={28} className="h-7 w-7" />
             <span className="font-semibold text-slate-800">Indian Academy of Mental Health</span>

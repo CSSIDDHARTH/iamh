@@ -37,7 +37,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ isOpen, onClose, type 
         </div>
 
         {/* Content */}
-        <div className="py-5 text-sm text-slate-600 space-y-4 leading-relaxed">
+        <div className="py-5 text-base text-slate-600 space-y-4 leading-relaxed">
           {type === 'privacy' ? (
             <>
               <p>
@@ -75,7 +75,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ isOpen, onClose, type 
         <div className="pt-4 border-t border-slate-100 flex justify-end">
           <button
             onClick={onClose}
-            className="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold"
+            className="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold"
           >
             Understood &amp; Close
           </button>

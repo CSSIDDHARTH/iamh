@@ -9,7 +9,7 @@ export const ClassroomWellbeingSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-100">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-sm font-bold uppercase tracking-wider mb-4 border border-emerald-100">
             <Heart className="w-3.5 h-3.5 text-emerald-700" />
             <span>Classroom Culture Transformation</span>
           </div>
@@ -28,7 +28,7 @@ export const ClassroomWellbeingSection: React.FC = () => {
         {/* Visual Flow: Listen → Understand → Connect → Respond → Support */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <span className="text-xs uppercase tracking-widest font-bold text-slate-500">
+            <span className="text-sm uppercase tracking-widest font-bold text-slate-500">
               The Pedagogical Connection Framework
             </span>
             <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-800 mt-1">
@@ -44,7 +44,7 @@ export const ClassroomWellbeingSection: React.FC = () => {
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 font-mono font-bold text-xs flex items-center justify-center">
+                    <span className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 font-mono font-bold text-sm flex items-center justify-center">
                       0{step.step}
                     </span>
                     {idx < CLASSROOM_FLOW_STEPS.length - 1 && (
@@ -55,12 +55,12 @@ export const ClassroomWellbeingSection: React.FC = () => {
                   <h4 className="font-display text-lg font-bold text-slate-900 mb-1.5">
                     {step.label}
                   </h4>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                     {step.detail}
                   </p>
                 </div>
 
-                <div className="mt-4 pt-2 border-t border-slate-100 text-[11px] font-semibold text-emerald-700">
+                <div className="mt-4 pt-2 border-t border-slate-100 text-sm font-semibold text-emerald-700">
                   Step {step.step} of 5
                 </div>
               </div>
@@ -74,7 +74,7 @@ export const ClassroomWellbeingSection: React.FC = () => {
             <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900">
               Ten Pillars of Classroom Psychological Safety
             </h3>
-            <p className="text-sm text-slate-600 mt-1">
+            <p className="text-base text-slate-600 mt-1">
               Essential dimensions practiced throughout the conclave modules to cultivate thriving student communities.
             </p>
           </div>
@@ -88,7 +88,7 @@ export const ClassroomWellbeingSection: React.FC = () => {
                 <div className="w-5 h-5 rounded-md bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
                   <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                 </div>
-                <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+                <span className="text-sm sm:text-base font-semibold text-slate-800 leading-snug">
                   {dim}
                 </span>
               </div>

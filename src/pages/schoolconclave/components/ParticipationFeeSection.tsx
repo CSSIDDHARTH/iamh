@@ -22,7 +22,7 @@ export const ParticipationFeeSection: React.FC<ParticipationFeeSectionProps> = (
               
               {/* Left Column: Heading, Supporting Text and Inclusions */}
               <div className="space-y-5 text-center lg:text-left flex-1">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-amber-300 text-xs font-bold uppercase tracking-widest border border-slate-700">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-amber-300 text-sm font-bold uppercase tracking-widest border border-slate-700">
                   <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
                   <span>Transparent Institutional Fee</span>
                 </div>
@@ -31,31 +31,31 @@ export const ParticipationFeeSection: React.FC<ParticipationFeeSectionProps> = (
                   Participation Fee
                 </h2>
 
-                <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
+                <p className="text-base sm:text-base text-slate-300 leading-relaxed max-w-xl">
                   {EVENT_DETAILS.feeScope}
                 </p>
 
                 {/* Included deliverables checklist */}
                 <div className="pt-2 space-y-2.5 text-left inline-block lg:block">
-                  <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-200">
+                  <div className="flex items-center gap-3 text-sm sm:text-base text-slate-200">
                     <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5" />
                     </div>
                     <span>Full delegation pass for <strong>50 to 80 Students</strong></span>
                   </div>
-                  <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-200">
+                  <div className="flex items-center gap-3 text-sm sm:text-base text-slate-200">
                     <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5" />
                     </div>
                     <span>Professional training cohort for <strong>10 to 20 Teachers</strong></span>
                   </div>
-                  <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-200">
+                  <div className="flex items-center gap-3 text-sm sm:text-base text-slate-200">
                     <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5" />
                     </div>
                     <span>Institutional Leadership registration for <strong>1 Principal</strong></span>
                   </div>
-                  <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-200">
+                  <div className="flex items-center gap-3 text-sm sm:text-base text-slate-200">
                     <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5" />
                     </div>
@@ -67,7 +67,7 @@ export const ParticipationFeeSection: React.FC<ParticipationFeeSectionProps> = (
               {/* Right Column: Pricing Display & CTA */}
               <div className="w-full lg:w-80 shrink-0">
                 <div className="bg-slate-850/90 rounded-2xl p-7 border border-slate-700/80 text-center shadow-lg">
-                  <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">
+                  <span className="text-sm font-semibold text-slate-400 uppercase tracking-wider block mb-1">
                     Total All-Inclusive Investment
                   </span>
                   
@@ -75,24 +75,24 @@ export const ParticipationFeeSection: React.FC<ParticipationFeeSectionProps> = (
                     <span className="font-display font-black text-4xl sm:text-5xl text-amber-300 tracking-tight block">
                       {EVENT_DETAILS.participationFee}
                     </span>
-                    <span className="text-sm font-semibold text-slate-300 mt-1 block">
+                    <span className="text-base font-semibold text-slate-300 mt-1 block">
                       Per School
                     </span>
                   </div>
 
-                  <p className="text-[11px] text-slate-400 mb-6">
+                  <p className="text-sm text-slate-400 mb-6">
                     Covers the designated participation of students, teachers and school leadership as per the official structure.
                   </p>
 
                   <button
                     onClick={onRegisterClick}
-                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-98"
+                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-bold text-slate-950 bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-98"
                   >
                     <span>Register Your School</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                   
-                  <div className="mt-4 pt-3 border-t border-slate-700/60 text-[11px] text-slate-400">
+                  <div className="mt-4 pt-3 border-t border-slate-700/60 text-sm text-slate-400">
                     Official IAMH Organizers Helpline: <strong className="text-slate-300">{EVENT_DETAILS.contactPhone}</strong>
                   </div>
                 </div>

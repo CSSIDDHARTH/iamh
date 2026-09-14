@@ -18,7 +18,7 @@ export const ProgramFocusSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-50 text-sky-800 text-xs font-bold uppercase tracking-wider mb-3 border border-sky-100">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-50 text-sky-800 text-sm font-bold uppercase tracking-wider mb-3 border border-sky-100">
             <Eye className="w-3.5 h-3.5 text-sky-700" />
             <span>Clinical &amp; Classroom Insights</span>
           </div>
@@ -35,7 +35,7 @@ export const ProgramFocusSection: React.FC = () => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+                className={`px-4 py-2 rounded-lg text-sm sm:text-base font-semibold transition-all whitespace-nowrap ${
                   activeCategory === cat
                     ? 'bg-white text-slate-900 shadow-xs border border-slate-200/60'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
@@ -63,7 +63,7 @@ export const ProgramFocusSection: React.FC = () => {
                   : 'bg-emerald-500'
               }`} />
               <div className="min-w-0">
-                <span className={`text-xs font-bold uppercase tracking-wider ${
+                <span className={`text-sm font-bold uppercase tracking-wider ${
                   item.category === 'Emotional & Psychological'
                     ? 'text-blue-600'
                     : item.category === 'Academic & Cognitive'
@@ -86,13 +86,13 @@ export const ProgramFocusSection: React.FC = () => {
             <h4 className="font-display text-lg font-bold text-white">
               Holistic Recognition Over Disciplinary Punishment
             </h4>
-            <p className="text-sm text-slate-300 max-w-2xl">
+            <p className="text-base text-slate-300 max-w-2xl">
               By reframing overt behavioural challenges as signals of unspoken emotional or cognitive strain, educators can intervene constructively before problems intensify.
             </p>
           </div>
           <a
             href="#registration"
-            className="px-6 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-sm font-bold shadow transition-all whitespace-nowrap shrink-0"
+            className="px-6 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-base font-bold shadow transition-all whitespace-nowrap shrink-0"
           >
             Nominate Your School
           </a>

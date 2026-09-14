@@ -17,7 +17,7 @@ export const VenueSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/80 text-amber-900 text-xs font-bold uppercase tracking-wider mb-4 border border-amber-300/80 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/80 text-amber-900 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-300/80 shadow-sm">
             <MapPin className="w-3.5 h-3.5 text-amber-700" />
             <span>Interactive Venue Location</span>
           </div>
@@ -38,11 +38,11 @@ export const VenueSection: React.FC = () => {
           <div className="bg-gradient-to-r from-amber-500/15 via-amber-400/10 to-transparent border-b border-amber-200/80 px-6 py-3.5 flex flex-wrap items-center justify-between gap-3 text-amber-950">
             <div className="flex items-center gap-2.5">
               <AlertCircle className="w-4 h-4 text-amber-700 shrink-0" />
-              <p className="text-xs sm:text-sm font-semibold">
+              <p className="text-sm sm:text-base font-semibold">
                 <strong>Official Designated Venue:</strong> {EVENT_DETAILS.venueStatus}
               </p>
             </div>
-            <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-amber-200/80 text-amber-900 border border-amber-300">
+            <span className="text-sm font-bold px-2.5 py-0.5 rounded-full bg-amber-200/80 text-amber-900 border border-amber-300">
               BHU Campus, Varanasi
             </span>
           </div>
@@ -52,14 +52,14 @@ export const VenueSection: React.FC = () => {
             {/* Left Details Column */}
             <div className="lg:col-span-6 space-y-6 flex flex-col justify-between">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Auditorium &amp; Complex</span>
+                <span className="text-sm font-bold uppercase tracking-widest text-slate-400">Auditorium &amp; Complex</span>
                 <h3 className="font-display text-2xl sm:text-3xl font-black text-slate-900 mt-1">
                   {EVENT_DETAILS.venueName}
                 </h3>
                 <p className="text-base sm:text-lg font-bold text-blue-900 mt-1 flex items-center gap-2">
                   <span>Banaras Hindu University (BHU)</span>
                 </p>
-                <p className="text-sm text-slate-600 mt-1">
+                <p className="text-base text-slate-600 mt-1">
                   Varanasi, Uttar Pradesh – 221005, India
                 </p>
 
@@ -69,7 +69,7 @@ export const VenueSection: React.FC = () => {
                     href="https://maps.google.com/?q=Swatantrata+Bhawan+BHU+Varanasi"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-900 hover:bg-blue-800 text-white text-xs font-bold shadow-sm transition-all hover:shadow hover:-translate-y-0.5"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-900 hover:bg-blue-800 text-white text-sm font-bold shadow-sm transition-all hover:shadow hover:-translate-y-0.5"
                   >
                     <Navigation className="w-3.5 h-3.5 text-amber-300" />
                     <span>Get Directions on Google Maps</span>
@@ -78,7 +78,7 @@ export const VenueSection: React.FC = () => {
 
                   <button
                     onClick={handleCopyAddress}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 transition-colors"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold border border-slate-200 transition-colors"
                     title="Copy full venue address"
                   >
                     {copied ? (
@@ -97,7 +97,7 @@ export const VenueSection: React.FC = () => {
               </div>
 
               {/* Tentative Venue Notice */}
-              <div className="p-4 rounded-2xl bg-amber-50/60 border border-amber-200/70 space-y-1.5 text-xs text-slate-700">
+              <div className="p-4 rounded-2xl bg-amber-50/60 border border-amber-200/70 space-y-1.5 text-sm text-slate-700">
                 <p className="font-bold text-amber-950 flex items-center gap-1.5">
                   <Compass className="w-3.5 h-3.5 text-amber-700" />
                   Notice to Participating Schools &amp; Delegates:
@@ -114,8 +114,8 @@ export const VenueSection: React.FC = () => {
                     <Train className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-slate-900">Varanasi Cantt</h4>
-                    <p className="text-[11px] text-slate-500">~9 km from BHU Gate</p>
+                    <h4 className="text-sm font-bold text-slate-900">Varanasi Cantt</h4>
+                    <p className="text-sm text-slate-500">~9 km from BHU Gate</p>
                   </div>
                 </div>
 
@@ -124,8 +124,8 @@ export const VenueSection: React.FC = () => {
                     <Building className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-slate-900">IMS-BHU CoE</h4>
-                    <p className="text-[11px] text-slate-500">Within campus bounds</p>
+                    <h4 className="text-sm font-bold text-slate-900">IMS-BHU CoE</h4>
+                    <p className="text-sm text-slate-500">Within campus bounds</p>
                   </div>
                 </div>
 
@@ -134,8 +134,8 @@ export const VenueSection: React.FC = () => {
                     <Plane className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-slate-900">VNS Airport</h4>
-                    <p className="text-[11px] text-slate-500">LBS Airport ~30 km</p>
+                    <h4 className="text-sm font-bold text-slate-900">VNS Airport</h4>
+                    <p className="text-sm text-slate-500">LBS Airport ~30 km</p>
                   </div>
                 </div>
               </div>
@@ -150,13 +150,13 @@ export const VenueSection: React.FC = () => {
                 <div className="px-4 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between text-white">
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span className="text-xs font-bold tracking-wide">Live Google Map Locator</span>
+                    <span className="text-sm font-bold tracking-wide">Live Google Map Locator</span>
                   </div>
                   <a
                     href="https://maps.google.com/?q=Swatantrata+Bhawan+BHU+Varanasi"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[11px] font-semibold text-amber-300 hover:text-amber-200 flex items-center gap-1 transition-colors"
+                    className="text-sm font-semibold text-amber-300 hover:text-amber-200 flex items-center gap-1 transition-colors"
                   >
                     <span>Full Screen</span>
                     <ExternalLink className="w-3 h-3" />
@@ -176,7 +176,7 @@ export const VenueSection: React.FC = () => {
                 </div>
 
                 {/* Footer strip on map card */}
-                <div className="px-4 py-3 bg-slate-800/90 border-t border-slate-700/80 flex items-center justify-between gap-3 text-slate-300 text-xs">
+                <div className="px-4 py-3 bg-slate-800/90 border-t border-slate-700/80 flex items-center justify-between gap-3 text-slate-300 text-sm">
                   <p className="truncate text-slate-300">
                     <span className="font-semibold text-white">Landmark:</span> Near IMS-BHU / Malaviya Bhawan
                   </p>

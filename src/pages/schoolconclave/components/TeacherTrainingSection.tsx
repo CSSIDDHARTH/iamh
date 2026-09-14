@@ -13,7 +13,7 @@ export const TeacherTrainingSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-800 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4 border border-slate-700">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-800 text-amber-300 text-sm font-bold uppercase tracking-wider mb-4 border border-slate-700">
             <GraduationCap className="w-4 h-4 text-amber-400" />
             <span>Dedicated Teacher Development</span>
           </div>
@@ -43,12 +43,12 @@ export const TeacherTrainingSection: React.FC = () => {
               </div>
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2">
-                  <span className="text-[11px] font-mono font-bold text-slate-400">Module {item.id}</span>
+                  <span className="text-sm font-mono font-bold text-slate-400">Module {item.id}</span>
                 </div>
                 <h3 className="font-display text-base sm:text-lg font-bold text-white leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed">
+                <p className="text-base text-slate-300 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -63,11 +63,11 @@ export const TeacherTrainingSection: React.FC = () => {
               <Sparkles className="w-6 h-6 text-amber-400" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-white">Teacher Delegation Per School</h4>
-              <p className="text-xs text-slate-400">10 to 20 teachers nominated per participating school for certified training</p>
+              <h4 className="text-base font-bold text-white">Teacher Delegation Per School</h4>
+              <p className="text-sm text-slate-400">10 to 20 teachers nominated per participating school for certified training</p>
             </div>
           </div>
-          <div className="text-xs font-semibold text-emerald-300 bg-emerald-950/80 px-3.5 py-1.5 rounded-full border border-emerald-800">
+          <div className="text-sm font-semibold text-emerald-300 bg-emerald-950/80 px-3.5 py-1.5 rounded-full border border-emerald-800">
             Official Training &amp; Participation Certificate Awarded
           </div>
         </div>
