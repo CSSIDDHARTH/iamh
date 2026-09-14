@@ -108,6 +108,15 @@
   font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
+.heading-rainbow {
+  background: linear-gradient(115deg, #e11d48 0%, #ea580c 20%, #d97706 38%, #16a34a 56%, #0284c7 76%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 .bg-mandala-pattern {
   background-image: radial-gradient(#0f2347 0.75px, transparent 0.75px), radial-gradient(#10b981 0.75px, #ffffff 0.75px);
   background-size: 30px 30px;

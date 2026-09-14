@@ -38,12 +38,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onExplore }) => {
         {/* Central Core Content */}
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Display Typography */}
-          <h1 className="font-display font-extrabold tracking-tight text-slate-900 text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.08] mb-6">
-            <span className="block text-slate-900">SCHOOL</span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-sky-800 to-teal-800">
-              MENTAL HEALTH
-            </span>
-            <span className="block text-slate-800">CONCLAVE</span>
+          <h1 className="font-display font-extrabold tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.08] mb-6 heading-rainbow">
+            <span className="block">SCHOOL</span>
+            <span className="block">MENTAL HEALTH</span>
+            <span className="block">CONCLAVE</span>
           </h1>
 
           <IndianLotusDivider className="w-56 h-6 mx-auto mb-6 opacity-70" />

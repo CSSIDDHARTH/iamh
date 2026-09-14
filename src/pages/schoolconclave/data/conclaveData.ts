@@ -14,7 +14,7 @@ export const EVENT_DETAILS = {
   organizer: "Indian Academy of Mental Health (IAMH)",
   collaborator: "Department of Psychiatry, Centre of Excellence, IMS-BHU",
   contactPhone: "9696384984",
-  participationFee: "₹11,000 /-",
+  participationFee: "₹21,000 /-",
   feeScope: "Per School (covers designated delegation of students, teachers, and school leadership)",
   visionStatement: "Every Child Deserves a Mentally Healthy School.",
   registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSennJI_E2ImGjPBwe8pOtfUPG54PH4gQWG0_JtixShWNaTFMw/viewform",

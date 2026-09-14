@@ -30,7 +30,7 @@ export default function EventsAnnouncement() {
                 </span>
               </div>
 
-              <h2 className="font-display font-extrabold text-2xl sm:text-4xl text-white tracking-tight leading-tight mb-4">
+              <h2 className="font-display font-extrabold text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-sky-400 tracking-tight leading-tight mb-4">
                 School Mental Health Conclave 2026
               </h2>
 

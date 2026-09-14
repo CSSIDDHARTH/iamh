@@ -18,7 +18,7 @@ export const TeacherTrainingSection: React.FC = () => {
             <span>Dedicated Teacher Development</span>
           </div>
           
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight heading-rainbow">
             Understanding Behaviour. <br className="hidden sm:inline" />
             Managing Emotions. <br className="hidden sm:inline" />
             Building Connections.

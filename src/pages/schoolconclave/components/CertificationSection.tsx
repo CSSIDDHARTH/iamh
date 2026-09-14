@@ -5,21 +5,25 @@ import { IAMHLogo } from './InstitutionalBadges';
 
 export const CertificationSection: React.FC = () => {
   return (
-    <section className="py-20 bg-slate-50 border-t border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-b from-amber-100/90 via-yellow-50 to-amber-100/70 border-t border-amber-200/80 relative overflow-hidden">
+      {/* Ambient gold glow */}
+      <div className="absolute top-0 right-10 w-96 h-96 bg-amber-400/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 text-amber-900 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-200">
-            <Award className="w-3.5 h-3.5 text-amber-700" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-200/80 text-amber-950 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-300">
+            <Award className="w-3.5 h-3.5 text-amber-800" />
             <span>Formal Institutional Credentials</span>
           </div>
 
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading-rainbow">
             Certification &amp; Recognition
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg text-slate-700 leading-relaxed">
             All participating students, teachers, and school leadership receive authorized institutional certifications issued by the Indian Academy of Mental Health (IAMH) and Department of Psychiatry, IMS-BHU.
           </p>
         </div>
@@ -29,22 +33,22 @@ export const CertificationSection: React.FC = () => {
           {CERTIFICATION_TIERS.map((tier) => (
             <div
               key={tier.audience}
-              className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 relative overflow-hidden flex flex-col"
+              className="bg-white/95 backdrop-blur-xs rounded-2xl p-5 border border-amber-200/90 shadow-sm hover:shadow-lg hover:border-amber-400 transition-all duration-200 relative overflow-hidden flex flex-col"
             >
               {/* Top colour bar */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-700 via-emerald-600 to-amber-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-600" />
 
               <div className="flex items-center justify-between mb-3 mt-1">
-                <span className="text-sm font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+                <span className="text-sm font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
                   {tier.audience}
                 </span>
-                <Award className="w-5 h-5 text-amber-500" />
+                <Award className="w-5 h-5 text-amber-600" />
               </div>
 
               <h3 className="font-display text-base font-bold text-slate-900 leading-snug mb-1">
                 {tier.certificateTitle}
               </h3>
-              <p className="text-sm font-semibold text-blue-700 mb-3">{tier.subtitle}</p>
+              <p className="text-sm font-semibold text-amber-900 mb-3">{tier.subtitle}</p>
 
               <div className="flex-1 space-y-1.5 text-sm text-slate-600">
                 <div className="flex items-center gap-1.5">
@@ -63,13 +67,13 @@ export const CertificationSection: React.FC = () => {
         </div>
 
         {/* Conclave Participation Report Card */}
-        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-white/95 backdrop-blur-xs rounded-3xl p-6 sm:p-8 border border-amber-200/90 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-700 flex items-center justify-center shrink-0 border border-blue-100">
+            <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center shrink-0 border border-amber-200">
               <FileText className="w-6 h-6" />
             </div>
             <div>
-              <span className="text-sm font-bold uppercase tracking-wider text-blue-700">Institutional Post-Conclave Deliverable</span>
+              <span className="text-sm font-bold uppercase tracking-wider text-amber-800">Institutional Post-Conclave Deliverable</span>
               <h4 className="font-display text-lg sm:text-xl font-bold text-slate-900 mt-0.5">
                 Conclave Participation Report
               </h4>
@@ -79,7 +83,7 @@ export const CertificationSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 text-sm font-bold text-slate-700 bg-slate-100 px-4 py-2.5 rounded-xl shrink-0">
+          <div className="flex items-center gap-2 text-sm font-bold text-amber-950 bg-amber-100/90 px-4 py-2.5 rounded-xl shrink-0 border border-amber-200">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
             <span>Included for Participating Schools</span>
           </div>

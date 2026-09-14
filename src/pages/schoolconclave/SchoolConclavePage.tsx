@@ -68,7 +68,7 @@ export default function SchoolConclavePage() {
         {/* 10. School Participation Structure (Delegation breakdown) */}
         <ParticipationSection onRegisterClick={handleRegisterRedirect} />
 
-        {/* 11. Participation Fee Section (₹11,000 /- Per School) */}
+        {/* 11. Participation Fee Section (₹21,000 /- Per School) */}
         <ParticipationFeeSection onRegisterClick={handleRegisterRedirect} />
 
         {/* 12. Certification & Recognition */}

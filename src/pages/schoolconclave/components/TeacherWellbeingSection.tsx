@@ -4,23 +4,27 @@ import { TEACHER_WELLBEING_TOPICS } from '../data/conclaveData';
 
 export const TeacherWellbeingSection: React.FC = () => {
   return (
-    <section className="py-20 bg-[#f4f8fa] border-t border-slate-200/60 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-br from-amber-100/85 via-yellow-50/90 to-amber-100/70 border-t border-amber-200/70 relative overflow-hidden">
+      {/* Decorative ambient gold glow */}
+      <div className="absolute -right-20 top-1/4 w-80 h-80 bg-yellow-400/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -left-20 bottom-10 w-80 h-80 bg-amber-300/20 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-50 text-teal-800 text-sm font-bold uppercase tracking-wider mb-4 border border-teal-200/80">
-            <Feather className="w-3.5 h-3.5 text-teal-700" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-200/70 text-amber-950 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-300">
+            <Feather className="w-3.5 h-3.5 text-amber-800" />
             <span>Nurturing the Caregivers</span>
           </div>
 
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight heading-rainbow">
             Healthy Teachers.<br className="hidden sm:inline" />
             Healthy Classrooms.<br className="hidden sm:inline" />
             Healthy Schools.
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg text-slate-700 leading-relaxed">
             Educators cannot pour from an empty cup. The conclave dedicates specialized time to teacher emotional self-care, occupational decompression, and faculty solidarity.
           </p>
         </div>
@@ -30,10 +34,10 @@ export const TeacherWellbeingSection: React.FC = () => {
           {TEACHER_WELLBEING_TOPICS.map((topic, index) => (
             <div
               key={topic.title}
-              className="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-2xs hover:shadow-md hover:border-teal-300 transition-all duration-200 flex flex-col justify-between"
+              className="bg-white/95 backdrop-blur-xs rounded-2xl p-5 border border-amber-200/80 shadow-2xs hover:shadow-md hover:border-amber-400 transition-all duration-200 flex flex-col justify-between"
             >
               <div>
-                <div className="w-8 h-8 rounded-lg bg-teal-50 text-teal-700 font-mono text-sm font-bold flex items-center justify-center mb-3">
+                <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 font-mono text-sm font-bold flex items-center justify-center mb-3">
                   {index + 1 < 10 ? `0${index + 1}` : index + 1}
                 </div>
                 <h3 className="font-display text-base font-bold text-slate-900 leading-snug">
@@ -43,7 +47,7 @@ export const TeacherWellbeingSection: React.FC = () => {
                   {topic.desc}
                 </p>
               </div>
-              <div className="mt-4 pt-2 border-t border-slate-100 flex items-center gap-1.5 text-sm font-semibold text-teal-700">
+              <div className="mt-4 pt-2 border-t border-amber-100 flex items-center gap-1.5 text-sm font-semibold text-amber-800">
                 <Sparkles className="w-3 h-3" />
                 <span>Well-being Core</span>
               </div>
@@ -52,10 +56,10 @@ export const TeacherWellbeingSection: React.FC = () => {
         </div>
 
         {/* Supportive Visual Quote Banner */}
-        <div className="mt-12 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-12 bg-white/95 backdrop-blur-xs rounded-2xl p-6 sm:p-8 border border-amber-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600 text-white flex items-center justify-center shrink-0 shadow-md">
-              <SunMedium className="w-6 h-6" />
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-yellow-500 text-slate-950 flex items-center justify-center shrink-0 shadow-md font-bold">
+              <SunMedium className="w-6 h-6 text-slate-950" />
             </div>
             <div>
               <h4 className="font-display text-base sm:text-lg font-bold text-slate-900">
@@ -66,7 +70,7 @@ export const TeacherWellbeingSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-2 text-sm font-semibold text-slate-600 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200 shrink-0">
+          <div className="flex items-center gap-2 text-sm font-semibold text-amber-900 bg-amber-100/80 px-4 py-2 rounded-xl border border-amber-200 shrink-0">
             <span>Burnout Prevention Workshop</span>
           </div>
         </div>

@@ -15,7 +15,7 @@ export const CollaboratorsSection: React.FC = () => {
             <span>Academic &amp; Clinical Leadership</span>
           </div>
 
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading-rainbow">
             In Collaboration With
           </h2>
 

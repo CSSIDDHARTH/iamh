@@ -22,7 +22,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onRegisterClick 
             <span>Official Event Inquiries</span>
           </div>
 
-          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading-rainbow">
             Contact IAMH
           </h2>
 

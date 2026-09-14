@@ -41,7 +41,7 @@ export const SchoolEcosystemSection: React.FC = () => {
                 <span>The Core Conclave Vision</span>
               </div>
 
-              <h2 className="font-serif-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+              <h2 className="font-serif-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight heading-rainbow">
                 "{EVENT_DETAILS.visionStatement}"
               </h2>
 
@@ -63,7 +63,7 @@ export const SchoolEcosystemSection: React.FC = () => {
             <span>Multi-Tiered Collaboration</span>
           </div>
 
-          <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
+          <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold heading-rainbow">
             A Collaborative School Ecosystem
           </h3>
           <p className="mt-3 text-base text-slate-600">
