@@ -19,6 +19,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Events', href: '#events' },
     { name: 'Mission', href: '#mission' },
     { name: 'Network', href: '#network' },
     { name: 'Membership', href: '#membership' },

@@ -69,3 +69,70 @@
   background-repeat: repeat;
 }
 
+
+/* ===== School Conclave Page Styles ===== */
+
+.font-serif-heading {
+  font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.bg-mandala-pattern {
+  background-image: radial-gradient(#0f2347 0.75px, transparent 0.75px), radial-gradient(#10b981 0.75px, #ffffff 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ===== Conclave Navbar: refined gold ramp derived from --color-iamh-gold ===== */
+
+.conclave-nav {
+  --nav-gold-light: color-mix(in srgb, var(--color-iamh-gold) 55%, white);
+  --nav-gold: var(--color-iamh-gold);
+  --nav-gold-dark: color-mix(in srgb, var(--color-iamh-gold) 82%, black);
+}
+
+@keyframes conclave-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes conclave-menu-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+}
+
+.conclave-menu-enter {
+  animation: conclave-menu-in 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.conclave-menu-exit {
+  animation: conclave-menu-out 160ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .conclave-menu-enter,
+  .conclave-menu-exit {
+    animation: none;
+  }
+}
