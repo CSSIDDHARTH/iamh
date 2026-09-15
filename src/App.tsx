@@ -10,6 +10,7 @@ import Hero from './components/Hero';
 import EventsAnnouncement from './components/EventsAnnouncement';
 import About from './components/About';
 import ValuesAndFeatures from './components/ValuesAndFeatures';
+import CommitteeMembers from './components/CommitteeMembers';
 import Membership from './components/Membership';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -49,6 +50,9 @@ function Home() {
 
         {/* Core Values */}
         <ValuesAndFeatures />
+
+        {/* Executive Committee Members */}
+        <CommitteeMembers />
 
         {/* Membership benefits, "Why Join" & Live Card Generator */}
         <Membership />

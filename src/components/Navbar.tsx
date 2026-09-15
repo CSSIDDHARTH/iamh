@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: 'About', href: '#about' },
     { name: 'Events', href: '#events' },
     { name: 'Mission', href: '#mission' },
-    { name: 'Network', href: '#network' },
+    { name: 'Committee', href: '#committee' },
     { name: 'Membership', href: '#membership' },
     { name: 'Core Values', href: '#values' },
     { name: 'Contact', href: '#contact' },
