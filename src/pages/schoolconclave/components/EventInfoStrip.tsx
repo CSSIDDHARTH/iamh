@@ -49,7 +49,7 @@ export const EventInfoStrip: React.FC = () => {
                 </span>
               </div>
               <p className="text-sm font-bold text-[#17203A] line-clamp-1">
-                Swatantrata Bhawan – Shatabdi Auditorium
+                Swatantrata Bhawan
               </p>
               <p className="text-sm text-[#596174]">BHU, Varanasi</p>
             </div>

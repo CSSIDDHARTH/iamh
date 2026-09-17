@@ -62,7 +62,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ isOpen, onClose, type 
                 <strong>2. Participation Fee:</strong> The institutional participation fee is fixed at <span className="font-bold text-slate-900">{EVENT_DETAILS.participationFee}</span> per school. This fee covers all sessions, workshops, materials, and certificates for the entire designated school delegation.
               </p>
               <p>
-                <strong>3. Venue Status Notice:</strong> As explicitly highlighted in all conclave literature, the venue (Swatantrata Bhawan – Shatabdi Auditorium, Banaras Hindu University, Varanasi) is tentative and subject to final institutional confirmation. Registered delegations will receive prompt written updates from IAMH.
+                <strong>3. Venue Status Notice:</strong> As explicitly highlighted in all conclave literature, the venue (Swatantrata Bhawan, Banaras Hindu University, Varanasi) is tentative and subject to final institutional confirmation. Registered delegations will receive prompt written updates from IAMH.
               </p>
               <p>
                 <strong>4. Certification:</strong> Certificates of Participation for students, Professional Training Certificates for teachers, and the Official Recognition Certificate and Conclave Report for participating schools will be awarded upon program completion.

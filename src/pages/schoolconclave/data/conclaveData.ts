@@ -8,7 +8,7 @@ export const EVENT_DETAILS = {
   date: "6 OCTOBER 2026",
   day: "Tuesday",
   time: "10:30 AM – 4:00 PM",
-  venueName: "Swatantrata Bhawan – Shatabdi Auditorium",
+  venueName: "Swatantrata Bhawan",
   venueInstitution: "Banaras Hindu University (BHU), Varanasi",
   venueStatus: "Tentative Venue – Subject to Final Confirmation",
   organizer: "Indian Academy of Mental Health (IAMH)",
