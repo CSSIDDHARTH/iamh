@@ -39,27 +39,38 @@
    *   lg = body-large       xl = H4     2xl = H3    3xl = H2
    *   4xl = H1              5xl-7xl = display/hero
    */
-  --text-xs: 0.8125rem;    /* 13px */
+  --text-xs: 0.8125rem;
+  /* 13px */
   --text-xs--line-height: 1.5;
-  --text-sm: 0.9375rem;    /* 15px */
+  --text-sm: 0.9375rem;
+  /* 15px */
   --text-sm--line-height: 1.55;
-  --text-base: 1.0625rem;  /* 17px */
+  --text-base: 1.0625rem;
+  /* 17px */
   --text-base--line-height: 1.65;
-  --text-lg: 1.1875rem;    /* 19px */
+  --text-lg: 1.1875rem;
+  /* 19px */
   --text-lg--line-height: 1.65;
-  --text-xl: clamp(1.375rem, 1.28rem + 0.5vw, 1.625rem);   /* ~22-26px */
+  --text-xl: clamp(1.375rem, 1.28rem + 0.5vw, 1.625rem);
+  /* ~22-26px */
   --text-xl--line-height: 1.3;
-  --text-2xl: clamp(1.625rem, 1.4rem + 1.1vw, 2.125rem);   /* ~26-34px */
+  --text-2xl: clamp(1.625rem, 1.4rem + 1.1vw, 2.125rem);
+  /* ~26-34px */
   --text-2xl--line-height: 1.2;
-  --text-3xl: clamp(2.125rem, 1.7rem + 2.1vw, 3rem);       /* ~34-48px */
+  --text-3xl: clamp(2.125rem, 1.7rem + 2.1vw, 3rem);
+  /* ~34-48px */
   --text-3xl--line-height: 1.15;
-  --text-4xl: clamp(2.625rem, 1.9rem + 3.6vw, 4rem);       /* ~42-64px */
+  --text-4xl: clamp(2.625rem, 1.9rem + 3.6vw, 4rem);
+  /* ~42-64px */
   --text-4xl--line-height: 1.1;
-  --text-5xl: clamp(3rem, 1.9rem + 5.4vw, 4.75rem);        /* ~48-76px */
+  --text-5xl: clamp(3rem, 1.9rem + 5.4vw, 4.75rem);
+  /* ~48-76px */
   --text-5xl--line-height: 1.05;
-  --text-6xl: clamp(3.25rem, 1.9rem + 6.7vw, 5.25rem);     /* ~52-84px */
+  --text-6xl: clamp(3.25rem, 1.9rem + 6.7vw, 5.25rem);
+  /* ~52-84px */
   --text-6xl--line-height: 1.03;
-  --text-7xl: clamp(3.5rem, 1.8rem + 8.4vw, 5.75rem);      /* ~56-92px */
+  --text-7xl: clamp(3.5rem, 1.8rem + 8.4vw, 5.75rem);
+  /* ~56-92px */
   --text-7xl--line-height: 1;
 
   /* Theme overrides for default tailwind colors to match user's custom brand values */
@@ -68,13 +79,13 @@
   --color-blue-600: #284E9C;
   --color-blue-700: #1C376F;
   --color-blue-800: #142750;
-  
+
   --color-emerald-50: color-mix(in srgb, #4DA92B 8%, white);
   --color-emerald-100: color-mix(in srgb, #4DA92B 20%, white);
   --color-emerald-500: #4DA92B;
   --color-emerald-600: #3E8B22;
   --color-emerald-700: #2B6118;
-  
+
   --color-indigo-50: color-mix(in srgb, #D0A932 8%, white);
   --color-indigo-100: color-mix(in srgb, #D0A932 20%, white);
   --color-indigo-600: #D0A932;
@@ -90,13 +101,16 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
@@ -126,6 +140,7 @@
 .bg-paper-grain {
   position: relative;
 }
+
 .bg-paper-grain::before {
   content: '';
   position: absolute;
@@ -140,6 +155,7 @@
 .bg-gold-glow-top {
   background-image: radial-gradient(ellipse 70% 55% at 50% -8%, rgba(214, 167, 44, 0.16), transparent 62%);
 }
+
 .bg-gold-glow-corner {
   background-image:
     radial-gradient(ellipse 55% 45% at 92% 0%, rgba(214, 167, 44, 0.14), transparent 60%),
@@ -191,6 +207,7 @@
     background: white !important;
     color: black !important;
   }
+
   .no-print {
     display: none !important;
   }
@@ -214,6 +231,7 @@
   border: 1px solid rgba(214, 167, 44, 0.25);
   position: relative;
 }
+
 .panel-editorial::before {
   content: '';
   position: absolute;
@@ -233,6 +251,7 @@
     opacity: 0;
     transform: translateY(-8px) scale(0.98);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -244,6 +263,7 @@
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+
   to {
     opacity: 0;
     transform: translateY(-8px) scale(0.98);
@@ -259,6 +279,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .conclave-menu-enter,
   .conclave-menu-exit {
     animation: none;

@@ -7,7 +7,7 @@ export const CollaboratorsSection: React.FC = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-100 text-slate-800 text-sm font-bold uppercase tracking-wider mb-4 border border-slate-200">
@@ -28,7 +28,7 @@ export const CollaboratorsSection: React.FC = () => {
 
         {/* 2 Main Partner Organization Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          
+
           {/* Organization 1: IMS-BHU Department of Psychiatry */}
           <div className="bg-[#fcfdfe] rounded-3xl p-8 border-2 border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>

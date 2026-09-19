@@ -6,7 +6,7 @@ export const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-white relative scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header Tag */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-sm font-bold uppercase tracking-wider mb-3 border border-blue-100">
@@ -23,10 +23,10 @@ export const AboutSection: React.FC = () => {
 
         {/* Split Desktop Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Column: Compact Concept Note */}
           <div className="lg:col-span-7 space-y-5 text-slate-700">
-            
+
             <div className="relative pl-4 border-l-4 border-blue-600">
               <p className="font-medium text-slate-900 text-base sm:text-lg leading-snug">
                 In today's rapidly changing environment, children and adolescents face growing behavioural, emotional, and psychological challenges that schools are uniquely positioned to address.

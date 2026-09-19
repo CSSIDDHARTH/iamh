@@ -15,7 +15,7 @@ export const ProgramFocusSection: React.FC = () => {
   return (
     <section id="program-focus" className="py-20 bg-white scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-50 text-sky-800 text-sm font-bold uppercase tracking-wider mb-3 border border-sky-100">
@@ -35,11 +35,10 @@ export const ProgramFocusSection: React.FC = () => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-lg text-sm sm:text-base font-semibold transition-all whitespace-nowrap ${
-                  activeCategory === cat
+                className={`px-4 py-2 rounded-lg text-sm sm:text-base font-semibold transition-all whitespace-nowrap ${activeCategory === cat
                     ? 'bg-white text-slate-900 shadow-xs border border-slate-200/60'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -55,21 +54,19 @@ export const ProgramFocusSection: React.FC = () => {
               className="bg-[#fcfdfe] rounded-xl px-5 py-4 border border-slate-200 hover:border-sky-300 hover:shadow-sm transition-all duration-200 flex items-start gap-3"
             >
               {/* Colour dot accent */}
-              <span className={`mt-2 w-2.5 h-2.5 rounded-full shrink-0 ${
-                item.category === 'Emotional & Psychological'
+              <span className={`mt-2 w-2.5 h-2.5 rounded-full shrink-0 ${item.category === 'Emotional & Psychological'
                   ? 'bg-blue-500'
                   : item.category === 'Academic & Cognitive'
-                  ? 'bg-amber-500'
-                  : 'bg-emerald-500'
-              }`} />
+                    ? 'bg-amber-500'
+                    : 'bg-emerald-500'
+                }`} />
               <div className="min-w-0">
-                <span className={`text-sm font-bold uppercase tracking-wider ${
-                  item.category === 'Emotional & Psychological'
+                <span className={`text-sm font-bold uppercase tracking-wider ${item.category === 'Emotional & Psychological'
                     ? 'text-blue-600'
                     : item.category === 'Academic & Cognitive'
-                    ? 'text-amber-700'
-                    : 'text-emerald-700'
-                }`}>
+                      ? 'text-amber-700'
+                      : 'text-emerald-700'
+                  }`}>
                   {item.category}
                 </span>
                 <h3 className="font-display text-lg font-bold text-slate-900 leading-snug mt-0.5">

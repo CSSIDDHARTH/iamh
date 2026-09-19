@@ -10,7 +10,7 @@ export const TeacherWellbeingSection: React.FC = () => {
       <div className="absolute -left-20 bottom-10 w-80 h-80 bg-amber-300/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-200/70 text-amber-950 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-300">

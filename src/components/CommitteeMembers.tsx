@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Crown, Award, Shield, Star } from 'lucide-react';
+import { Crown, Award, Shield, Star, ShieldCheck } from 'lucide-react';
 
 interface Member {
   name: string;
   role: string;
-  photo: string;
+  photo?: string;
   badge: React.ReactNode;
   tier: 'leadership' | 'executive';
 }
@@ -22,6 +22,13 @@ const members: Member[] = [
     role: 'Vice President',
     photo: '/KN Murthy (1).jpeg',
     badge: <Award className="w-3.5 h-3.5" />,
+    tier: 'leadership',
+  },
+  {
+    name: 'Prof. Satya Gopal Jee',
+    role: 'General Secretary',
+    photo: '',
+    badge: <ShieldCheck className="w-3.5 h-3.5" />,
     tier: 'leadership',
   },
   {
@@ -59,11 +66,47 @@ const members: Member[] = [
     badge: <Star className="w-3.5 h-3.5" />,
     tier: 'executive',
   },
+  {
+    name: 'Dr. Kuldeep Kaur',
+    role: 'Executive Member',
+    photo: '',
+    badge: <Star className="w-3.5 h-3.5" />,
+    tier: 'executive',
+  },
+  {
+    name: 'Dr. Dilip Kumar',
+    role: 'Executive Member',
+    photo: '',
+    badge: <Star className="w-3.5 h-3.5" />,
+    tier: 'executive',
+  },
+  {
+    name: 'Dr. Hare Ram Pandey',
+    role: 'Executive Member',
+    photo: '',
+    badge: <Star className="w-3.5 h-3.5" />,
+    tier: 'executive',
+  },
+  {
+    name: 'Dr. Desh Raj Singh',
+    role: 'Executive Member',
+    photo: '',
+    badge: <Star className="w-3.5 h-3.5" />,
+    tier: 'executive',
+  },
+  {
+    name: 'Dr. Rajni Chandre',
+    role: 'Executive Member',
+    photo: '',
+    badge: <Star className="w-3.5 h-3.5" />,
+    tier: 'executive',
+  },
 ];
 
 const roleBadgeStyle: Record<string, string> = {
   President: 'bg-amber-50 text-amber-800 border border-amber-200',
   'Vice President': 'bg-blue-50 text-blue-800 border border-blue-200',
+  'General Secretary': 'bg-teal-50 text-teal-800 border border-teal-200',
   Secretary: 'bg-emerald-50 text-emerald-800 border border-emerald-200',
   Treasurer: 'bg-violet-50 text-violet-800 border border-violet-200',
   'Executive Member': 'bg-slate-50 text-slate-700 border border-slate-200',
@@ -72,13 +115,23 @@ const roleBadgeStyle: Record<string, string> = {
 const ringStyle: Record<string, string> = {
   President: 'ring-2 ring-amber-400/60 ring-offset-2',
   'Vice President': 'ring-2 ring-blue-400/60 ring-offset-2',
+  'General Secretary': 'ring-2 ring-teal-400/60 ring-offset-2',
   Secretary: 'ring-2 ring-emerald-400/60 ring-offset-2',
   Treasurer: 'ring-2 ring-violet-400/60 ring-offset-2',
   'Executive Member': 'ring-2 ring-slate-300/60 ring-offset-2',
 };
 
+function getInitials(name: string) {
+  const cleanName = name.replace(/^(Prof\.|Dr\.|Prof|Dr)\s+/i, '').trim();
+  const parts = cleanName.split(/\s+/);
+  if (parts.length >= 2) {
+    return `${parts[0][0]}${parts[parts.length - 1][0]}`.toUpperCase();
+  }
+  return cleanName.slice(0, 2).toUpperCase() || 'M';
+}
+
 function MemberCard({ member }: { member: Member }) {
-  const [imgError, setImgError] = useState(false);
+  const [imgError, setImgError] = useState(!member.photo);
 
   return (
     <div
@@ -89,8 +142,8 @@ function MemberCard({ member }: { member: Member }) {
       <div className="absolute inset-x-0 top-0 h-1 rounded-t-2xl bg-gradient-to-r from-iamh-navy via-iamh-gold to-iamh-emerald opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       {/* Photo */}
-      <div className={`relative w-28 h-28 rounded-full overflow-hidden mb-4 ${ringStyle[member.role]} bg-slate-100`}>
-        {!imgError ? (
+      <div className={`relative w-28 h-28 rounded-full overflow-hidden mb-4 ${ringStyle[member.role] || 'ring-2 ring-slate-300/60 ring-offset-2'} bg-slate-100`}>
+        {member.photo && !imgError ? (
           <img
             src={member.photo}
             alt={member.name}
@@ -98,14 +151,14 @@ function MemberCard({ member }: { member: Member }) {
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-iamh-navy/10 to-iamh-emerald/10 text-iamh-navy font-bold text-3xl">
-            {member.name.charAt(0)}
+          <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-iamh-navy/5 via-slate-100 to-iamh-emerald/10 text-iamh-navy font-display font-bold text-2xl tracking-wider select-none">
+            <span>{getInitials(member.name)}</span>
           </div>
         )}
       </div>
 
       {/* Role badge */}
-      <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wide mb-2 ${roleBadgeStyle[member.role]}`}>
+      <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wide mb-2 ${roleBadgeStyle[member.role] || roleBadgeStyle['Executive Member']}`}>
         {member.badge}
         {member.role}
       </span>
@@ -143,8 +196,8 @@ export default function CommitteeMembers() {
           </p>
         </div>
 
-        {/* Leadership Row — 4 cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        {/* Leadership Row — 5 cards */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 sm:gap-6 mb-8 justify-center">
           {leadership.map(member => (
             <MemberCard key={member.name} member={member} />
           ))}
@@ -153,8 +206,8 @@ export default function CommitteeMembers() {
         {/* Divider */}
         <div className="divider-gold my-8 mx-auto max-w-xs opacity-60" />
 
-        {/* Executive Members Row — 3 cards centered */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        {/* Executive Members Grid — 8 cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6 max-w-5xl mx-auto">
           {executive.map(member => (
             <MemberCard key={member.name} member={member} />
           ))}

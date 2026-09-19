@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-  Users, 
-  GraduationCap, 
-  Award, 
-  Home, 
-  Shield, 
-  ArrowRight, 
+import {
+  Users,
+  GraduationCap,
+  Award,
+  Home,
+  Shield,
+  ArrowRight,
   Sparkles,
   HeartHandshake
 } from 'lucide-react';
@@ -28,7 +28,7 @@ export const SchoolEcosystemSection: React.FC = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Highlighted Premium Vision Banner: Every Child Deserves a Mentally Healthy School. */}
         <div className="mb-20">
           <div

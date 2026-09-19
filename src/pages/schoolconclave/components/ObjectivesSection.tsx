@@ -1,14 +1,14 @@
 import React from 'react';
-import { 
-  Brain, 
-  Search, 
-  ShieldCheck, 
-  HeartHandshake, 
-  MessageCircle, 
-  Compass, 
-  Sparkles, 
-  School, 
-  UserCheck 
+import {
+  Brain,
+  Search,
+  ShieldCheck,
+  HeartHandshake,
+  MessageCircle,
+  Compass,
+  Sparkles,
+  School,
+  UserCheck
 } from 'lucide-react';
 import { KEY_OBJECTIVES } from '../data/conclaveData';
 
@@ -36,7 +36,7 @@ export const ObjectivesSection: React.FC = () => {
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/80 text-amber-900 text-sm font-bold uppercase tracking-wider mb-3 border border-amber-200">

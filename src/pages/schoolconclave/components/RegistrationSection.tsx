@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { 
-  QrCode, 
-  ExternalLink, 
-  Copy, 
-  Check, 
-  Smartphone, 
-  ShieldCheck, 
-  PhoneCall, 
-  Users, 
-  Calendar, 
-  FileText, 
-  CheckCircle2, 
+import {
+  QrCode,
+  ExternalLink,
+  Copy,
+  Check,
+  Smartphone,
+  ShieldCheck,
+  PhoneCall,
+  Users,
+  Calendar,
+  FileText,
+  CheckCircle2,
   Sparkles,
   ArrowRight
 } from 'lucide-react';
@@ -19,7 +19,7 @@ import { IAMHLogo } from './InstitutionalBadges';
 
 export const RegistrationSection: React.FC = () => {
   const [copied, setCopied] = useState(false);
-  
+
   // Official Google Form link
   const googleFormUrl = EVENT_DETAILS.registrationUrl;
 
@@ -36,7 +36,7 @@ export const RegistrationSection: React.FC = () => {
       <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-300 shadow-sm">
@@ -56,7 +56,7 @@ export const RegistrationSection: React.FC = () => {
         {/* Main Registration Container */}
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
-            
+
             {/* Left Column: QR Code Showcase (Span 6) */}
             <div className="lg:col-span-6 p-8 sm:p-12 bg-gradient-to-br from-[#FFF1C7] via-[#FFF8E8] to-[#FFFDF7] text-[#17203A] flex flex-col items-center justify-between text-center relative">
 
@@ -68,7 +68,7 @@ export const RegistrationSection: React.FC = () => {
 
               {/* QR Code Container with High-Tech Targeting Corners */}
               <div className="w-full max-w-[280px] sm:max-w-[320px] aspect-square relative p-4 bg-white rounded-3xl shadow-2xl flex flex-col items-center justify-center my-4 group">
-                
+
                 {/* Targeting Corners */}
                 <span className="absolute top-2 left-2 w-5 h-5 border-t-4 border-l-4 border-amber-500 rounded-tl-lg pointer-events-none" />
                 <span className="absolute top-2 right-2 w-5 h-5 border-t-4 border-r-4 border-amber-500 rounded-tr-lg pointer-events-none" />
@@ -102,7 +102,7 @@ export const RegistrationSection: React.FC = () => {
                       {/* Bottom-Left Finder */}
                       <rect x="5" y="69" width="26" height="26" rx="4" fill="none" stroke="currentColor" strokeWidth="4" />
                       <rect x="11" y="75" width="14" height="14" rx="2" fill="currentColor" />
-                      
+
                       {/* Simulated QR Data Matrix Pattern */}
                       <rect x="36" y="8" width="5" height="5" />
                       <rect x="46" y="8" width="5" height="5" />
@@ -150,7 +150,7 @@ export const RegistrationSection: React.FC = () => {
                     Google Forms Registration QR
                   </span>
                   <span className="text-xs text-slate-500">
-                    
+
                   </span>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export const RegistrationSection: React.FC = () => {
 
             {/* Right Column: Instructions & Delegation Essentials (Span 6) */}
             <div className="lg:col-span-6 p-8 sm:p-10 lg:p-12 flex flex-col justify-between space-y-8">
-              
+
               <div>
                 <h3 className="font-display text-2xl font-extrabold text-slate-900 tracking-tight">
                   How School Registration Works

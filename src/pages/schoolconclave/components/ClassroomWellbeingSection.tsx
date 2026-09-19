@@ -6,7 +6,7 @@ export const ClassroomWellbeingSection: React.FC = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-white via-slate-50/50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-sm font-bold uppercase tracking-wider mb-4 border border-emerald-100">

@@ -10,7 +10,7 @@ export const ParticipationFeeSection: React.FC<ParticipationFeeSectionProps> = (
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="max-w-4xl mx-auto">
           <div className="relative rounded-3xl panel-editorial text-[#17203A] p-8 sm:p-12 lg:p-14 shadow-xl overflow-hidden">
 

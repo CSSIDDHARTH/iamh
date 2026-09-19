@@ -14,7 +14,7 @@ export const VenueSection: React.FC = () => {
   return (
     <section id="venue" className="py-20 bg-slate-50 border-t border-slate-200 scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/80 text-amber-900 text-sm font-bold uppercase tracking-wider mb-4 border border-amber-300/80 shadow-sm">
@@ -33,7 +33,7 @@ export const VenueSection: React.FC = () => {
 
         {/* Venue Container */}
         <div className="max-w-6xl mx-auto bg-white rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden">
-          
+
           {/* Status Banner */}
           <div className="bg-gradient-to-r from-amber-500/15 via-amber-400/10 to-transparent border-b border-amber-200/80 px-6 py-3.5 flex flex-wrap items-center justify-between gap-3 text-amber-950">
             <div className="flex items-center gap-2.5">
@@ -48,7 +48,7 @@ export const VenueSection: React.FC = () => {
           </div>
 
           <div className="p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
-            
+
             {/* Left Details Column */}
             <div className="lg:col-span-6 space-y-6 flex flex-col justify-between">
               <div>
